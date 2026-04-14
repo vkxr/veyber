@@ -6,38 +6,38 @@ export default function Page() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="pt-24">
+      <main className="pt-[120px]">
 {/*  Hero Section  */}
-<section className="relative px-8 py-24 md:py-44 flex flex-col items-center overflow-hidden" style={{background:'radial-gradient(ellipse 110% 55% at 50% -5%, rgba(174,198,255,0.07) 0%, transparent 70%)'}}>
+<section className="relative px-4 sm:px-8 py-12 sm:py-20 md:py-28 flex flex-col items-center overflow-hidden" style={{background:'radial-gradient(ellipse 110% 55% at 50% -5%, rgba(174,198,255,0.07) 0%, transparent 70%)'}}>
 {/* Subtle grid overlay */}
 <div className="pointer-events-none absolute inset-0 opacity-[0.022]" style={{backgroundImage:'linear-gradient(rgba(174,198,255,0.6) 1px,transparent 1px),linear-gradient(90deg,rgba(174,198,255,0.6) 1px,transparent 1px)',backgroundSize:'64px 64px'}}/>
-{/*  Background Glows — enhanced  */}
+{/*  Background Glows  */}
 <div className="pointer-events-none absolute -top-[20%] -left-[15%] w-[780px] h-[780px] bg-primary/10 blur-[160px] rounded-full"/>
 <div className="pointer-events-none absolute -bottom-[20%] -right-[10%] w-[680px] h-[680px] bg-secondary-container/12 blur-[140px] rounded-full"/>
 <div className="pointer-events-none absolute top-[18%] left-1/2 -translate-x-1/2 w-[900px] h-[360px] bg-primary/5 blur-[110px] rounded-full"/>
 <div className="relative z-10 text-center max-w-5xl mx-auto">
-<span className="hero-content-anim inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/[0.08] text-primary font-bold text-xs tracking-widest uppercase mb-6 shadow-[0_0_24px_rgba(174,198,255,0.12)] backdrop-blur-sm">
+<span className="hero-content-anim inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/[0.08] text-primary font-bold text-xs tracking-widest uppercase mb-5 shadow-[0_0_24px_rgba(174,198,255,0.12)] backdrop-blur-sm">
   <span className="relative flex h-1.5 w-1.5 shrink-0"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"/><span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary"/></span>
   Scale Your Digital Empire
 </span>
-<h1 className="hero-content-anim text-5xl md:text-8xl font-extrabold tracking-tighter mb-8 leading-[1.05] text-white" style={{animationDelay:'0.1s'}}>
+<h1 className="hero-content-anim text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-5 leading-[1.05] text-white max-w-[650px] mx-auto" style={{animationDelay:'0.1s'}}>
                     Build. Scale. <span className="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent" style={{filter:'drop-shadow(0 0 28px rgba(174,198,255,0.3))'}}>Dominate</span> with Veyber
                 </h1>
-<p className="hero-content-anim text-lg md:text-xl text-on-surface-variant max-w-3xl mx-auto mb-12 font-medium leading-relaxed" style={{animationDelay:'0.2s'}}>
+<p className="hero-content-anim text-base sm:text-lg text-on-surface-variant max-w-2xl mx-auto mb-8 font-medium leading-relaxed" style={{animationDelay:'0.2s'}}>
                     We help businesses grow with powerful eCommerce solutions, strategic account management, high-converting content, and result-driven digital marketing.
                 </p>
 <div className="hero-content-anim flex flex-col sm:flex-row gap-4 justify-center" style={{animationDelay:'0.3s'}}>
-<Link href="/contact" className="group relative px-8 py-4 bg-gradient-to-r from-[#aec6ff] to-[#4f8eff] text-[#001a42] font-bold rounded-full text-lg overflow-hidden transition-all duration-300 hover:scale-[1.04] hover:shadow-[0_0_52px_rgba(174,198,255,0.38)] active:scale-95 cursor-pointer">
+<Link href="/contact" className="group relative px-6 sm:px-8 py-3.5 sm:py-4 bg-gradient-to-r from-[#aec6ff] to-[#4f8eff] text-[#001a42] font-bold rounded-full text-base sm:text-lg overflow-hidden transition-all duration-300 hover:scale-[1.04] hover:shadow-[0_0_52px_rgba(174,198,255,0.38)] active:scale-95 cursor-pointer">
   <span className="relative z-10">Get Free Consultation</span>
   <div className="absolute inset-0 translate-x-[-100%] skew-x-12 bg-gradient-to-r from-white/0 via-white/20 to-white/0 group-hover:translate-x-[100%] transition-transform duration-700"/>
 </Link>
-<Link href="/services" className="px-8 py-4 text-white font-bold rounded-full text-lg border border-white/12 backdrop-blur-sm hover:border-primary/40 hover:bg-primary/[0.08] hover:shadow-[0_0_28px_rgba(174,198,255,0.10)] transition-all duration-300 cursor-pointer">
+<Link href="/services" className="px-6 sm:px-8 py-3.5 sm:py-4 text-white font-bold rounded-full text-base sm:text-lg border border-white/12 backdrop-blur-sm hover:border-primary/40 hover:bg-primary/[0.08] hover:shadow-[0_0_28px_rgba(174,198,255,0.10)] transition-all duration-300 cursor-pointer">
                         View Our Services
                     </Link>
 </div>
 </div>
 {/*  Premium Visual  */}
-<div className="hero-content-anim mt-20 w-full max-w-6xl mx-auto relative px-4" style={{animationDelay:'0.45s'}}>
+<div className="hero-content-anim hidden sm:block mt-16 sm:mt-20 w-full max-w-6xl mx-auto relative px-4" style={{animationDelay:'0.45s'}}>
 {/* Radial glow behind dashboard */}
 <div className="pointer-events-none absolute inset-x-8 -top-20 h-[520px] rounded-full bg-primary/10 blur-[100px]"/>
 <div className="pointer-events-none absolute inset-x-32 top-1/3 h-[200px] rounded-full bg-[#4f8eff]/8 blur-[60px]"/>
@@ -275,11 +275,11 @@ export default function Page() {
 </div>{/* closes Premium Visual outer */}
 </section>
 {/*  About Section: Bento Grid  */}
-<section className="px-8 py-32 bg-surface-container-low/50">
+<section className="px-4 sm:px-8 py-16 sm:py-32 bg-surface-container-low/50">
 <div className="max-w-7xl mx-auto">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 <div className="lg:col-span-5 flex flex-col justify-center">
-<h2 className="text-4xl md:text-5xl font-extrabold text-white mb-8 tracking-tight">Who We Are</h2>
+<h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6 sm:mb-8 tracking-tight">Who We Are</h2>
 <p className="text-xl text-on-surface-variant mb-6 leading-relaxed">
                             At Veyber, we don’t just provide services — <span className="text-primary font-bold">we build growth systems.</span>
 </p>
@@ -297,36 +297,36 @@ export default function Page() {
 </div>
 </div>
 </div>
-<div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div className="bg-surface-container-high p-8 rounded-3xl border border-outline-variant/10 flex flex-col justify-between">
-<span className="material-symbols-outlined text-primary text-5xl mb-4" data-icon="shopping_cart">shopping_cart</span>
-<h3 className="text-2xl font-bold text-white">eCommerce Specialist</h3>
+<div className="lg:col-span-7 grid grid-cols-2 gap-4">
+<div className="bg-surface-container-high p-5 sm:p-8 rounded-3xl border border-outline-variant/10 flex flex-col justify-between">
+<span className="material-symbols-outlined text-primary text-4xl sm:text-5xl mb-3 sm:mb-4" data-icon="shopping_cart">shopping_cart</span>
+<h3 className="text-lg sm:text-2xl font-bold text-white">eCommerce Specialist</h3>
 </div>
-<div className="bg-surface-container-high p-8 rounded-3xl border border-outline-variant/10 flex flex-col justify-between">
-<span className="material-symbols-outlined text-primary text-5xl mb-4" data-icon="query_stats">query_stats</span>
-<h3 className="text-2xl font-bold text-white">Account Management</h3>
+<div className="bg-surface-container-high p-5 sm:p-8 rounded-3xl border border-outline-variant/10 flex flex-col justify-between">
+<span className="material-symbols-outlined text-primary text-4xl sm:text-5xl mb-3 sm:mb-4" data-icon="query_stats">query_stats</span>
+<h3 className="text-lg sm:text-2xl font-bold text-white">Account Management</h3>
 </div>
-<div className="bg-surface-container-high p-8 rounded-3xl border border-outline-variant/10 flex flex-col justify-between">
-<span className="material-symbols-outlined text-primary text-5xl mb-4" data-icon="movie_edit">movie_edit</span>
-<h3 className="text-2xl font-bold text-white">Content Marketing</h3>
+<div className="bg-surface-container-high p-5 sm:p-8 rounded-3xl border border-outline-variant/10 flex flex-col justify-between">
+<span className="material-symbols-outlined text-primary text-4xl sm:text-5xl mb-3 sm:mb-4" data-icon="movie_edit">movie_edit</span>
+<h3 className="text-lg sm:text-2xl font-bold text-white">Content Marketing</h3>
 </div>
-<div className="bg-surface-container-high p-8 rounded-3xl border border-outline-variant/10 flex flex-col justify-between">
-<span className="material-symbols-outlined text-primary text-5xl mb-4" data-icon="groups">groups</span>
-<h3 className="text-2xl font-bold text-white">Social Growth</h3>
+<div className="bg-surface-container-high p-5 sm:p-8 rounded-3xl border border-outline-variant/10 flex flex-col justify-between">
+<span className="material-symbols-outlined text-primary text-4xl sm:text-5xl mb-3 sm:mb-4" data-icon="groups">groups</span>
+<h3 className="text-lg sm:text-2xl font-bold text-white">Social Growth</h3>
 </div>
 </div>
 </div>
 </div>
 </section>
 {/*  Services Section  */}
-<section className="px-8 py-32 bg-surface">
-<div className="max-w-7xl mx-auto text-center mb-20">
-<h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">Strategic Services</h2>
+<section className="px-4 sm:px-8 py-16 sm:py-32 bg-surface">
+<div className="max-w-7xl mx-auto text-center mb-12 sm:mb-20">
+<h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6">Strategic Services</h2>
 <p className="text-on-surface-variant max-w-2xl mx-auto">Full-stack digital acceleration for modern brands who refuse to settle for average growth.</p>
 </div>
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 {/*  eCommerce Development  */}
-<div className="group bg-surface-container p-10 rounded-[2rem] border border-outline-variant/10 hover:bg-surface-container-highest transition-all duration-300">
+<div className="group bg-surface-container p-6 sm:p-10 rounded-[2rem] border border-outline-variant/10 hover:bg-surface-container-highest transition-all duration-300">
 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-300">
 <span className="material-symbols-outlined text-primary text-4xl group-hover:text-on-primary-container" data-icon="web">web</span>
 </div>
@@ -334,7 +334,7 @@ export default function Page() {
 <p className="text-on-surface-variant leading-relaxed mb-6">High-performance storefronts built for conversion and speed. Shopify, WooCommerce, and Custom Headless solutions.</p>
 </div>
 {/*  Account Management  */}
-<div className="group bg-surface-container p-10 rounded-[2rem] border border-outline-variant/10 hover:bg-surface-container-highest transition-all duration-300">
+<div className="group bg-surface-container p-6 sm:p-10 rounded-[2rem] border border-outline-variant/10 hover:bg-surface-container-highest transition-all duration-300">
 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-300">
 <span className="material-symbols-outlined text-primary text-4xl group-hover:text-on-primary-container" data-icon="inventory">inventory</span>
 </div>
@@ -342,7 +342,7 @@ export default function Page() {
 <p className="text-on-surface-variant leading-relaxed mb-6">Full management of Amazon, Walmart, and eBay marketplaces to maximize revenue and organic visibility.</p>
 </div>
 {/*  Social Media Handling  */}
-<div className="group bg-surface-container p-10 rounded-[2rem] border border-outline-variant/10 hover:bg-surface-container-highest transition-all duration-300">
+<div className="group bg-surface-container p-6 sm:p-10 rounded-[2rem] border border-outline-variant/10 hover:bg-surface-container-highest transition-all duration-300">
 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-300">
 <span className="material-symbols-outlined text-primary text-4xl group-hover:text-on-primary-container" data-icon="share">share</span>
 </div>
@@ -350,7 +350,7 @@ export default function Page() {
 <p className="text-on-surface-variant leading-relaxed mb-6">Strategic brand positioning and community building across TikTok, Instagram, and LinkedIn.</p>
 </div>
 {/*  Content Marketing  */}
-<div className="group bg-surface-container p-10 rounded-[2rem] border border-outline-variant/10 hover:bg-surface-container-highest transition-all duration-300">
+<div className="group bg-surface-container p-6 sm:p-10 rounded-[2rem] border border-outline-variant/10 hover:bg-surface-container-highest transition-all duration-300">
 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-300">
 <span className="material-symbols-outlined text-primary text-4xl group-hover:text-on-primary-container" data-icon="edit_note">edit_note</span>
 </div>
@@ -358,7 +358,7 @@ export default function Page() {
 <p className="text-on-surface-variant leading-relaxed mb-6">SEO-driven articles, video scripts, and ad copy that turns strangers into loyal customers.</p>
 </div>
 {/*  Business Consulting  */}
-<div className="group bg-surface-container p-10 rounded-[2rem] border border-outline-variant/10 hover:bg-surface-container-highest transition-all duration-300">
+<div className="group bg-surface-container p-6 sm:p-10 rounded-[2rem] border border-outline-variant/10 hover:bg-surface-container-highest transition-all duration-300">
 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-300">
 <span className="material-symbols-outlined text-primary text-4xl group-hover:text-on-primary-container" data-icon="psychology">psychology</span>
 </div>
@@ -366,7 +366,7 @@ export default function Page() {
 <p className="text-on-surface-variant leading-relaxed mb-6">Executive strategy to streamline operations and identify untapped growth opportunities.</p>
 </div>
 {/*  Call to Action Card  */}
-<div className="relative bg-gradient-to-br from-primary to-primary-container p-10 rounded-[2rem] overflow-hidden flex flex-col justify-center">
+<div className="relative bg-gradient-to-br from-primary to-primary-container p-6 sm:p-10 rounded-[2rem] overflow-hidden flex flex-col justify-center">
 <div className="relative z-10">
 <h3 className="text-3xl font-black text-on-primary-container mb-4">Need a Custom Strategy?</h3>
 <p className="text-on-primary-container/80 mb-8 font-medium">Let's craft a solution tailored specifically to your unique business goals.</p>
@@ -377,11 +377,11 @@ export default function Page() {
 </div>
 </section>
 {/*  Why Choose Veyber: Asymmetric Layout  */}
-<section className="px-8 py-32 bg-surface-container-low">
+<section className="px-4 sm:px-8 py-16 sm:py-32 bg-surface-container-low">
 <div className="max-w-7xl mx-auto">
-<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 <div>
-<h2 className="text-4xl md:text-5xl font-extrabold text-white mb-10 tracking-tight leading-tight">The Veyber Advantage</h2>
+<h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-8 sm:mb-10 tracking-tight leading-tight">The Veyber Advantage</h2>
 <div className="space-y-8">
 <div className="flex items-start gap-6 group">
 <div className="mt-1 flex-shrink-0 w-12 h-12 bg-surface-container-highest rounded-xl flex items-center justify-center border border-primary/20 text-primary transition-all group-hover:shadow-[0_0_15px_rgba(174,198,255,0.3)]">
@@ -427,10 +427,10 @@ export default function Page() {
 {/* Hover spotlight shimmer */}
 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-white/5 via-transparent to-transparent pointer-events-none"></div>
 {/* Content */}
-<div className="relative z-20 p-12">
-<h3 className="text-4xl font-bold text-white mb-6 leading-tight drop-shadow-lg">Scale Without<br/>Friction.</h3>
-<p className="text-lg text-white/80 mb-8 max-w-sm leading-relaxed drop-shadow">Industry-focused approach combined with scalable solutions for high-performance brands.</p>
-<div className="flex gap-4">
+<div className="relative z-20 p-6 sm:p-12">
+<h3 className="text-2xl sm:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight drop-shadow-lg">Scale Without<br/>Friction.</h3>
+<p className="text-base sm:text-lg text-white/80 mb-6 sm:mb-8 max-w-sm leading-relaxed drop-shadow">Industry-focused approach combined with scalable solutions for high-performance brands.</p>
+<div className="flex flex-wrap gap-3">
 <span className="px-4 py-2 bg-primary/30 text-white border border-primary/40 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm">Global Focus</span>
 <span className="px-4 py-2 bg-white/10 text-white border border-white/20 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm">Industry Led</span>
 </div>
@@ -449,45 +449,45 @@ export default function Page() {
 </div>
 </section>
 {/*  Process Section  */}
-<section className="px-8 py-32 bg-surface">
+<section className="px-4 sm:px-8 py-16 sm:py-32 bg-surface">
 <div className="max-w-7xl mx-auto">
-<div className="text-center mb-24">
-<h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">How We Work</h2>
+<div className="text-center mb-12 sm:mb-24">
+<h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6">How We Work</h2>
 <p className="text-on-surface-variant">A precision-engineered workflow designed for maximum efficiency and results.</p>
 </div>
-<div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
 {/*  Step 1  */}
-<div className="relative p-8 bg-surface-container-low rounded-3xl border border-outline-variant/10 overflow-hidden group">
-<div className="absolute top-4 right-4 text-6xl font-black text-outline-variant opacity-20">01</div>
-<h4 className="text-xl font-bold text-white mb-4 pt-10">Understanding Your Business</h4>
-<p className="text-sm text-on-surface-variant leading-relaxed">We dive deep into your market position, competitors, and growth bottlenecks.</p>
+<div className="relative p-5 sm:p-8 bg-surface-container-low rounded-3xl border border-outline-variant/10 overflow-hidden group">
+<div className="absolute top-3 right-3 text-5xl sm:text-6xl font-black text-outline-variant opacity-20">01</div>
+<h4 className="text-base sm:text-xl font-bold text-white mb-3 sm:mb-4 pt-8 sm:pt-10">Understanding Your Business</h4>
+<p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed">We dive deep into your market position, competitors, and growth bottlenecks.</p>
 </div>
 {/*  Step 2  */}
-<div className="relative p-8 bg-surface-container rounded-3xl border border-outline-variant/10 overflow-hidden group">
-<div className="absolute top-4 right-4 text-6xl font-black text-outline-variant opacity-20">02</div>
-<h4 className="text-xl font-bold text-white mb-4 pt-10">Strategy Development</h4>
-<p className="text-sm text-on-surface-variant leading-relaxed">Crafting a bespoke roadmap focused on ROI and sustainable scalability.</p>
+<div className="relative p-5 sm:p-8 bg-surface-container rounded-3xl border border-outline-variant/10 overflow-hidden group">
+<div className="absolute top-3 right-3 text-5xl sm:text-6xl font-black text-outline-variant opacity-20">02</div>
+<h4 className="text-base sm:text-xl font-bold text-white mb-3 sm:mb-4 pt-8 sm:pt-10">Strategy Development</h4>
+<p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed">Crafting a bespoke roadmap focused on ROI and sustainable scalability.</p>
 </div>
 {/*  Step 3  */}
-<div className="relative p-8 bg-surface-container-high rounded-3xl border border-outline-variant/10 overflow-hidden group">
-<div className="absolute top-4 right-4 text-6xl font-black text-outline-variant opacity-20">03</div>
-<h4 className="text-xl font-bold text-white mb-4 pt-10">Execution &amp; Optimization</h4>
-<p className="text-sm text-on-surface-variant leading-relaxed">Launch with precision. Constant A/B testing and refining for peak performance.</p>
+<div className="relative p-5 sm:p-8 bg-surface-container-high rounded-3xl border border-outline-variant/10 overflow-hidden group">
+<div className="absolute top-3 right-3 text-5xl sm:text-6xl font-black text-outline-variant opacity-20">03</div>
+<h4 className="text-base sm:text-xl font-bold text-white mb-3 sm:mb-4 pt-8 sm:pt-10">Execution &amp; Optimization</h4>
+<p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed">Launch with precision. Constant A/B testing and refining for peak performance.</p>
 </div>
 {/*  Step 4  */}
-<div className="relative p-8 bg-surface-container-highest rounded-3xl border border-outline-variant/10 overflow-hidden group">
-<div className="absolute top-4 right-4 text-6xl font-black text-outline-variant opacity-20">04</div>
-<h4 className="text-xl font-bold text-white mb-4 pt-10">Continuous Growth Tracking</h4>
-<p className="text-sm text-on-surface-variant leading-relaxed">Scaling winning formulas and exploring new horizons for your brand.</p>
+<div className="relative p-5 sm:p-8 bg-surface-container-highest rounded-3xl border border-outline-variant/10 overflow-hidden group">
+<div className="absolute top-3 right-3 text-5xl sm:text-6xl font-black text-outline-variant opacity-20">04</div>
+<h4 className="text-base sm:text-xl font-bold text-white mb-3 sm:mb-4 pt-8 sm:pt-10">Continuous Growth Tracking</h4>
+<p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed">Scaling winning formulas and exploring new horizons for your brand.</p>
 </div>
 </div>
 </div>
 </section>
 {/*  Testimonials  */}
-<section className="px-8 py-32 bg-surface-container-low/50 relative overflow-hidden">
+<section className="px-4 sm:px-8 py-16 sm:py-32 bg-surface-container-low/50 relative overflow-hidden">
 <div className="max-w-7xl mx-auto">
-<div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-<h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">Partnering for<br/>Success</h2>
+<div className="flex flex-col md:flex-row justify-between items-end mb-10 sm:mb-16 gap-6 sm:gap-8">
+<h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight">Partnering for<br/>Success</h2>
 <div className="flex gap-4">
 <button className="w-14 h-14 rounded-full border border-outline-variant/20 flex items-center justify-center text-white hover:bg-surface-variant transition-all">
 <span className="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
@@ -498,7 +498,7 @@ export default function Page() {
 </div>
 </div>
 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div className="bg-surface-container-high p-10 rounded-[2.5rem] border border-outline-variant/10">
+<div className="bg-surface-container-high p-6 sm:p-10 rounded-[2.5rem] border border-outline-variant/10">
 <div className="flex gap-1 mb-6 text-primary">
 <span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
 <span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
@@ -506,7 +506,7 @@ export default function Page() {
 <span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
 <span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
 </div>
-<p className="text-2xl font-medium text-white mb-10 leading-relaxed italic">"Veyber completely transformed our Amazon presence. In 6 months, our monthly revenue tripled while our ACoS dropped by 15%."</p>
+<p className="text-lg sm:text-2xl font-medium text-white mb-8 sm:mb-10 leading-relaxed italic">"Veyber completely transformed our Amazon presence. In 6 months, our monthly revenue tripled while our ACoS dropped by 15%."</p>
 <div className="flex items-center gap-4">
 <div className="w-12 h-12 rounded-full bg-slate-800 border border-outline-variant overflow-hidden">
 <img alt="Client Portrait" data-alt="Professional portrait of a male CEO in business attire, confident expression, soft corporate studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8-AXu7hTdd5AkhbTkbjP1Y6e93sOvWnbEgtDH1Zbnwv0IvYnXXHA6RxrJWPqnHpK5hSQmm2RTm7jaU20tB0_-SoVQixE5eKirfhPBKrR1nd2e1sDFHugBM1AVRyvPCVCIuFcbx37CmJr8dc9mtR34n7-xG02iK_e0qTcTEveNs01ycw_zcpBc9PLoG-sYuIlT442Nk0yyA8k20_oRNFdz8IS8ICzSHplXGqNXanqj-XvsW-uJDKEnaB9nlX--BFAvnQwI7dxyYv0"/>
@@ -517,7 +517,7 @@ export default function Page() {
 </div>
 </div>
 </div>
-<div className="bg-surface-container-high p-10 rounded-[2.5rem] border border-outline-variant/10">
+<div className="bg-surface-container-high p-6 sm:p-10 rounded-[2.5rem] border border-outline-variant/10">
 <div className="flex gap-1 mb-6 text-primary">
 <span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
 <span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
@@ -525,7 +525,7 @@ export default function Page() {
 <span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
 <span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
 </div>
-<p className="text-2xl font-medium text-white mb-10 leading-relaxed italic">"The team at Veyber understands growth systems better than anyone we've ever worked with. Their content marketing is top-tier."</p>
+<p className="text-lg sm:text-2xl font-medium text-white mb-8 sm:mb-10 leading-relaxed italic">"The team at Veyber understands growth systems better than anyone we've ever worked with. Their content marketing is top-tier."</p>
 <div className="flex items-center gap-4">
 <div className="w-12 h-12 rounded-full bg-slate-800 border border-outline-variant overflow-hidden">
 <img alt="Client Portrait" data-alt="Portrait of a female digital entrepreneur, creative professional style, warm natural lighting, confident smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgMmZzX7BsjeHR91rDjm5pSYWPGq5ByWQYTx17Arp7s59S3eKMz-2S_5K5QXFEPXJqzsRL9tmSlk6Oq6pMg7AIuML9Ye4d7mirhc0uG-5LQ_euXuaT-RSTu32cgpCuse0Lmex-3fncQCXyzt4xsBm2hoeh2XAU8LiCjjDXrPxXVWsIK_34I_pKsV7mKfs5AqZ2Wx3IlQkf9aIglIZr8lfG__zXBih5HzhQLHUv95e2ZYmaDCJ58RWSMq_aCLp8_r2xrtct5IQLHkM"/>
@@ -540,9 +540,9 @@ export default function Page() {
 </div>
 </section>
 {/*  Final CTA  */}
-<section className="px-8 py-32 relative overflow-hidden">
+<section className="px-4 sm:px-8 py-16 sm:py-32 relative overflow-hidden">
 <div className="absolute inset-0 bg-primary/5"></div>
-<div className="force-dark max-w-5xl mx-auto text-center relative z-10 bg-neutral-900 rounded-[3rem] border border-white/15 overflow-hidden">
+<div className="force-dark max-w-5xl mx-auto text-center relative z-10 bg-neutral-900 rounded-[2rem] sm:rounded-[3rem] border border-white/15 overflow-hidden">
 {/* Background image — thriving team / business energy */}
 <img
   alt="Ready to grow your business — energetic team celebrating success"
@@ -554,10 +554,10 @@ export default function Page() {
 {/* Subtle blue brand tint at top */}
 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-transparent"></div>
 {/* Content */}
-<div className="relative z-10 p-16 md:p-24">
-<h2 className="text-4xl md:text-6xl font-black text-white mb-8 tracking-tight drop-shadow-xl">Ready to grow your business?</h2>
-<p className="text-xl text-white/75 mb-12 max-w-2xl mx-auto leading-relaxed drop-shadow">Let’s build something powerful together. Your journey to market dominance starts with a single conversation.</p>
-<Link href="/contact" className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-black rounded-full text-xl shadow-2xl hover:shadow-primary/40 transition-all active:scale-95 cursor-pointer group">
+<div className="relative z-10 p-8 sm:p-12 md:p-16 lg:p-24">
+<h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-6 sm:mb-8 tracking-tight drop-shadow-xl">Ready to grow your business?</h2>
+<p className="text-base sm:text-xl text-white/75 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed drop-shadow">Let’s build something powerful together. Your journey to market dominance starts with a single conversation.</p>
+<Link href="/contact" className="inline-flex items-center px-7 sm:px-10 py-3.5 sm:py-5 bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-black rounded-full text-base sm:text-xl shadow-2xl hover:shadow-primary/40 transition-all active:scale-95 cursor-pointer group">
                     Get Free Strategy Call
                     <span className="material-symbols-outlined inline-block align-middle ml-2 group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
 </Link>

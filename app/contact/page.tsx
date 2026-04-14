@@ -5,22 +5,23 @@ export default function Page() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+      <main className="pt-[120px] pb-16 sm:pb-24 px-4 sm:px-6 md:px-12 max-w-7xl mx-auto">
 
         {/* ── Header ── */}
-        <header className="mb-20 text-center max-w-3xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter text-white mb-6">
+        <header className="pt-12 sm:pt-20 md:pt-28 mb-12 text-center">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/[0.08] text-primary font-bold text-xs tracking-widest uppercase mb-5">Let's Work Together</span>
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-5 max-w-[650px] mx-auto leading-tight">
             Get in Touch with Veyber
           </h1>
-          <p className="text-on-surface-variant text-lg md:text-xl font-medium leading-relaxed">
+          <p className="text-on-surface-variant text-base sm:text-lg font-medium leading-relaxed max-w-2xl mx-auto">
             Whether you're looking to scale your digital presence or build something entirely new, our team is ready to transform your vision into reality.
           </p>
         </header>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-start">
 
           {/* ── Contact Form ── */}
-          <section className="lg:col-span-7 bg-surface-container-low rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+          <section className="lg:col-span-7 bg-surface-container-low rounded-3xl p-6 sm:p-8 md:p-12 shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] rounded-full -mr-32 -mt-32 pointer-events-none"/>
             <form className="relative z-10 space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -60,7 +61,7 @@ export default function Page() {
           </section>
 
           {/* ── Contact Info + Map ── */}
-          <section className="lg:col-span-5 space-y-8">
+          <section className="lg:col-span-5 space-y-4 sm:space-y-8">
 
             {/* Contact cards */}
             <div className="space-y-4">
@@ -109,7 +110,7 @@ export default function Page() {
             </div>
 
             {/* ── Real Vadodara Map (Google Maps embed) ── */}
-            <div className="rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/10 relative" style={{height:'300px'}}>
+            <div className="rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/10 relative" style={{height:'240px'}}>
               <iframe
                 title="Veyber location — Vadodara, Gujarat"
                 src="https://maps.google.com/maps?q=Vadodara,Gujarat,India&z=13&output=embed"

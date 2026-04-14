@@ -5,18 +5,18 @@ export default function Page() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="pt-24">
+      <main className="pt-[120px]">
 {/*  Hero Section  */}
-<section className="relative px-8 py-24 md:py-32 overflow-hidden">
+<section className="relative px-4 sm:px-8 py-12 sm:py-20 md:py-28 overflow-hidden">
 <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none"></div>
 <div className="max-w-7xl mx-auto relative z-10">
-<div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
 <div className="lg:col-span-7">
-<span className="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-6">Established in Vadodara</span>
-<h1 className="text-5xl md:text-7xl font-extrabold font-headline tracking-tight leading-tight mb-8">
+<span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/[0.08] text-primary font-bold text-xs tracking-widest uppercase mb-5">Digital Growth Agency · Vadodara</span>
+<h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold font-headline tracking-tight leading-tight mb-5 max-w-[650px]">
                             About Veyber – <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">Digital Growth</span> Company in Vadodara
                         </h1>
-<p className="text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-2xl font-body">
+<p className="text-base sm:text-lg text-on-surface-variant leading-relaxed max-w-[540px] font-body">
                             As a leading <span className="text-primary font-semibold">digital marketing company in Vadodara</span>, Veyber is dedicated to transforming local enterprises into global contenders. Based in the heart of Gujarat, we blend technical precision with creative flair to scale brands across the digital landscape.
                         </p>
 </div>
@@ -32,8 +32,8 @@ export default function Page() {
 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent pointer-events-none"/>
 </div>
 {/* Floating stat badge */}
-<div className="absolute -bottom-6 -left-6 p-8 bg-surface-container-highest rounded-2xl shadow-xl border border-outline-variant/10 backdrop-blur-sm">
-<div className="text-4xl font-bold font-headline text-primary">150+</div>
+<div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 p-5 sm:p-8 bg-surface-container-highest rounded-2xl shadow-xl border border-outline-variant/10 backdrop-blur-sm">
+<div className="text-3xl sm:text-4xl font-bold font-headline text-primary">150+</div>
 <div className="text-sm font-medium text-on-surface-variant uppercase tracking-widest">Projects Delivered</div>
 </div>
 </div>
@@ -41,10 +41,10 @@ export default function Page() {
 </div>
 </section>
 {/*  Our Story / Who We Are (Asymmetric Bento)  */}
-<section className="px-8 py-24 bg-surface-container-low">
+<section className="px-4 sm:px-8 py-12 sm:py-24 bg-surface-container-low">
 <div className="max-w-7xl mx-auto">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-<div className="force-dark md:col-span-4 relative bg-neutral-900 rounded-2xl overflow-hidden flex flex-col justify-end min-h-[400px] group">
+<div className="force-dark md:col-span-4 relative bg-neutral-900 rounded-2xl overflow-hidden flex flex-col justify-end min-h-[280px] sm:min-h-[400px] group">
 {/* Background — diverse creative team working together */}
 <img
   alt="Who We Are — diverse team of digital professionals"
@@ -53,12 +53,12 @@ export default function Page() {
 />
 <div className="absolute inset-0 bg-gradient-to-t from-black/92 via-black/55 to-black/15"></div>
 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent opacity-50"></div>
-<div className="relative z-10 p-10">
-<h2 className="text-3xl font-bold font-headline mb-4 text-white">Who We Are</h2>
+<div className="relative z-10 p-6 sm:p-10">
+<h2 className="text-2xl sm:text-3xl font-bold font-headline mb-4 text-white">Who We Are</h2>
 <p className="text-white/70 leading-relaxed">We are a collective of digital architects, data scientists, and creative storytellers committed to the growth of businesses in Gujarat and beyond.</p>
 </div>
 </div>
-<div className="force-dark md:col-span-8 relative bg-neutral-900 rounded-2xl overflow-hidden min-h-[400px] group">
+<div className="force-dark md:col-span-8 relative bg-neutral-900 rounded-2xl overflow-hidden min-h-[280px] sm:min-h-[400px] group">
 {/* Background — founding story / small determined startup team */}
 <img
   alt="Our Story — founders working late building Veyber from Vadodara"
@@ -68,17 +68,17 @@ export default function Page() {
 {/* Dark overlay — always works in both light and dark mode */}
 <div className="absolute inset-0 bg-gradient-to-t from-black/92 via-black/55 to-black/20"></div>
 <div className="absolute inset-0 bg-gradient-to-tr from-primary/15 via-transparent to-transparent"></div>
-<div className="absolute bottom-10 left-10 right-10 z-10">
-<h2 className="text-3xl font-bold font-headline mb-4 text-white uppercase tracking-widest drop-shadow-lg">Our Story</h2>
-<p className="text-white/80 text-lg leading-relaxed max-w-xl drop-shadow">Founded with a vision to bridge the gap between local craft and global reach, Veyber started as a small team in Vadodara with one goal: to redefine how brands communicate in the digital age.</p>
+<div className="absolute bottom-5 sm:bottom-10 left-5 sm:left-10 right-5 sm:right-10 z-10">
+<h2 className="text-2xl sm:text-3xl font-bold font-headline mb-3 sm:mb-4 text-white uppercase tracking-widest drop-shadow-lg">Our Story</h2>
+<p className="text-white/80 text-base sm:text-lg leading-relaxed max-w-xl drop-shadow">Founded with a vision to bridge the gap between local craft and global reach, Veyber started as a small team in Vadodara with one goal: to redefine how brands communicate in the digital age.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
 {/*  Mission & Vision  */}
-<section className="px-8 py-24">
-<div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+<section className="px-4 sm:px-8 py-12 sm:py-24">
+<div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-16">
 <div className="space-y-8">
 <div className="flex gap-6">
 <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
@@ -104,12 +104,12 @@ export default function Page() {
 </div>
 </section>
 {/*  Leadership Messages  */}
-<section className="px-8 py-24 bg-surface-container-lowest">
+<section className="px-4 sm:px-8 py-12 sm:py-24 bg-surface-container-lowest">
 <div className="max-w-7xl mx-auto">
-<h2 className="text-4xl font-bold font-headline mb-16 text-center">Leadership Messages</h2>
-<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+<h2 className="text-3xl sm:text-4xl font-bold font-headline mb-8 sm:mb-16 text-center">Leadership Messages</h2>
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 {/*  Founder  */}
-<div className="bg-surface-container-high p-8 rounded-2xl border border-outline-variant/5">
+<div className="bg-surface-container-high p-5 sm:p-8 rounded-2xl border border-outline-variant/5">
 <div className="w-20 h-20 rounded-full overflow-hidden mb-6 ring-4 ring-primary/20">
 <img className="w-full h-full object-cover" data-alt="Portrait of a visionary male CEO in a modern suit, professional studio lighting, confident expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJSdNF5bCbka75fYJDEPi0zXAU2KCBPpYlU9enKPpw3uC-a1k-on8IanIoWzpTrc0R_dGAxPYqJt4i00FBa4Anj1WxCqJzzpWiEbv5uSZWwd03VEzliQEw4BrfQvHaMI4aTrbME_92CQ7hrpr_EtZSQBW7vXuFkE3W88BMDNwUksgfFAFpToL1ja0-0R7v2wXCq8Vjji-d1SPmZtLgK0kKircg9MAM8Pp_o4F89vHRTTeVz5J3knoHQRbjXCizBzqVVHBByuoP3bg"/>
 </div>
@@ -120,7 +120,7 @@ export default function Page() {
 </div>
 </div>
 {/*  Co-Founder 1  */}
-<div className="bg-surface-container-high p-8 rounded-2xl border border-outline-variant/5">
+<div className="bg-surface-container-high p-5 sm:p-8 rounded-2xl border border-outline-variant/5">
 <div className="w-20 h-20 rounded-full overflow-hidden mb-6 ring-4 ring-primary/20">
 <img className="w-full h-full object-cover" data-alt="Portrait of a female creative director with stylish glasses, minimalist aesthetic, professional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL9OUzxbhRy2MtWz2vGY87ykzTsLNh_TmQUUNY9QUxYdblWQQSta7R1oouoPAnVzlnswMXV3bMVjOwF36PwgTmszxg585XzeTMSpkMES9gltpHnba2eQK27V54ukcGmOd-L37KjXGwM8YpbqLyLmL6qmy5uzEwC_zUUkbn3hvCO_v_Nqhga6VkZbS_1JORW2FiRkHDSOiovdMB1GmCdFmE_rwTphY5FkLy9nEIneF0s42SS1wbqH0i7C1poVb3mZtz_koRBzvXh4g"/>
 </div>
@@ -131,7 +131,7 @@ export default function Page() {
 </div>
 </div>
 {/*  Co-Founder 2  */}
-<div className="bg-surface-container-high p-8 rounded-2xl border border-outline-variant/5">
+<div className="bg-surface-container-high p-5 sm:p-8 rounded-2xl border border-outline-variant/5">
 <div className="w-20 h-20 rounded-full overflow-hidden mb-6 ring-4 ring-primary/20">
 <img className="w-full h-full object-cover" data-alt="Portrait of a young male tech entrepreneur, tech-focused environment background, clean professional look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHOKiHczlyRKA9lkHT6pzqgO5rY3TrW1Aj6H_tDc96My2SN_YJ9_ge2cissxubXbZrhUuhOWHU4JicMrLekiAM2c6blcaAiphjfT3m2kzHe3JGXPjTtuO1pB5jubmTOGQSlUbzTuWAxW8OMTY8xZ1CRM8HWQqLV0RqK_8x29M4Ugc4a-KtniGCFuLHiDtVlsH-otAOSDcou8s4zJPxVSubdvWwz1IxPzlTIsP4PPhaFmQBZBgEoxcKM9mv2e7YNMIeqohIySC699k"/>
 </div>
@@ -145,10 +145,10 @@ export default function Page() {
 </div>
 </section>
 {/*  Why Choose Veyber & Approach  */}
-<section className="px-8 py-24">
-<div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<section className="px-4 sm:px-8 py-12 sm:py-24">
+<div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24 items-center">
 <div>
-<h2 className="text-4xl font-bold font-headline mb-8">Why Choose Veyber?</h2>
+<h2 className="text-3xl sm:text-4xl font-bold font-headline mb-6 sm:mb-8">Why Choose Veyber?</h2>
 <ul className="space-y-6">
 <li className="flex items-start gap-4">
 <span className="material-symbols-outlined text-primary mt-1">verified</span>
@@ -173,9 +173,9 @@ export default function Page() {
 </li>
 </ul>
 </div>
-<div className="bg-surface-container p-12 rounded-3xl border border-outline-variant/10 relative overflow-hidden">
+<div className="bg-surface-container p-6 sm:p-10 rounded-3xl border border-outline-variant/10 relative overflow-hidden">
 <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-bl-full filter blur-3xl"></div>
-<h2 className="text-4xl font-bold font-headline mb-8">Our Approach</h2>
+<h2 className="text-3xl sm:text-4xl font-bold font-headline mb-6 sm:mb-8">Our Approach</h2>
 <div className="space-y-8 relative z-10">
 <div className="flex items-center gap-6">
 <span className="text-4xl font-black text-outline-variant/30 font-headline">01</span>
@@ -198,26 +198,26 @@ export default function Page() {
 </div>
 </section>
 {/*  Who We Work With & Commitment  */}
-<section className="px-8 py-24 bg-surface-container-low text-center">
+<section className="px-4 sm:px-8 py-12 sm:py-24 bg-surface-container-low text-center">
 <div className="max-w-4xl mx-auto">
-<h2 className="text-4xl font-bold font-headline mb-6">Who We Work With</h2>
-<p className="text-lg text-on-surface-variant mb-12">From Vadodara's promising startups to established manufacturing giants across Gujarat, we partner with visionaries who are ready to scale.</p>
-<div className="flex flex-wrap justify-center gap-6 mb-24 opacity-60">
+<h2 className="text-3xl sm:text-4xl font-bold font-headline mb-6">Who We Work With</h2>
+<p className="text-base sm:text-lg text-on-surface-variant mb-10 sm:mb-12">From Vadodara's promising startups to established manufacturing giants across Gujarat, we partner with visionaries who are ready to scale.</p>
+<div className="flex flex-wrap justify-center gap-4 mb-10 sm:mb-24 opacity-60">
 <span className="px-6 py-2 bg-surface-container-highest rounded-full text-xs font-bold tracking-widest uppercase">E-Commerce</span>
 <span className="px-6 py-2 bg-surface-container-highest rounded-full text-xs font-bold tracking-widest uppercase">Real Estate</span>
 <span className="px-6 py-2 bg-surface-container-highest rounded-full text-xs font-bold tracking-widest uppercase">Education</span>
 <span className="px-6 py-2 bg-surface-container-highest rounded-full text-xs font-bold tracking-widest uppercase">Healthcare</span>
 <span className="px-6 py-2 bg-surface-container-highest rounded-full text-xs font-bold tracking-widest uppercase">Manufacturing</span>
 </div>
-<div className="p-12 rounded-2xl bg-gradient-to-br from-primary/10 to-primary-container/10 border border-primary/20">
-<h3 className="text-2xl font-bold font-headline mb-4 uppercase tracking-widest">Our Commitment</h3>
-<p className="text-lg leading-relaxed text-on-surface">We commit to transparency, relentless innovation, and a results-oriented mindset. When you work with Veyber, you aren't just hiring an agency; you're gaining a growth partner dedicated to your long-term success.</p>
+<div className="p-6 sm:p-10 rounded-2xl bg-gradient-to-br from-primary/10 to-primary-container/10 border border-primary/20">
+<h3 className="text-xl sm:text-2xl font-bold font-headline mb-4 uppercase tracking-widest">Our Commitment</h3>
+<p className="text-base sm:text-lg leading-relaxed text-on-surface">We commit to transparency, relentless innovation, and a results-oriented mindset. When you work with Veyber, you aren't just hiring an agency; you're gaining a growth partner dedicated to your long-term success.</p>
 </div>
 </div>
 </section>
 {/*  FAQ Section  */}
-<section className="px-8 py-24 max-w-4xl mx-auto">
-<h2 className="text-4xl font-bold font-headline mb-12 text-center">Frequently Asked Questions</h2>
+<section className="px-4 sm:px-8 py-12 sm:py-24 max-w-4xl mx-auto">
+<h2 className="text-3xl sm:text-4xl font-bold font-headline mb-8 sm:mb-12 text-center">Frequently Asked Questions</h2>
 <div className="space-y-4">
 <div className="bg-surface-container p-6 rounded-xl border border-outline-variant/10">
 <h4 className="font-bold text-lg mb-2">Why is Veyber considered the best digital marketing company in Vadodara?</h4>

@@ -62,9 +62,9 @@ export default function Footer() {
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#aec6ff]/30 to-transparent"/>
       <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-32 bg-primary/6 blur-[70px]"/>
 
-      <div className="max-w-7xl mx-auto px-12 pt-20 pb-10">
+      <div className="max-w-7xl mx-auto px-6 sm:px-12 pt-14 sm:pt-20 pb-8 sm:pb-10">
         {/* ── Main grid ── */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-white/[0.06]">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 pb-10 sm:pb-16 border-b border-white/[0.06]">
 
           {/* Brand column */}
           <div className="md:col-span-5">
@@ -108,6 +108,7 @@ export default function Footer() {
                 ['Account Management',    '/services#account-management'],
                 ['Social Media Handling', '/services#social-media'],
                 ['Content Marketing',     '/services#content-marketing'],
+                ['Graphic Design',        '/services#graphic-design'],
                 ['Business Consulting',   '/services#business-consulting'],
               ].map(([label, href]) => (
                 <li key={label}>
