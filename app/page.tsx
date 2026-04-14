@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -11,12 +12,12 @@ export default function Page() {
 <section className="relative px-4 sm:px-8 py-12 sm:py-20 md:py-28 flex flex-col items-center overflow-hidden" style={{background:'radial-gradient(ellipse 110% 55% at 50% -5%, rgba(174,198,255,0.07) 0%, transparent 70%)'}}>
 {/* Subtle grid overlay */}
 <div className="pointer-events-none absolute inset-0 opacity-[0.022]" style={{backgroundImage:'linear-gradient(rgba(174,198,255,0.6) 1px,transparent 1px),linear-gradient(90deg,rgba(174,198,255,0.6) 1px,transparent 1px)',backgroundSize:'64px 64px'}}/>
-{/*  Background Glows  */}
-<div className="pointer-events-none absolute -top-[20%] -left-[15%] w-[780px] h-[780px] bg-primary/10 blur-[160px] rounded-full"/>
-<div className="pointer-events-none absolute -bottom-[20%] -right-[10%] w-[680px] h-[680px] bg-secondary-container/12 blur-[140px] rounded-full"/>
-<div className="pointer-events-none absolute top-[18%] left-1/2 -translate-x-1/2 w-[900px] h-[360px] bg-primary/5 blur-[110px] rounded-full"/>
+{/*  Background Glows — reduced blur radius for performance  */}
+<div className="pointer-events-none absolute -top-[20%] -left-[15%] w-[780px] h-[780px] bg-primary/10 blur-[80px] rounded-full"/>
+<div className="pointer-events-none absolute -bottom-[20%] -right-[10%] w-[680px] h-[680px] bg-secondary-container/12 blur-[70px] rounded-full"/>
+<div className="pointer-events-none absolute top-[18%] left-1/2 -translate-x-1/2 w-[900px] h-[360px] bg-primary/5 blur-[60px] rounded-full"/>
 <div className="relative z-10 text-center max-w-5xl mx-auto">
-<span className="hero-content-anim inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/[0.08] text-primary font-bold text-xs tracking-widest uppercase mb-5 shadow-[0_0_24px_rgba(174,198,255,0.12)] backdrop-blur-sm">
+<span className="hero-content-anim inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/[0.08] text-primary font-bold text-xs tracking-widest uppercase mb-5 shadow-[0_0_24px_rgba(174,198,255,0.12)]">
   <span className="relative flex h-1.5 w-1.5 shrink-0"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"/><span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary"/></span>
   Scale Your Digital Empire
 </span>
@@ -31,16 +32,16 @@ export default function Page() {
   <span className="relative z-10">Get Free Consultation</span>
   <div className="absolute inset-0 translate-x-[-100%] skew-x-12 bg-gradient-to-r from-white/0 via-white/20 to-white/0 group-hover:translate-x-[100%] transition-transform duration-700"/>
 </Link>
-<Link href="/services" className="px-6 sm:px-8 py-3.5 sm:py-4 text-white font-bold rounded-full text-base sm:text-lg border border-white/12 backdrop-blur-sm hover:border-primary/40 hover:bg-primary/[0.08] hover:shadow-[0_0_28px_rgba(174,198,255,0.10)] transition-all duration-300 cursor-pointer">
+<Link href="/services" className="px-6 sm:px-8 py-3.5 sm:py-4 text-white font-bold rounded-full text-base sm:text-lg border border-white/12 hover:border-primary/40 hover:bg-primary/[0.08] hover:shadow-[0_0_28px_rgba(174,198,255,0.10)] transition-all duration-300 cursor-pointer">
                         View Our Services
                     </Link>
 </div>
 </div>
 {/*  Premium Visual  */}
 <div className="hero-content-anim hidden sm:block mt-16 sm:mt-20 w-full max-w-6xl mx-auto relative px-4" style={{animationDelay:'0.45s'}}>
-{/* Radial glow behind dashboard */}
-<div className="pointer-events-none absolute inset-x-8 -top-20 h-[520px] rounded-full bg-primary/10 blur-[100px]"/>
-<div className="pointer-events-none absolute inset-x-32 top-1/3 h-[200px] rounded-full bg-[#4f8eff]/8 blur-[60px]"/>
+{/* Radial glow behind dashboard — reduced blur */}
+<div className="pointer-events-none absolute inset-x-8 -top-20 h-[520px] rounded-full bg-primary/10 blur-[60px]"/>
+<div className="pointer-events-none absolute inset-x-32 top-1/3 h-[200px] rounded-full bg-[#4f8eff]/8 blur-[40px]"/>
 {/* Float + deep shadow wrapper */}
 <div className="hero-dashboard-float" style={{filter:'drop-shadow(0 56px 100px rgba(0,0,0,0.70)) drop-shadow(0 0 80px rgba(174,198,255,0.09))'}}>
 <div className="bg-surface-container-low rounded-3xl border border-primary/12 shadow-2xl p-4 overflow-hidden" style={{transform:'perspective(1600px) rotateX(4.5deg)'}}>
@@ -237,10 +238,10 @@ export default function Page() {
 </div>
 </div>{/* closes hero-dashboard-float */}
 
-{/* ── Floating stat cards (glassmorphism) ── */}
+{/* ── Floating stat cards (glassmorphism — reduced blur for perf) ── */}
 
 {/* Card 1 — Growth · top-right */}
-<div className="stat-card-1 absolute -top-7 right-2 md:-right-8 hidden md:flex items-center gap-3 px-5 py-3.5 rounded-2xl border border-white/12 bg-white/[0.055] backdrop-blur-2xl shadow-[0_8px_40px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.08)] z-20">
+<div className="stat-card-1 absolute -top-7 right-2 md:-right-8 hidden md:flex items-center gap-3 px-5 py-3.5 rounded-2xl border border-white/12 bg-white/[0.055] backdrop-blur-lg shadow-[0_8px_40px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.08)] z-20">
   <div className="w-9 h-9 rounded-xl bg-[#4ade80]/15 border border-[#4ade80]/20 flex items-center justify-center shrink-0">
     <span className="material-symbols-outlined text-[#4ade80] text-[18px]">trending_up</span>
   </div>
@@ -251,7 +252,7 @@ export default function Page() {
 </div>
 
 {/* Card 2 — Revenue · bottom-left */}
-<div className="stat-card-2 absolute -bottom-6 left-2 md:-left-8 hidden md:flex items-center gap-3 px-5 py-3.5 rounded-2xl border border-white/12 bg-white/[0.055] backdrop-blur-2xl shadow-[0_8px_40px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.08)] z-20">
+<div className="stat-card-2 absolute -bottom-6 left-2 md:-left-8 hidden md:flex items-center gap-3 px-5 py-3.5 rounded-2xl border border-white/12 bg-white/[0.055] backdrop-blur-lg shadow-[0_8px_40px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.08)] z-20">
   <div className="w-9 h-9 rounded-xl bg-primary/15 border border-primary/20 flex items-center justify-center shrink-0">
     <span className="material-symbols-outlined text-primary text-[18px]">paid</span>
   </div>
@@ -262,7 +263,7 @@ export default function Page() {
 </div>
 
 {/* Card 3 — Orders · left-center */}
-<div className="stat-card-3 absolute top-[38%] -left-2 md:-left-14 hidden lg:flex items-center gap-3 px-5 py-3.5 rounded-2xl border border-white/12 bg-white/[0.055] backdrop-blur-2xl shadow-[0_8px_40px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.08)] z-20">
+<div className="stat-card-3 absolute top-[38%] -left-2 md:-left-14 hidden lg:flex items-center gap-3 px-5 py-3.5 rounded-2xl border border-white/12 bg-white/[0.055] backdrop-blur-lg shadow-[0_8px_40px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.08)] z-20">
   <div className="w-9 h-9 rounded-xl bg-[#f0661b]/15 border border-[#f0661b]/20 flex items-center justify-center shrink-0">
     <span className="material-symbols-outlined text-[#f0661b] text-[18px]">shopping_bag</span>
   </div>
@@ -281,7 +282,7 @@ export default function Page() {
 <div className="lg:col-span-5 flex flex-col justify-center">
 <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6 sm:mb-8 tracking-tight">Who We Are</h2>
 <p className="text-xl text-on-surface-variant mb-6 leading-relaxed">
-                            At Veyber, we don’t just provide services — <span className="text-primary font-bold">we build growth systems.</span>
+                            At Veyber, we don't just provide services — <span className="text-primary font-bold">we build growth systems.</span>
 </p>
 <p className="text-on-surface-variant mb-8 leading-relaxed">
                             Our mission is simple: Help businesses scale faster, smarter, and more profitably through elite digital strategies and technical execution.
@@ -415,17 +416,19 @@ export default function Page() {
 <div className="relative">
 <div className="force-dark aspect-square bg-neutral-900 rounded-[3rem] border border-white/10 relative z-10 flex flex-col justify-center overflow-hidden group cursor-pointer transition-all duration-500 hover:shadow-[0_24px_64px_rgba(0,0,0,0.55)] hover:border-primary/30">
 {/* High-quality background — city towers reaching up, matches "scale" narrative */}
-<img
+<Image
   alt="Scale Without Friction — glass skyscrapers reaching upward"
-  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=85"
+  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=75"
+  fill
+  sizes="(max-width: 1024px) 100vw, 50vw"
+  loading="lazy"
+  quality={75}
 />
 {/* Dark gradient so text is readable in both light and dark mode */}
 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/55 to-black/25 transition-all duration-500 group-hover:from-black/95"></div>
 {/* Blue accent tint — ties image to brand palette */}
 <div className="absolute inset-0 bg-gradient-to-tr from-primary/25 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
-{/* Hover spotlight shimmer */}
-<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-white/5 via-transparent to-transparent pointer-events-none"></div>
 {/* Content */}
 <div className="relative z-20 p-6 sm:p-12">
 <h3 className="text-2xl sm:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight drop-shadow-lg">Scale Without<br/>Friction.</h3>
@@ -437,7 +440,7 @@ export default function Page() {
 </div>
 </div>
 {/*  Glass decoration  */}
-<div className="absolute -bottom-8 -left-8 w-48 h-48 bg-surface-variant/40 backdrop-blur-2xl rounded-3xl border border-white/10 z-20 shadow-2xl hidden md:flex flex-col items-center justify-center gap-2 p-6 text-center hover:bg-surface-variant/60 transition-colors duration-300">
+<div className="absolute -bottom-8 -left-8 w-48 h-48 bg-surface-variant/40 backdrop-blur-lg rounded-3xl border border-white/10 z-20 shadow-2xl hidden md:flex flex-col items-center justify-center gap-2 p-6 text-center hover:bg-surface-variant/60 transition-colors duration-300">
   <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-2">
     <span className="material-symbols-outlined text-primary text-2xl" data-icon="rocket_launch">rocket_launch</span>
   </div>
@@ -506,10 +509,10 @@ export default function Page() {
 <span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
 <span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
 </div>
-<p className="text-lg sm:text-2xl font-medium text-white mb-8 sm:mb-10 leading-relaxed italic">"Veyber completely transformed our Amazon presence. In 6 months, our monthly revenue tripled while our ACoS dropped by 15%."</p>
+<p className="text-lg sm:text-2xl font-medium text-white mb-8 sm:mb-10 leading-relaxed italic">&quot;Veyber completely transformed our Amazon presence. In 6 months, our monthly revenue tripled while our ACoS dropped by 15%.&quot;</p>
 <div className="flex items-center gap-4">
-<div className="w-12 h-12 rounded-full bg-slate-800 border border-outline-variant overflow-hidden">
-<img alt="Client Portrait" data-alt="Professional portrait of a male CEO in business attire, confident expression, soft corporate studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8-AXu7hTdd5AkhbTkbjP1Y6e93sOvWnbEgtDH1Zbnwv0IvYnXXHA6RxrJWPqnHpK5hSQmm2RTm7jaU20tB0_-SoVQixE5eKirfhPBKrR1nd2e1sDFHugBM1AVRyvPCVCIuFcbx37CmJr8dc9mtR34n7-xG02iK_e0qTcTEveNs01ycw_zcpBc9PLoG-sYuIlT442Nk0yyA8k20_oRNFdz8IS8ICzSHplXGqNXanqj-XvsW-uJDKEnaB9nlX--BFAvnQwI7dxyYv0"/>
+<div className="w-12 h-12 rounded-full bg-slate-800 border border-outline-variant overflow-hidden relative">
+<Image alt="Client Portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8-AXu7hTdd5AkhbTkbjP1Y6e93sOvWnbEgtDH1Zbnwv0IvYnXXHA6RxrJWPqnHpK5hSQmm2RTm7jaU20tB0_-SoVQixE5eKirfhPBKrR1nd2e1sDFHugBM1AVRyvPCVCIuFcbx37CmJr8dc9mtR34n7-xG02iK_e0qTcTEveNs01ycw_zcpBc9PLoG-sYuIlT442Nk0yyA8k20_oRNFdz8IS8ICzSHplXGqNXanqj-XvsW-uJDKEnaB9nlX--BFAvnQwI7dxyYv0" fill sizes="48px" className="object-cover" loading="lazy" />
 </div>
 <div>
 <h5 className="font-bold text-white">David Chen</h5>
@@ -525,10 +528,10 @@ export default function Page() {
 <span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
 <span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
 </div>
-<p className="text-lg sm:text-2xl font-medium text-white mb-8 sm:mb-10 leading-relaxed italic">"The team at Veyber understands growth systems better than anyone we've ever worked with. Their content marketing is top-tier."</p>
+<p className="text-lg sm:text-2xl font-medium text-white mb-8 sm:mb-10 leading-relaxed italic">&quot;The team at Veyber understands growth systems better than anyone we&apos;ve ever worked with. Their content marketing is top-tier.&quot;</p>
 <div className="flex items-center gap-4">
-<div className="w-12 h-12 rounded-full bg-slate-800 border border-outline-variant overflow-hidden">
-<img alt="Client Portrait" data-alt="Portrait of a female digital entrepreneur, creative professional style, warm natural lighting, confident smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgMmZzX7BsjeHR91rDjm5pSYWPGq5ByWQYTx17Arp7s59S3eKMz-2S_5K5QXFEPXJqzsRL9tmSlk6Oq6pMg7AIuML9Ye4d7mirhc0uG-5LQ_euXuaT-RSTu32cgpCuse0Lmex-3fncQCXyzt4xsBm2hoeh2XAU8LiCjjDXrPxXVWsIK_34I_pKsV7mKfs5AqZ2Wx3IlQkf9aIglIZr8lfG__zXBih5HzhQLHUv95e2ZYmaDCJ58RWSMq_aCLp8_r2xrtct5IQLHkM"/>
+<div className="w-12 h-12 rounded-full bg-slate-800 border border-outline-variant overflow-hidden relative">
+<Image alt="Client Portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgMmZzX7BsjeHR91rDjm5pSYWPGq5ByWQYTx17Arp7s59S3eKMz-2S_5K5QXFEPXJqzsRL9tmSlk6Oq6pMg7AIuML9Ye4d7mirhc0uG-5LQ_euXuaT-RSTu32cgpCuse0Lmex-3fncQCXyzt4xsBm2hoeh2XAU8LiCjjDXrPxXVWsIK_34I_pKsV7mKfs5AqZ2Wx3IlQkf9aIglIZr8lfG__zXBih5HzhQLHUv95e2ZYmaDCJ58RWSMq_aCLp8_r2xrtct5IQLHkM" fill sizes="48px" className="object-cover" loading="lazy" />
 </div>
 <div>
 <h5 className="font-bold text-white">Sarah Jenkins</h5>
@@ -544,10 +547,14 @@ export default function Page() {
 <div className="absolute inset-0 bg-primary/5"></div>
 <div className="force-dark max-w-5xl mx-auto text-center relative z-10 bg-neutral-900 rounded-[2rem] sm:rounded-[3rem] border border-white/15 overflow-hidden">
 {/* Background image — thriving team / business energy */}
-<img
+<Image
   alt="Ready to grow your business — energetic team celebrating success"
   className="absolute inset-0 w-full h-full object-cover object-center scale-[1.02]"
-  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=85"
+  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=75"
+  fill
+  sizes="(max-width: 1280px) 100vw, 1280px"
+  loading="lazy"
+  quality={75}
 />
 {/* Rich dark overlay ensures perfect readability in both modes */}
 <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/85"></div>
@@ -556,7 +563,7 @@ export default function Page() {
 {/* Content */}
 <div className="relative z-10 p-8 sm:p-12 md:p-16 lg:p-24">
 <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-6 sm:mb-8 tracking-tight drop-shadow-xl">Ready to grow your business?</h2>
-<p className="text-base sm:text-xl text-white/75 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed drop-shadow">Let’s build something powerful together. Your journey to market dominance starts with a single conversation.</p>
+<p className="text-base sm:text-xl text-white/75 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed drop-shadow">Let's build something powerful together. Your journey to market dominance starts with a single conversation.</p>
 <Link href="/contact" className="inline-flex items-center px-7 sm:px-10 py-3.5 sm:py-5 bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-black rounded-full text-base sm:text-xl shadow-2xl hover:shadow-primary/40 transition-all active:scale-95 cursor-pointer group">
                     Get Free Strategy Call
                     <span className="material-symbols-outlined inline-block align-middle ml-2 group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>

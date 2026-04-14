@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -21,18 +22,22 @@ export default function Page() {
                         </p>
 </div>
 <div className="lg:col-span-5 relative">
-<div className="aspect-square rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10 group">
+<div className="aspect-square rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10 group relative">
 {/* Digital agency team — creative professionals collaborating */}
-<img
+<Image
   alt="Veyber team — creative professionals collaborating in a modern workspace"
   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=85"
+  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=75"
+  fill
+  sizes="(max-width: 1024px) 100vw, 42vw"
+  loading="eager"
+  quality={75}
 />
 {/* Subtle brand tint overlay */}
 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent pointer-events-none"/>
 </div>
 {/* Floating stat badge */}
-<div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 p-5 sm:p-8 bg-surface-container-highest rounded-2xl shadow-xl border border-outline-variant/10 backdrop-blur-sm">
+<div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 p-5 sm:p-8 bg-surface-container-highest rounded-2xl shadow-xl border border-outline-variant/10">
 <div className="text-3xl sm:text-4xl font-bold font-headline text-primary">150+</div>
 <div className="text-sm font-medium text-on-surface-variant uppercase tracking-widest">Projects Delivered</div>
 </div>
@@ -46,10 +51,14 @@ export default function Page() {
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="force-dark md:col-span-4 relative bg-neutral-900 rounded-2xl overflow-hidden flex flex-col justify-end min-h-[280px] sm:min-h-[400px] group">
 {/* Background — diverse creative team working together */}
-<img
+<Image
   alt="Who We Are — diverse team of digital professionals"
   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-  src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=85"
+  src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=75"
+  fill
+  sizes="(max-width: 768px) 100vw, 33vw"
+  loading="lazy"
+  quality={75}
 />
 <div className="absolute inset-0 bg-gradient-to-t from-black/92 via-black/55 to-black/15"></div>
 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent opacity-50"></div>
@@ -60,10 +69,14 @@ export default function Page() {
 </div>
 <div className="force-dark md:col-span-8 relative bg-neutral-900 rounded-2xl overflow-hidden min-h-[280px] sm:min-h-[400px] group">
 {/* Background — founding story / small determined startup team */}
-<img
+<Image
   alt="Our Story — founders working late building Veyber from Vadodara"
   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=85"
+  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=75"
+  fill
+  sizes="(max-width: 768px) 100vw, 67vw"
+  loading="lazy"
+  quality={75}
 />
 {/* Dark overlay — always works in both light and dark mode */}
 <div className="absolute inset-0 bg-gradient-to-t from-black/92 via-black/55 to-black/20"></div>
@@ -110,10 +123,10 @@ export default function Page() {
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 {/*  Founder  */}
 <div className="bg-surface-container-high p-5 sm:p-8 rounded-2xl border border-outline-variant/5">
-<div className="w-20 h-20 rounded-full overflow-hidden mb-6 ring-4 ring-primary/20">
-<img className="w-full h-full object-cover" data-alt="Portrait of a visionary male CEO in a modern suit, professional studio lighting, confident expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJSdNF5bCbka75fYJDEPi0zXAU2KCBPpYlU9enKPpw3uC-a1k-on8IanIoWzpTrc0R_dGAxPYqJt4i00FBa4Anj1WxCqJzzpWiEbv5uSZWwd03VEzliQEw4BrfQvHaMI4aTrbME_92CQ7hrpr_EtZSQBW7vXuFkE3W88BMDNwUksgfFAFpToL1ja0-0R7v2wXCq8Vjji-d1SPmZtLgK0kKircg9MAM8Pp_o4F89vHRTTeVz5J3knoHQRbjXCizBzqVVHBByuoP3bg"/>
+<div className="w-20 h-20 rounded-full overflow-hidden mb-6 ring-4 ring-primary/20 relative">
+<Image className="w-full h-full object-cover" alt="Aryan Varma - Founder & CEO" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJSdNF5bCbka75fYJDEPi0zXAU2KCBPpYlU9enKPpw3uC-a1k-on8IanIoWzpTrc0R_dGAxPYqJt4i00FBa4Anj1WxCqJzzpWiEbv5uSZWwd03VEzliQEw4BrfQvHaMI4aTrbME_92CQ7hrpr_EtZSQBW7vXuFkE3W88BMDNwUksgfFAFpToL1ja0-0R7v2wXCq8Vjji-d1SPmZtLgK0kKircg9MAM8Pp_o4F89vHRTTeVz5J3knoHQRbjXCizBzqVVHBByuoP3bg" fill sizes="80px" loading="lazy" />
 </div>
-<p className="text-on-surface italic mb-8 leading-relaxed">"Digital growth isn't just about traffic; it's about building lasting legacies for our clients through innovation and integrity."</p>
+<p className="text-on-surface italic mb-8 leading-relaxed">&quot;Digital growth isn&apos;t just about traffic; it&apos;s about building lasting legacies for our clients through innovation and integrity.&quot;</p>
 <div>
 <div className="font-bold font-headline text-lg">Aryan Varma</div>
 <div className="text-primary text-sm font-medium">Founder &amp; CEO</div>
@@ -121,10 +134,10 @@ export default function Page() {
 </div>
 {/*  Co-Founder 1  */}
 <div className="bg-surface-container-high p-5 sm:p-8 rounded-2xl border border-outline-variant/5">
-<div className="w-20 h-20 rounded-full overflow-hidden mb-6 ring-4 ring-primary/20">
-<img className="w-full h-full object-cover" data-alt="Portrait of a female creative director with stylish glasses, minimalist aesthetic, professional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL9OUzxbhRy2MtWz2vGY87ykzTsLNh_TmQUUNY9QUxYdblWQQSta7R1oouoPAnVzlnswMXV3bMVjOwF36PwgTmszxg585XzeTMSpkMES9gltpHnba2eQK27V54ukcGmOd-L37KjXGwM8YpbqLyLmL6qmy5uzEwC_zUUkbn3hvCO_v_Nqhga6VkZbS_1JORW2FiRkHDSOiovdMB1GmCdFmE_rwTphY5FkLy9nEIneF0s42SS1wbqH0i7C1poVb3mZtz_koRBzvXh4g"/>
+<div className="w-20 h-20 rounded-full overflow-hidden mb-6 ring-4 ring-primary/20 relative">
+<Image className="w-full h-full object-cover" alt="Meera Shah - Co-Founder, Creative Head" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL9OUzxbhRy2MtWz2vGY87ykzTsLNh_TmQUUNY9QUxYdblWQQSta7R1oouoPAnVzlnswMXV3bMVjOwF36PwgTmszxg585XzeTMSpkMES9gltpHnba2eQK27V54ukcGmOd-L37KjXGwM8YpbqLyLmL6qmy5uzEwC_zUUkbn3hvCO_v_Nqhga6VkZbS_1JORW2FiRkHDSOiovdMB1GmCdFmE_rwTphY5FkLy9nEIneF0s42SS1wbqH0i7C1poVb3mZtz_koRBzvXh4g" fill sizes="80px" loading="lazy" />
 </div>
-<p className="text-on-surface italic mb-8 leading-relaxed">"We believe in the power of data-driven creativity. Every pixel we place has a purpose and a goal."</p>
+<p className="text-on-surface italic mb-8 leading-relaxed">&quot;We believe in the power of data-driven creativity. Every pixel we place has a purpose and a goal.&quot;</p>
 <div>
 <div className="font-bold font-headline text-lg">Meera Shah</div>
 <div className="text-primary text-sm font-medium">Co-Founder, Creative Head</div>
@@ -132,10 +145,10 @@ export default function Page() {
 </div>
 {/*  Co-Founder 2  */}
 <div className="bg-surface-container-high p-5 sm:p-8 rounded-2xl border border-outline-variant/5">
-<div className="w-20 h-20 rounded-full overflow-hidden mb-6 ring-4 ring-primary/20">
-<img className="w-full h-full object-cover" data-alt="Portrait of a young male tech entrepreneur, tech-focused environment background, clean professional look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHOKiHczlyRKA9lkHT6pzqgO5rY3TrW1Aj6H_tDc96My2SN_YJ9_ge2cissxubXbZrhUuhOWHU4JicMrLekiAM2c6blcaAiphjfT3m2kzHe3JGXPjTtuO1pB5jubmTOGQSlUbzTuWAxW8OMTY8xZ1CRM8HWQqLV0RqK_8x29M4Ugc4a-KtniGCFuLHiDtVlsH-otAOSDcou8s4zJPxVSubdvWwz1IxPzlTIsP4PPhaFmQBZBgEoxcKM9mv2e7YNMIeqohIySC699k"/>
+<div className="w-20 h-20 rounded-full overflow-hidden mb-6 ring-4 ring-primary/20 relative">
+<Image className="w-full h-full object-cover" alt="Rohan Patel - Co-Founder, CTO" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHOKiHczlyRKA9lkHT6pzqgO5rY3TrW1Aj6H_tDc96My2SN_YJ9_ge2cissxubXbZrhUuhOWHU4JicMrLekiAM2c6blcaAiphjfT3m2kzHe3JGXPjTtuO1pB5jubmTOGQSlUbzTuWAxW8OMTY8xZ1CRM8HWQqLV0RqK_8x29M4Ugc4a-KtniGCFuLHiDtVlsH-otAOSDcou8s4zJPxVSubdvWwz1IxPzlTIsP4PPhaFmQBZBgEoxcKM9mv2e7YNMIeqohIySC699k" fill sizes="80px" loading="lazy" />
 </div>
-<p className="text-on-surface italic mb-8 leading-relaxed">"Technology is the engine, but strategy is the driver. At Veyber, we master both to ensure your brand reaches its destination."</p>
+<p className="text-on-surface italic mb-8 leading-relaxed">&quot;Technology is the engine, but strategy is the driver. At Veyber, we master both to ensure your brand reaches its destination.&quot;</p>
 <div>
 <div className="font-bold font-headline text-lg">Rohan Patel</div>
 <div className="text-primary text-sm font-medium">Co-Founder, CTO</div>
@@ -201,7 +214,7 @@ export default function Page() {
 <section className="px-4 sm:px-8 py-12 sm:py-24 bg-surface-container-low text-center">
 <div className="max-w-4xl mx-auto">
 <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-6">Who We Work With</h2>
-<p className="text-base sm:text-lg text-on-surface-variant mb-10 sm:mb-12">From Vadodara's promising startups to established manufacturing giants across Gujarat, we partner with visionaries who are ready to scale.</p>
+<p className="text-base sm:text-lg text-on-surface-variant mb-10 sm:mb-12">From Vadodara&apos;s promising startups to established manufacturing giants across Gujarat, we partner with visionaries who are ready to scale.</p>
 <div className="flex flex-wrap justify-center gap-4 mb-10 sm:mb-24 opacity-60">
 <span className="px-6 py-2 bg-surface-container-highest rounded-full text-xs font-bold tracking-widest uppercase">E-Commerce</span>
 <span className="px-6 py-2 bg-surface-container-highest rounded-full text-xs font-bold tracking-widest uppercase">Real Estate</span>
@@ -211,7 +224,7 @@ export default function Page() {
 </div>
 <div className="p-6 sm:p-10 rounded-2xl bg-gradient-to-br from-primary/10 to-primary-container/10 border border-primary/20">
 <h3 className="text-xl sm:text-2xl font-bold font-headline mb-4 uppercase tracking-widest">Our Commitment</h3>
-<p className="text-base sm:text-lg leading-relaxed text-on-surface">We commit to transparency, relentless innovation, and a results-oriented mindset. When you work with Veyber, you aren't just hiring an agency; you're gaining a growth partner dedicated to your long-term success.</p>
+<p className="text-base sm:text-lg leading-relaxed text-on-surface">We commit to transparency, relentless innovation, and a results-oriented mindset. When you work with Veyber, you aren&apos;t just hiring an agency; you&apos;re gaining a growth partner dedicated to your long-term success.</p>
 </div>
 </div>
 </section>

@@ -1,5 +1,58 @@
+"use client";
+
+import { useState, useEffect, useRef } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+
+function LazyMap() {
+  const ref = useRef<HTMLDivElement>(null);
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setShow(true); obs.disconnect(); } },
+      { rootMargin: '200px' }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
+  return (
+    <div ref={ref} className="rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/10 relative" style={{height:'240px'}}>
+      {show ? (
+        <iframe
+          title="Veyber location — Vadodara, Gujarat"
+          src="https://maps.google.com/maps?q=Vadodara,Gujarat,India&z=13&output=embed"
+          width="100%"
+          height="100%"
+          style={{border:0, filter:'saturate(0.85) brightness(0.92)'}}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      ) : (
+        <div className="w-full h-full bg-surface-container-high flex items-center justify-center">
+          <span className="text-on-surface-variant text-sm">Loading map…</span>
+        </div>
+      )}
+      {/* Branded pin overlay */}
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+        <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-[0_0_24px_rgba(79,142,255,0.7)]">
+          <svg viewBox="0 0 24 24" fill="white" className="w-5 h-5">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/>
+            <circle cx="12" cy="10" r="3" fill="#001a42"/>
+          </svg>
+        </div>
+      </div>
+      {/* Bottom label */}
+      <div className="pointer-events-none absolute bottom-0 inset-x-0 h-12 bg-gradient-to-t from-black/40 to-transparent flex items-end px-4 pb-3">
+        <span className="text-white text-xs font-semibold drop-shadow">📍 Vadodara, Gujarat, India</span>
+      </div>
+    </div>
+  );
+}
 
 export default function Page() {
   return (
@@ -9,12 +62,12 @@ export default function Page() {
 
         {/* ── Header ── */}
         <header className="pt-12 sm:pt-20 md:pt-28 mb-12 text-center">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/[0.08] text-primary font-bold text-xs tracking-widest uppercase mb-5">Let's Work Together</span>
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/[0.08] text-primary font-bold text-xs tracking-widest uppercase mb-5">Let&apos;s Work Together</span>
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-5 max-w-[650px] mx-auto leading-tight">
             Get in Touch with Veyber
           </h1>
           <p className="text-on-surface-variant text-base sm:text-lg font-medium leading-relaxed max-w-2xl mx-auto">
-            Whether you're looking to scale your digital presence or build something entirely new, our team is ready to transform your vision into reality.
+            Whether you&apos;re looking to scale your digital presence or build something entirely new, our team is ready to transform your vision into reality.
           </p>
         </header>
 
@@ -22,7 +75,7 @@ export default function Page() {
 
           {/* ── Contact Form ── */}
           <section className="lg:col-span-7 bg-surface-container-low rounded-3xl p-6 sm:p-8 md:p-12 shadow-2xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] rounded-full -mr-32 -mt-32 pointer-events-none"/>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[60px] rounded-full -mr-32 -mt-32 pointer-events-none"/>
             <form className="relative z-10 space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
@@ -109,32 +162,8 @@ export default function Page() {
 
             </div>
 
-            {/* ── Real Vadodara Map (Google Maps embed) ── */}
-            <div className="rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/10 relative" style={{height:'240px'}}>
-              <iframe
-                title="Veyber location — Vadodara, Gujarat"
-                src="https://maps.google.com/maps?q=Vadodara,Gujarat,India&z=13&output=embed"
-                width="100%"
-                height="100%"
-                style={{border:0, filter:'saturate(0.85) brightness(0.92)'}}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-              {/* Branded pin overlay */}
-              <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-                <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-[0_0_24px_rgba(79,142,255,0.7)] animate-pulse">
-                  <svg viewBox="0 0 24 24" fill="white" className="w-5 h-5">
-                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/>
-                    <circle cx="12" cy="10" r="3" fill="#001a42"/>
-                  </svg>
-                </div>
-              </div>
-              {/* Bottom label */}
-              <div className="pointer-events-none absolute bottom-0 inset-x-0 h-12 bg-gradient-to-t from-black/40 to-transparent flex items-end px-4 pb-3">
-                <span className="text-white text-xs font-semibold drop-shadow">📍 Vadodara, Gujarat, India</span>
-              </div>
-            </div>
+            {/* ── Lazy-loaded Vadodara Map ── */}
+            <LazyMap />
 
           </section>
         </div>
