@@ -104,12 +104,13 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-[11px]">Services</h4>
             <ul className="space-y-3.5">
               {[
-                ['eCommerce Development', '/services#ecommerce-dev'],
-                ['Account Management',    '/services#account-management'],
-                ['Social Media Handling', '/services#social-media'],
-                ['Content Marketing',     '/services#content-marketing'],
+                ['eCommerce Development', '/ecommerce-development'],
+                ['Account Management',    '/ecommerce-account-management'],
+                ['Social Media Handling', '/social-media-handling'],
+                ['Content Marketing',     '/content-marketing'],
                 ['Graphic Design',        '/services#graphic-design'],
-                ['Business Consulting',   '/services#business-consulting'],
+                ['Business Consulting',   '/business-consulting'],
+                ['Digital Marketing Gujarat', '/digital-marketing-gujarat'],
               ].map(([label, href]) => (
                 <li key={label}>
                   <Link href={href} className="text-slate-500 text-sm hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 group">
@@ -127,6 +128,7 @@ export default function Footer() {
             <ul className="space-y-3.5">
               {[
                 ['About Us', '/about'],
+                ['Locations', '/service-locations'],
                 ['Contact',  '/contact'],
               ].map(([label, href]) => (
                 <li key={label}>

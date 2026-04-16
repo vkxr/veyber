@@ -284,8 +284,21 @@ export default function Page() {
 <p className="text-xl text-on-surface-variant mb-6 leading-relaxed">
                             At Veyber, we don't just provide services — <span className="text-primary font-bold">we build growth systems.</span>
 </p>
-<p className="text-on-surface-variant mb-8 leading-relaxed">
-                            Our mission is simple: Help businesses scale faster, smarter, and more profitably through elite digital strategies and technical execution.
+<p className="text-on-surface-variant mb-4 leading-relaxed">
+                            We are a results-focused digital solutions company specializing in:
+                        </p>
+<ul className="mb-6 space-y-2">
+  {['eCommerce Development','Marketplace Account Management','Social Media Growth','Content Marketing','Business Consulting'].map((item) => (
+    <li key={item} className="flex items-center gap-3 text-on-surface-variant">
+      <span className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/15 border border-primary/30 flex items-center justify-center">
+        <span className="material-symbols-outlined text-primary" style={{fontSize:'13px'}}>check</span>
+      </span>
+      <span>{item}</span>
+    </li>
+  ))}
+</ul>
+<p className="text-on-surface-variant mb-8 leading-relaxed font-medium">
+                            Our mission is simple: <span className="text-primary">Help businesses scale faster, smarter, and more profitably.</span>
                         </p>
 <div className="flex flex-col gap-4">
 <div className="flex items-start gap-4">
@@ -332,7 +345,20 @@ export default function Page() {
 <span className="material-symbols-outlined text-primary text-4xl group-hover:text-on-primary-container" data-icon="web">web</span>
 </div>
 <h3 className="text-2xl font-bold text-white mb-4">eCommerce Development</h3>
-<p className="text-on-surface-variant leading-relaxed mb-6">High-performance storefronts built for conversion and speed. Shopify, WooCommerce, and Custom Headless solutions.</p>
+<p className="text-on-surface-variant leading-relaxed mb-4">We build high-performance, scalable eCommerce websites designed to convert visitors into customers.</p>
+<ul className="space-y-2 mb-6">
+  {['Shopify / WooCommerce Development','Custom eCommerce Solutions','Payment Gateway Integration','Mobile-Optimized Design','Conversion Optimization'].map((item) => (
+    <li key={item} className="flex items-center gap-2 text-sm text-on-surface-variant">
+      <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary"/>
+      {item}
+    </li>
+  ))}
+</ul>
+<p className="text-primary font-semibold text-sm mb-4">Build your online store the right way.</p>
+<Link href="/ecommerce-development" className="inline-flex items-center gap-1.5 text-sm font-bold text-white/70 hover:text-primary transition-colors duration-200 group/link">
+  Learn More
+  <span className="material-symbols-outlined text-[16px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</Link>
 </div>
 {/*  Account Management  */}
 <div className="group bg-surface-container p-6 sm:p-10 rounded-[2rem] border border-outline-variant/10 hover:bg-surface-container-highest transition-all duration-300">
@@ -340,7 +366,20 @@ export default function Page() {
 <span className="material-symbols-outlined text-primary text-4xl group-hover:text-on-primary-container" data-icon="inventory">inventory</span>
 </div>
 <h3 className="text-2xl font-bold text-white mb-4">eCommerce Account Management</h3>
-<p className="text-on-surface-variant leading-relaxed mb-6">Full management of Amazon, Walmart, and eBay marketplaces to maximize revenue and organic visibility.</p>
+<p className="text-on-surface-variant leading-relaxed mb-4">We manage and grow your presence on marketplaces like Amazon, Flipkart, Meesho, and more.</p>
+<ul className="space-y-2 mb-6">
+  {['Product Listing Optimization','Marketplace SEO','Ad Campaign Management','Inventory & Order Management','Performance Analytics'].map((item) => (
+    <li key={item} className="flex items-center gap-2 text-sm text-on-surface-variant">
+      <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary"/>
+      {item}
+    </li>
+  ))}
+</ul>
+<p className="text-primary font-semibold text-sm">Focus on your business, we handle the marketplace.</p>
+<Link href="/ecommerce-account-management" className="inline-flex items-center gap-1.5 text-sm font-bold text-white/70 hover:text-primary transition-colors duration-200 group/link mt-4">
+  Learn More
+  <span className="material-symbols-outlined text-[16px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</Link>
 </div>
 {/*  Social Media Handling  */}
 <div className="group bg-surface-container p-6 sm:p-10 rounded-[2rem] border border-outline-variant/10 hover:bg-surface-container-highest transition-all duration-300">
@@ -348,7 +387,20 @@ export default function Page() {
 <span className="material-symbols-outlined text-primary text-4xl group-hover:text-on-primary-container" data-icon="share">share</span>
 </div>
 <h3 className="text-2xl font-bold text-white mb-4">Social Media Handling</h3>
-<p className="text-on-surface-variant leading-relaxed mb-6">Strategic brand positioning and community building across TikTok, Instagram, and LinkedIn.</p>
+<p className="text-on-surface-variant leading-relaxed mb-4">Turn your social media into a powerful growth engine.</p>
+<ul className="space-y-2 mb-6">
+  {['Content Planning & Posting','Instagram & Facebook Growth','Paid Ads Campaigns','Engagement & Branding','Analytics Tracking'].map((item) => (
+    <li key={item} className="flex items-center gap-2 text-sm text-on-surface-variant">
+      <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary"/>
+      {item}
+    </li>
+  ))}
+</ul>
+<p className="text-primary font-semibold text-sm mb-4">Build a brand people trust and follow.</p>
+<Link href="/social-media-handling" className="inline-flex items-center gap-1.5 text-sm font-bold text-white/70 hover:text-primary transition-colors duration-200 group/link">
+  Learn More
+  <span className="material-symbols-outlined text-[16px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</Link>
 </div>
 {/*  Content Marketing  */}
 <div className="group bg-surface-container p-6 sm:p-10 rounded-[2rem] border border-outline-variant/10 hover:bg-surface-container-highest transition-all duration-300">
@@ -356,7 +408,20 @@ export default function Page() {
 <span className="material-symbols-outlined text-primary text-4xl group-hover:text-on-primary-container" data-icon="edit_note">edit_note</span>
 </div>
 <h3 className="text-2xl font-bold text-white mb-4">Content Marketing</h3>
-<p className="text-on-surface-variant leading-relaxed mb-6">SEO-driven articles, video scripts, and ad copy that turns strangers into loyal customers.</p>
+<p className="text-on-surface-variant leading-relaxed mb-4">Content that ranks, engages, and converts.</p>
+<ul className="space-y-2 mb-6">
+  {['SEO Blog Writing','Website Content','Social Media Content','Sales Copywriting','Branding Content'].map((item) => (
+    <li key={item} className="flex items-center gap-2 text-sm text-on-surface-variant">
+      <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary"/>
+      {item}
+    </li>
+  ))}
+</ul>
+<p className="text-primary font-semibold text-sm mb-4">Say the right things to the right audience.</p>
+<Link href="/content-marketing" className="inline-flex items-center gap-1.5 text-sm font-bold text-white/70 hover:text-primary transition-colors duration-200 group/link">
+  Learn More
+  <span className="material-symbols-outlined text-[16px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</Link>
 </div>
 {/*  Business Consulting  */}
 <div className="group bg-surface-container p-6 sm:p-10 rounded-[2rem] border border-outline-variant/10 hover:bg-surface-container-highest transition-all duration-300">
@@ -364,7 +429,20 @@ export default function Page() {
 <span className="material-symbols-outlined text-primary text-4xl group-hover:text-on-primary-container" data-icon="psychology">psychology</span>
 </div>
 <h3 className="text-2xl font-bold text-white mb-4">Business Consulting</h3>
-<p className="text-on-surface-variant leading-relaxed mb-6">Executive strategy to streamline operations and identify untapped growth opportunities.</p>
+<p className="text-on-surface-variant leading-relaxed mb-4">We help you make smarter business decisions backed by data and strategy.</p>
+<ul className="space-y-2 mb-6">
+  {['Growth Strategy Planning','Market Analysis','Revenue Optimization','Digital Transformation','Startup Guidance'].map((item) => (
+    <li key={item} className="flex items-center gap-2 text-sm text-on-surface-variant">
+      <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary"/>
+      {item}
+    </li>
+  ))}
+</ul>
+<p className="text-primary font-semibold text-sm mb-4">Turn ideas into profitable systems.</p>
+<Link href="/business-consulting" className="inline-flex items-center gap-1.5 text-sm font-bold text-white/70 hover:text-primary transition-colors duration-200 group/link">
+  Learn More
+  <span className="material-symbols-outlined text-[16px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</Link>
 </div>
 {/*  Call to Action Card  */}
 <div className="relative bg-gradient-to-br from-primary to-primary-container p-6 sm:p-10 rounded-[2rem] overflow-hidden flex flex-col justify-center">
@@ -409,6 +487,24 @@ export default function Page() {
 <div>
 <h4 className="text-xl font-bold text-white mb-2">Transparent Communication</h4>
 <p className="text-on-surface-variant">No jargon. No hidden fees. Just clear reporting and consistent updates.</p>
+</div>
+</div>
+<div className="flex items-start gap-6 group">
+<div className="mt-1 flex-shrink-0 w-12 h-12 bg-surface-container-highest rounded-xl flex items-center justify-center border border-primary/20 text-primary transition-all group-hover:shadow-[0_0_15px_rgba(174,198,255,0.3)]">
+<span className="material-symbols-outlined" data-icon="factory">factory</span>
+</div>
+<div>
+<h4 className="text-xl font-bold text-white mb-2">Industry-Focused Approach</h4>
+<p className="text-on-surface-variant">Deep domain knowledge across eCommerce, retail, and digital-first sectors so strategies actually fit.</p>
+</div>
+</div>
+<div className="flex items-start gap-6 group">
+<div className="mt-1 flex-shrink-0 w-12 h-12 bg-surface-container-highest rounded-xl flex items-center justify-center border border-primary/20 text-primary transition-all group-hover:shadow-[0_0_15px_rgba(174,198,255,0.3)]">
+<span className="material-symbols-outlined" data-icon="open_in_full">open_in_full</span>
+</div>
+<div>
+<h4 className="text-xl font-bold text-white mb-2">Scalable Solutions</h4>
+<p className="text-on-surface-variant">Systems built to grow with you — from startup to seven figures and beyond.</p>
 </div>
 </div>
 </div>
@@ -490,7 +586,7 @@ export default function Page() {
 <section className="px-4 sm:px-8 py-16 sm:py-32 bg-surface-container-low/50 relative overflow-hidden">
 <div className="max-w-7xl mx-auto">
 <div className="flex flex-col md:flex-row justify-between items-end mb-10 sm:mb-16 gap-6 sm:gap-8">
-<h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight">Partnering for<br/>Success</h2>
+<h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight">What Our<br/>Clients Say</h2>
 <div className="flex gap-4">
 <button className="w-14 h-14 rounded-full border border-outline-variant/20 flex items-center justify-center text-white hover:bg-surface-variant transition-all">
 <span className="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
@@ -539,6 +635,49 @@ export default function Page() {
 </div>
 </div>
 </div>
+</div>
+</div>
+</section>
+{/* FAQ Section */}
+<section className="px-4 sm:px-8 py-16 sm:py-32 bg-surface">
+<div className="max-w-3xl mx-auto">
+<div className="text-center mb-12 sm:mb-20">
+<h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6">Frequently Asked Questions</h2>
+<p className="text-on-surface-variant">Everything you need to know about working with Veyber.</p>
+</div>
+<div className="flex flex-col gap-4">
+{[
+  {
+    q: 'What services does Veyber offer?',
+    a: 'Veyber offers end-to-end digital growth services including eCommerce development (Shopify, WooCommerce), marketplace account management (Amazon, Flipkart, Meesho), social media handling, SEO content marketing, and strategic business consulting.'
+  },
+  {
+    q: 'Do you work with small businesses and startups?',
+    a: 'Absolutely. We specialize in helping startups and small businesses build scalable growth systems from the ground up. Our strategies are tailored to your budget, industry, and stage of growth.'
+  },
+  {
+    q: 'Which marketplaces do you manage accounts on?',
+    a: 'We manage accounts across major Indian and global marketplaces including Amazon, Flipkart, Meesho, Walmart, and more. From product listing optimization to ad campaigns and inventory management — we handle it all.'
+  },
+  {
+    q: 'How do I get started with Veyber?',
+    a: 'Simple. Book a free strategy call via our Contact page. We\'ll audit your current digital presence, understand your goals, and propose a customized growth plan — no commitment required.'
+  },
+  {
+    q: 'How long does it take to see results?',
+    a: 'Results vary by service and industry, but most clients see measurable improvements within 60–90 days. Our eCommerce and marketplace clients typically see revenue growth within the first month of optimized account management.'
+  }
+].map((item, i) => (
+  <details key={i} className="group bg-surface-container rounded-2xl border border-outline-variant/10 overflow-hidden open:border-primary/20 transition-all duration-200">
+    <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none gap-4">
+      <h3 className="font-bold text-white text-base sm:text-lg">{item.q}</h3>
+      <span className="flex-shrink-0 w-8 h-8 rounded-full border border-outline-variant/20 flex items-center justify-center text-on-surface-variant group-open:bg-primary/10 group-open:border-primary/30 group-open:text-primary transition-all duration-200">
+        <span className="material-symbols-outlined text-[18px] group-open:rotate-45 transition-transform duration-200">add</span>
+      </span>
+    </summary>
+    <div className="px-6 pb-5 text-on-surface-variant leading-relaxed text-sm sm:text-base">{item.a}</div>
+  </details>
+))}
 </div>
 </div>
 </section>

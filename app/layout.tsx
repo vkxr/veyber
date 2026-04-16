@@ -6,8 +6,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-headline" });
 
 export const metadata: Metadata = {
-  title: "Veyber | Build. Scale. Dominate.",
-  description: "High-end digital growth agency specializing in eCommerce and marketplace dominance. We turn ambition into authority.",
+  title: "Veyber | eCommerce Development & Digital Marketing Company in Vadodara",
+  description: "Veyber is a leading digital solutions company offering eCommerce development, account management, social media marketing, content marketing, and business consulting services. Grow your business with expert strategies.",
+  keywords: "ecommerce development company in Vadodara, ecommerce account management services India, social media marketing agency Vadodara, content marketing services India, business consultant in Vadodara, Shopify development company India, Amazon account management services",
 };
 
 export default function RootLayout({
@@ -26,6 +27,30 @@ export default function RootLayout({
         <link rel="preconnect" href="https://images.unsplash.com" />
         {/* Material Symbols — narrowed to weight 400 only + display=swap for non-blocking */}
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0&display=swap" rel="stylesheet" />
+        {/* Organization Schema — structured data for search engines */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Veyber",
+          "url": "https://veyber.in",
+          "logo": "https://veyber.in/veyber-logo.png",
+          "description": "Veyber is a leading digital solutions company offering eCommerce development, account management, social media marketing, content marketing, and business consulting services.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Vadodara",
+            "addressRegion": "Gujarat",
+            "addressCountry": "IN"
+          },
+          "sameAs": [],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-98765-43210",
+            "email": "hello@veyber.in",
+            "contactType": "customer service",
+            "areaServed": "IN",
+            "availableLanguage": "English"
+          }
+        })}} />
       </head>
       <body className={`${inter.variable} ${manrope.variable} font-body bg-surface text-on-surface selection:bg-primary/30 antialiased`}>
         {children}
