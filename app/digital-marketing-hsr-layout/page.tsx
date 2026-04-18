@@ -4,9 +4,9 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Digital Marketing Services in Vadodara | Ecommerce, SMM & SEO – Veyber',
-  description: 'Looking for digital marketing services in Vadodara? Veyber offers ecommerce development, social media marketing, content marketing & consulting services.',
-  keywords: 'Digital marketing services Vadodara, Ecommerce development Vadodara, Social media marketing Vadodara, Business consultant Vadodara, Digital agency Vadodara, SEO services Vadodara, Online marketing Vadodara, Ecommerce services Vadodara',
+  title: 'Digital Marketing Services in HSR Layout Bangalore | SEO & SMM – Veyber',
+  description: 'Looking for digital marketing services in HSR Layout Bangalore? Veyber offers SEO, ecommerce, social media marketing & consulting.',
+  keywords: 'Digital marketing services HSR Layout, SEO company HSR Layout Bangalore, Social media marketing HSR Layout, Ecommerce marketing HSR Layout, Marketing agency HSR Layout, Startup marketing Bangalore, Business consultant HSR Layout',
 };
 
 const pageSchema = {
@@ -15,16 +15,16 @@ const pageSchema = {
   name: 'Veyber',
   url: 'https://veyber.co.in',
   areaServed: {
-    '@type': 'City',
-    name: 'Vadodara',
+    '@type': 'Place',
+    name: 'HSR Layout, Bangalore',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Vadodara',
-    addressRegion: 'Gujarat',
+    addressLocality: 'HSR Layout',
+    addressRegion: 'Karnataka',
     addressCountry: 'India',
   },
-  description: 'Digital marketing services in Vadodara including ecommerce development, social media marketing, content marketing and business consulting.',
+  description: 'Digital marketing services in HSR Layout Bangalore including SEO, ecommerce, social media marketing and business consulting.',
 };
 
 const faqSchema = {
@@ -33,34 +33,34 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Do you provide services in all areas of Vadodara?',
+      name: 'Do you provide services in HSR Layout Bangalore?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, we cover all major areas including Gotri, Manjalpur, Karelibaug, and more.',
+        text: 'Yes, we offer complete digital marketing services in HSR Layout and nearby areas.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Can you help local businesses grow?',
+      name: 'Do you work with startups and freelancers?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, we specialize in helping Vadodara-based businesses grow online.',
+        text: 'Yes, we specialize in startups, freelancers, and growing businesses.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Do you offer ecommerce services?',
+      name: 'Do you provide performance marketing?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, we provide complete ecommerce development and management.',
+        text: 'Yes, we focus on ROI-driven campaigns and lead generation.',
       },
     },
     {
       '@type': 'Question',
-      name: 'How can I contact you?',
+      name: 'How can I get started?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You can contact us through our website or call for consultation.',
+        text: 'You can contact us through our website for consultation.',
       },
     },
   ],
@@ -69,80 +69,74 @@ const faqSchema = {
 const services = [
   {
     icon: 'shopping_cart',
-    title: 'Ecommerce Development in Vadodara',
-    desc: 'Build powerful online stores that drive sales.',
-    items: ['Shopify, WooCommerce & custom websites', 'Mobile-friendly & SEO-optimized', 'Payment gateway integration'],
+    title: 'Ecommerce Development',
+    desc: 'Launch and scale your online store.',
+    items: ['Shopify, WooCommerce & custom ecommerce', 'Mobile-first design', 'Conversion-optimized structure'],
     href: '/ecommerce-development',
   },
   {
     icon: 'storefront',
     title: 'Ecommerce Account Management',
-    desc: 'Grow your marketplace sales with expert management.',
-    items: ['Amazon, Flipkart & Meesho account handling', 'Product listing optimization', 'Sales growth strategies'],
+    desc: 'Grow your marketplace sales.',
+    items: ['Amazon, Flipkart & Meesho management', 'Listing optimization', 'Sales-focused strategies'],
     href: '/account-management',
   },
   {
     icon: 'share',
-    title: 'Social Media Handling in Vadodara',
-    desc: 'Turn your social media into a growth engine.',
-    items: ['Instagram & Facebook management', 'Content creation & posting', 'Paid advertising campaigns'],
+    title: 'Social Media Marketing',
+    desc: 'Build a strong digital presence.',
+    items: ['Instagram & Facebook management', 'Content creation & reels strategy', 'Paid ads campaigns'],
     href: '/social-media-handling',
   },
   {
     icon: 'edit_note',
-    title: 'Content Marketing Services',
-    desc: 'Rank on Google and attract customers.',
-    items: ['SEO blog writing', 'Website content', 'Content strategy & planning'],
+    title: 'Content Marketing',
+    desc: 'Attract and convert your audience.',
+    items: ['SEO blog writing', 'Website content', 'Funnel-based content strategy'],
     href: '/content-marketing',
   },
   {
     icon: 'psychology',
-    title: 'Business Consulting in Vadodara',
-    desc: 'Scale your business with expert guidance.',
-    items: ['Growth strategy', 'Market research', 'Business optimization'],
+    title: 'Business Consulting',
+    desc: 'Scale your business smartly.',
+    items: ['Growth strategy', 'Market positioning', 'Conversion optimization'],
     href: '/business-consulting',
   },
 ];
 
 const process = [
-  { n: '01', label: 'Business Understanding', desc: 'Deep dive into your business model and target audience.' },
-  { n: '02', label: 'Market Analysis', desc: 'Conducting Vadodara-focused competitor analysis & research.' },
-  { n: '03', label: 'Strategy Creation', desc: 'Developing a localized roadmap tailored to your specific goals.' },
-  { n: '04', label: 'Execution', desc: 'Deploying high-impact campaigns across digital platforms.' },
-  { n: '05', label: 'Optimization & Growth', desc: 'Refining data and iteratively scaling performance.' },
+  { n: '01', label: 'Business Analysis', desc: 'Identify your true potential and exact bottlenecks.' },
+  { n: '02', label: 'Market Research', desc: 'HSR-focused competitive growth targeting.' },
+  { n: '03', label: 'Strategy Development', desc: 'Developing bespoke conversion-focused action plans.' },
+  { n: '04', label: 'Execution', desc: 'Rolling out highly optimized multi-channel campaigns.' },
+  { n: '05', label: 'Optimization', desc: 'Refining data and extracting maximum value.' },
 ];
 
 const results = [
-  { icon: 'ads_click', stat: 'Increased', label: 'Website Traffic' },
-  { icon: 'forum', stat: 'More', label: 'Leads & Inquiries' },
-  { icon: 'payments', stat: 'Higher', label: 'Sales Conversions' },
-  { icon: 'verified_user', stat: 'Strong', label: 'Brand Presence' },
-  { icon: 'trending_up', stat: 'Sustainable', label: 'Business Growth' },
+  { icon: 'contacts', stat: 'High-quality', label: 'Leads' },
+  { icon: 'share', stat: 'Strong', label: 'Online Presence' },
+  { icon: 'people', stat: 'Increased', label: 'Engagement' },
+  { icon: 'payments', stat: 'Better', label: 'Conversion Rates' },
+  { icon: 'timeline', stat: 'Scalable', label: 'Growth' },
 ];
 
 const faqs = [
   {
-    q: 'Do you provide services in all areas of Vadodara?',
-    a: 'Yes, we cover all major areas including Gotri, Manjalpur, Karelibaug, and more.',
+    q: 'Do you provide services in HSR Layout Bangalore?',
+    a: 'Yes, we offer complete digital marketing services in HSR Layout and nearby areas.',
   },
   {
-    q: 'Can you help local businesses grow?',
-    a: 'Yes, we specialize in helping Vadodara-based businesses grow online.',
+    q: 'Do you work with startups and freelancers?',
+    a: 'Yes, we specialize in startups, freelancers, and growing businesses.',
   },
   {
-    q: 'Do you offer ecommerce services?',
-    a: 'Yes, we provide complete ecommerce development and management.',
+    q: 'Do you provide performance marketing?',
+    a: 'Yes, we focus on ROI-driven campaigns and lead generation.',
   },
   {
-    q: 'How can I contact you?',
-    a: 'You can contact us through our website or call for consultation.',
+    q: 'How can I get started?',
+    a: 'You can contact us through our website for consultation.',
   },
-];
-
-const locations = [
-  'Alkapuri', 'Fatehgunj', 'Sayajigunj', 'Karelibaug', 'Nizampura', 'Gotri', 
-  'Subhanpura', 'Waghodia Road', 'Ajwa Road', 'Manjalpur', 'Makarpura', 
-  'Tarsali', 'Harni', 'Sama', 'New VIP Road', 'Chhani', 'Gorwa', 'Akota'
 ];
 
 export default function Page() {
@@ -161,21 +155,21 @@ export default function Page() {
           <div className="relative z-10 max-w-5xl mx-auto text-center">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/[0.08] text-primary font-bold text-xs tracking-widest uppercase mb-5">
               <span className="relative flex h-1.5 w-1.5 shrink-0"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"/><span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary"/></span>
-              Your Local Veyber Experts
+              Smart Growth Marketing by Veyber
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold font-headline tracking-tight mb-5 leading-[1.05] text-white">
               Digital Marketing Services<br/>
-              <span className="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent" style={{filter:'drop-shadow(0 0 28px rgba(174,198,255,0.3))'}}>In Vadodara</span>
+              <span className="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent" style={{filter:'drop-shadow(0 0 28px rgba(174,198,255,0.3))'}}>In HSR Layout, Bangalore</span>
             </h1>
             <p className="text-base sm:text-lg text-on-surface-variant max-w-2xl mx-auto mb-4 leading-relaxed">
-              Grow Your Business with Veyber – <span className="text-primary font-semibold">Local Experts in Vadodara</span>
+              Looking for expert digital marketing services in HSR Layout, Bangalore?
             </p>
             <p className="text-sm sm:text-base text-on-surface-variant max-w-xl mx-auto mb-8 leading-relaxed">
-              Looking for reliable digital marketing and business growth services in Vadodara? At Veyber, we help businesses in Vadodara build a strong online presence, generate leads, and scale their operations with result-driven digital solutions. Whether you&apos;re a startup, local business, or ecommerce brand—we deliver strategies that actually work in the Vadodara market.
+              At Veyber, we help startups, ecommerce brands, and service businesses in HSR Layout grow with data-driven marketing strategies, performance campaigns, and high-conversion systems. We focus on real growth—not just likes and traffic.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="group relative px-7 sm:px-9 py-3.5 sm:py-4 bg-gradient-to-r from-[#aec6ff] to-[#4f8eff] text-[#001a42] font-bold rounded-full text-base sm:text-lg overflow-hidden transition-all duration-300 hover:scale-[1.04] hover:shadow-[0_0_52px_rgba(174,198,255,0.38)] active:scale-95">
-              <span className="relative z-10 flex items-center gap-2"><span className="material-symbols-outlined text-[20px]">rocket_launch</span>Scale Your Business</span>
+              <span className="relative z-10 flex items-center gap-2"><span className="material-symbols-outlined text-[20px]">rocket_launch</span>Dominate HSR Layout</span>
               <div className="absolute inset-0 translate-x-[-100%] skew-x-12 bg-gradient-to-r from-white/0 via-white/20 to-white/0 group-hover:translate-x-[100%] transition-transform duration-700"/>
             </Link>
             </div>
@@ -188,39 +182,40 @@ export default function Page() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               <div>
                 <h2 className="text-2xl sm:text-4xl font-bold font-headline mb-5 leading-tight">
-                  Why Choose Veyber in Vadodara?
+                  Why Businesses in HSR Layout Need Digital Marketing
                 </h2>
                 <p className="text-on-surface-variant leading-relaxed mb-6">
-                  Vadodara is a fast-growing business hub with increasing competition. To stand out, you need:
+                  HSR Layout is one of Bangalore&apos;s youngest and fastest-growing business hubs, known for:
                 </p>
                 <div className="flex flex-col gap-3 mb-6">
                   {[
-                    { icon: 'visibility', text: 'Strong online presence' },
-                    { icon: 'track_changes', text: 'Targeted marketing strategies' },
-                    { icon: 'forum', text: 'Consistent customer engagement' },
-                  ].map(({ icon, text }) => (
+                     { text: 'Startup culture' },
+                     { text: 'Digital-first businesses' },
+                     { text: 'Freelancers & entrepreneurs' },
+                     { text: 'Strong online audience' }
+                  ].map(({ text }) => (
                     <div key={text} className="flex items-center gap-4 p-4 bg-surface-container rounded-xl border border-outline-variant/10 hover:border-primary/25 transition-all group">
                       <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                        <span className="material-symbols-outlined text-primary text-[20px]">{icon}</span>
+                        <span className="material-symbols-outlined text-primary text-[20px]">store</span>
                       </div>
                       <span className="font-semibold text-white">{text}</span>
                     </div>
                   ))}
                 </div>
                 <p className="text-white font-semibold text-lg border-l-4 border-primary pl-4 py-2 border-outline-variant/10">
-                  👉 Veyber provides localized strategies tailored for Vadodara businesses.
+                  👉 This creates high engagement + high competition. To win here, you need: <span className="text-primary">Strong online presence, high-converting funnels, and performance-driven marketing.</span>
                 </p>
               </div>
               <div className="bg-surface-container rounded-3xl border border-outline-variant/10 p-6 sm:p-8 relative overflow-hidden h-full flex flex-col justify-center">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-primary/10 blur-[50px] rounded-full pointer-events-none"/>
-                <h3 className="text-xl sm:text-2xl font-bold font-headline text-white mb-6">Who We Work With</h3>
+                <h3 className="text-xl sm:text-2xl font-bold font-headline text-white mb-6">Who We Work With in HSR Layout</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 relative z-10 w-full">
                   {[
-                    'Local businesses in Vadodara',
-                    'Startups & entrepreneurs',
-                    'Ecommerce sellers',
-                    'Service providers',
-                    'Growing brands'
+                    'Startups & founders',
+                    'Ecommerce & D2C brands',
+                    'Freelancers & creators',
+                    'Service-based businesses',
+                    'Growth-stage companies',
                   ].map((ind) => (
                     <div key={ind} className="flex items-center gap-3 p-4 bg-surface-container-high rounded-xl border border-outline-variant/5">
                       <span className="material-symbols-outlined text-primary text-[18px]">verified</span>
@@ -233,12 +228,12 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Our Services in Vadodara */}
+        {/* Our Services in HSR Layout */}
         <section className="px-4 sm:px-8 py-14 sm:py-24 bg-surface">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">Our Services in Vadodara</h2>
-              <p className="text-on-surface-variant max-w-xl mx-auto text-sm sm:text-base">Targeted digital solutions designed to accelerate growth in the local ecosystem.</p>
+              <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">Our Services in HSR Layout</h2>
+              <p className="text-on-surface-variant max-w-xl mx-auto text-sm sm:text-base">Robust digital strategies to empower HSR Layout&apos;s rapid growth ecosystem.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {services.map(({ icon, title, desc, items, href }: { icon: string; title: string; desc: string; items: string[]; href: string; }) => (
@@ -272,21 +267,21 @@ export default function Page() {
               
               {/* Trust Section */}
               <div className="h-full flex flex-col justify-center">
-                <h2 className="text-2xl sm:text-4xl font-bold font-headline mb-5 leading-tight">Why Local Businesses Trust Veyber</h2>
-                <p className="text-on-surface-variant leading-relaxed mb-8">We are not a remote, disconnected agency. We understand the fabric of the city&apos;s business dynamics.</p>
+                <h2 className="text-2xl sm:text-4xl font-bold font-headline mb-5 leading-tight">Why Choose Veyber?</h2>
+                <p className="text-on-surface-variant leading-relaxed mb-8">We engineer aggressive, performance-driven campaigns matching HSR Layout&apos;s rapid digital-first environment perfectly.</p>
                 
                 <div className="space-y-4 mb-8">
                   <ul className="space-y-4">
                     {[
-                      'Deep understanding of Vadodara market',
-                      'Customized solutions (not generic)',
-                      'Affordable pricing',
-                      'Dedicated support',
-                      'Result-focused approach',
+                      'Growth-focused marketing',
+                      'Startup-friendly approach',
+                      'Performance-driven campaigns',
+                      'Affordable vs Bangalore agencies',
+                      'Results-oriented execution',
                     ].map((text) => (
                       <li key={text} className="flex items-center gap-4 p-4 bg-surface-container rounded-xl border border-outline-variant/10">
                         <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                          <span className="material-symbols-outlined text-primary text-[16px]">done</span>
+                          <span className="material-symbols-outlined text-primary text-[16px]">done_all</span>
                         </div>
                         <span className="font-semibold text-white text-sm">{text}</span>
                       </li>
@@ -296,55 +291,42 @@ export default function Page() {
               </div>
 
               {/* Areas List */}
-              <div className="bg-surface-container rounded-3xl border border-primary/20 p-6 sm:p-10 relative overflow-hidden h-full">
-                <div className="absolute top-0 right-0 w-40 h-40 bg-primary/10 blur-[50px] rounded-full pointer-events-none"/>
-                <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-primary text-[28px]">push_pin</span>
-                </div>
-                <h3 className="text-2xl font-bold font-headline mb-3 text-white">Areas We Serve in Vadodara</h3>
-                <p className="text-on-surface-variant text-sm mb-6 leading-relaxed">
-                  We provide digital solutions across all major locations, helping you dominate local searches and reach clients nearby.
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-6 relative z-10">
-                  {locations.map((area) => {
-                    const activeLinks: Record<string, string> = {
-                      'Alkapuri': '/digital-marketing-alkapuri',
-                      'Fatehgunj': '/digital-marketing-fatehgunj',
-                      'Sayajigunj': '/digital-marketing-sayajigunj',
-                      'Karelibaug': '/digital-marketing-karelibaug',
-                      'Nizampura': '/digital-marketing-nizampura',
-                      'Subhanpura': '/digital-marketing-subhanpura',
-                      'Waghodia Road': '/digital-marketing-waghodia-road',
-                      'Gotri': '/digital-marketing-gotri',
-                      'Ajwa Road': '/digital-marketing-ajwa-road',
-                      'Makarpura': '/digital-marketing-makarpura',
-                      'Manjalpur': '/digital-marketing-manjalpur',
-                      'Tarsali': '/digital-marketing-tarsali',
-                      'Harni': '/digital-marketing-harni',
-                      'Sama': '/digital-marketing-sama',
-                      'New VIP Road': '/digital-marketing-new-vip-road',
-                      'Chhani': '/digital-marketing-chhani',
-                      'Gorwa': '/digital-marketing-gorwa',
-                      'Akota': '/digital-marketing-akota',
-                    };
-                    const href = activeLinks[area];
-                    
-                    return href ? (
-                      <Link key={area} href={href} className="px-3 py-1.5 bg-surface-container-high text-xs font-semibold text-white/80 rounded-md border border-outline-variant/10 hover:border-primary/50 hover:text-primary transition-all flex items-center gap-1.5 cursor-pointer group/loc">
-                        {area} <span className="material-symbols-outlined text-[14px] group-hover/loc:translate-x-0.5 group-hover/loc:-translate-y-0.5 transition-transform">arrow_outward</span>
-                      </Link>
-                    ) : (
-                      <span key={area} className="px-3 py-1.5 bg-surface-container-high text-xs font-semibold text-white/80 rounded-md border border-outline-variant/10">
+              <div className="flex flex-col gap-6">
+                <div className="bg-surface-container rounded-3xl border border-primary/20 p-6 sm:p-10 relative overflow-hidden h-full">
+                  <div className="absolute top-0 right-0 w-40 h-40 bg-primary/10 blur-[50px] rounded-full pointer-events-none"/>
+                  <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                    <span className="material-symbols-outlined text-primary text-[28px]">push_pin</span>
+                  </div>
+                  <h3 className="text-2xl font-bold font-headline mb-3 text-white">Serving HSR Layout & Nearby</h3>
+                  <p className="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                    We also serve all surrounding innovation clusters effortlessly.
+                  </p>
+                  
+                  <div className="flex flex-wrap gap-2 relative z-10">
+                    {['HSR Layout', 'Koramangala', 'BTM Layout', 'Sarjapur Road', 'Nearby Bangalore Areas'].map((area) => (
+                      <span key={area} className="px-3 py-1.5 bg-surface-container-high text-xs font-semibold text-white/80 rounded-md border border-outline-variant/10 flex items-center gap-1.5">
+                        <span className="material-symbols-outlined text-[14px] text-primary">location_on</span>
                         {area}
                       </span>
-                    )
-                  })}
+                    ))}
+                  </div>
                 </div>
-                <p className="text-primary text-sm font-bold border-t border-outline-variant/10 pt-4 relative z-10 flex items-center gap-2">
-                  <span className="material-symbols-outlined text-[18px]">verified</span>
-                  We cover entire Vadodara and nearby areas.
-                </p>
+
+                <div className="bg-surface-container rounded-3xl border border-outline-variant/10 p-6 sm:p-8 relative overflow-hidden h-full">
+                  <h3 className="text-lg font-bold font-headline mb-4 text-white">Major State & City Hubs</h3>
+                  <div className="flex flex-wrap gap-2 relative z-10">
+                    {[
+                      { name: 'Bangalore', url: '/digital-marketing-bangalore' },
+                      { name: 'Karnataka', url: '/digital-marketing-karnataka' },
+                      { name: 'Indiranagar', url: '/digital-marketing-indiranagar' },
+                      { name: 'Koramangala', url: '/digital-marketing-koramangala' },
+                    ].map((city) => (
+                      <Link key={city.name} href={city.url} className="px-3 py-1.5 bg-surface-container-high text-xs font-semibold text-white/80 rounded-md border border-outline-variant/10 hover:border-primary/50 hover:text-primary transition-all flex items-center gap-1.5 cursor-pointer group">
+                        {city.name} <span className="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">arrow_outward</span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
               </div>
 
             </div>
@@ -356,7 +338,7 @@ export default function Page() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12 sm:mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">Our Process</h2>
-              <p className="text-on-surface-variant max-w-xl mx-auto text-sm">Strategic workflows fine-tuned for our local Vadodara clients.</p>
+              <p className="text-on-surface-variant max-w-xl mx-auto text-sm">A highly structured execution roadmap.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
               {process.map(({ n, label, desc }) => (
@@ -377,7 +359,7 @@ export default function Page() {
         <section className="px-4 sm:px-8 py-14 sm:py-20 bg-surface-container-low">
           <div className="max-w-7xl mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl font-bold font-headline mb-3">Results You Can Expect</h2>
-            <p className="text-on-surface-variant text-sm mb-10 max-w-lg mx-auto">Tangible improvement metrics directly impacting your bottom line.</p>
+            <p className="text-on-surface-variant text-sm mb-10 max-w-lg mx-auto">Hyper-targeting high-growth startup ecosystems translates to exceptional revenue generation.</p>
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
               {results.map(({ icon, stat, label }) => (
                 <div key={label} className="flex-1 min-w-[140px] max-w-[200px] bg-surface-container rounded-2xl border border-outline-variant/10 p-5 sm:p-7 flex flex-col items-center gap-3 hover:border-primary/25 hover:bg-surface-container-high transition-all duration-200">
@@ -397,7 +379,7 @@ export default function Page() {
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-10 sm:mb-14">
               <h2 className="text-2xl sm:text-3xl font-bold font-headline mb-3">Frequently Asked Questions</h2>
-              <p className="text-on-surface-variant text-sm">Got questions about working with our local team?</p>
+              <p className="text-on-surface-variant text-sm">Common insights regarding our local HSR Layout operations.</p>
             </div>
             <div className="flex flex-col gap-4">
               {faqs.map((item, i) => (
@@ -425,13 +407,13 @@ export default function Page() {
             <div className="relative z-10 p-8 sm:p-12 md:p-16">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary font-bold text-xs tracking-widest uppercase mb-6">
                 <span className="relative flex h-1.5 w-1.5 shrink-0"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"/><span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary"/></span>
-                Let&apos;s Grow Your Business in Vadodara
+                Let’s Grow Your Business in HSR Layout
               </span>
               <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-white mb-4 tracking-tight drop-shadow-xl">
-                Ready to scale your business in Vadodara?
+                Ready to scale your business and generate leads?
               </h2>
               <p className="text-base sm:text-lg text-white/75 mb-8 max-w-xl mx-auto leading-relaxed drop-shadow">
-                Contact Veyber today for expert, locally-tailored digital marketing services.
+                Contact Veyber today for expert digital marketing services in HSR Layout.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-7 sm:px-10 py-3.5 sm:py-5 bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-black rounded-full text-base sm:text-lg shadow-2xl hover:shadow-primary/40 transition-all active:scale-95 group">

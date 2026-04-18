@@ -122,14 +122,16 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Locations */}
           <div className="md:col-span-2">
-            <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-[11px]">Company</h4>
+            <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-[11px]">Locations</h4>
             <ul className="space-y-3.5">
               {[
-                ['About Us', '/about'],
-                ['Locations', '/service-locations'],
-                ['Contact',  '/contact'],
+                ['Vadodara', '/digital-marketing-vadodara'],
+                ['Ahmedabad', '/digital-marketing-ahmedabad'],
+                ['Surat', '/digital-marketing-surat'],
+                ['Karnataka', '/digital-marketing-karnataka'],
+                ['Bangalore', '/digital-marketing-bangalore'],
               ].map(([label, href]) => (
                 <li key={label}>
                   <Link href={href} className="text-slate-500 text-sm hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 group">
@@ -141,13 +143,15 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* Company */}
           <div className="md:col-span-2">
-            <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-[11px]">Legal</h4>
+            <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-[11px]">Company</h4>
             <ul className="space-y-3.5">
               {[
-                ['Privacy Policy',    '#'],
-                ['Terms of Service',  '#'],
+                ['About Us', '/about'],
+                ['Contact',  '/contact'],
+                ['Privacy Policy', '#'],
+                ['Terms of Service', '#'],
               ].map(([label, href]) => (
                 <li key={label}>
                   <Link href={href} className="text-slate-500 text-sm hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 group">
