@@ -145,6 +145,14 @@ const locationSilo = [
   { city: 'Rajkot', href: '/digital-marketing-rajkot' },
   { city: 'Gandhinagar', href: '/digital-marketing-gandhinagar' },
   { city: 'Anand', href: '/digital-marketing-anand' },
+  { city: 'Morbi', href: '/digital-marketing-morbi' },
+  { city: 'Jamnagar', href: '/digital-marketing-jamnagar' },
+  { city: 'Junagadh', href: '/digital-marketing-junagadh' },
+  { city: 'Bhavnagar', href: '/digital-marketing-bhavnagar' },
+  { city: 'Valsad', href: '/digital-marketing-valsad' },
+  { city: 'Vapi', href: '/digital-marketing-vapi' },
+  { city: 'Navsari', href: '/digital-marketing-navsari' },
+  { city: 'Bharuch', href: '/digital-marketing-bharuch' },
 ];
 
 export default function Page() {

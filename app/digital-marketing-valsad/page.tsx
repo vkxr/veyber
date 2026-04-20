@@ -4,9 +4,9 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Digital Marketing Services in Whitefield Bangalore | SEO & Performance – Veyber',
-  description: 'Looking for digital marketing services in Whitefield Bangalore? Veyber offers SEO, ecommerce, social media marketing & consulting services.',
-  keywords: 'Digital marketing services Whitefield, SEO company Whitefield Bangalore, Marketing agency Whitefield, Ecommerce marketing Whitefield, Social media marketing Whitefield, IT marketing Bangalore, Business consultant Whitefield',
+  title: 'Digital Marketing Services in Valsad Gujarat | Local SEO – Veyber',
+  description: 'Looking for digital marketing services in Valsad Gujarat? Veyber offers SEO, social media marketing, ecommerce & business consulting services.',
+  keywords: 'Digital marketing services Valsad, SEO company Valsad Gujarat, Marketing agency Valsad, Local SEO Valsad, Ecommerce marketing Valsad, Social media marketing Valsad, Business consultant Valsad',
 };
 
 const pageSchema = {
@@ -16,15 +16,15 @@ const pageSchema = {
   url: 'https://veyber.co.in',
   areaServed: {
     '@type': 'Place',
-    name: 'Whitefield, Bangalore',
+    name: 'Valsad, Gujarat',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Whitefield',
-    addressRegion: 'Karnataka',
+    addressLocality: 'Valsad',
+    addressRegion: 'Gujarat',
     addressCountry: 'India',
   },
-  description: 'Digital marketing services in Whitefield Bangalore including SEO, ecommerce, social media marketing and business consulting.',
+  description: 'Digital marketing services in Valsad Gujarat including SEO, social media marketing, ecommerce development and business consulting.',
 };
 
 const faqSchema = {
@@ -33,26 +33,26 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Do you provide services in Whitefield Bangalore?',
+      name: 'Do you provide services in Valsad Gujarat?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, we offer complete digital marketing services in Whitefield and nearby areas.',
+        text: 'Yes, we provide complete digital marketing services in Valsad and nearby areas.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Do you work with IT and corporate businesses?',
+      name: 'Which industries do you work with in Valsad?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, we specialize in IT companies, SaaS businesses, and corporate services.',
+        text: 'We work heavily with MSMEs, agriculture businesses, local retail, and service providers.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Do you provide performance marketing?',
+      name: 'Do you provide local SEO services?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, we focus on ROI-driven campaigns and lead generation.',
+        text: 'Yes, we focus on Google ranking and generating high-quality local leads.',
       },
     },
     {
@@ -60,7 +60,7 @@ const faqSchema = {
       name: 'How can I get started?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You can contact us through our website for consultation.',
+        text: 'You can contact us through our website for a free business consultation.',
       },
     },
   ],
@@ -70,81 +70,81 @@ const services = [
   {
     icon: 'shopping_cart',
     title: 'Ecommerce Development',
-    desc: 'Build high-performance ecommerce platforms.',
-    items: ['Shopify, WooCommerce & custom ecommerce', 'Fast, secure & scalable', 'Conversion-focused design'],
+    desc: 'Build a professional online presence.',
+    items: ['Shopify, WooCommerce & custom websites', 'Mobile-first design', 'Conversion-focused UI'],
     href: '/ecommerce-development',
   },
   {
     icon: 'storefront',
     title: 'Ecommerce Account Management',
-    desc: 'Maximize your marketplace growth.',
-    items: ['Amazon, Flipkart & Meesho management', 'Product listing optimization', 'Revenue-driven strategies'],
+    desc: 'Grow online sales efficiently.',
+    items: ['Amazon, Flipkart & Meesho management', 'Product listing optimization', 'Marketplace growth strategy'],
     href: '/account-management',
   },
   {
     icon: 'share',
     title: 'Social Media Marketing',
-    desc: 'Build a professional brand presence.',
-    items: ['LinkedIn, Instagram & Facebook management', 'Content creation & campaigns', 'Paid advertising'],
+    desc: 'Build strong local brand awareness.',
+    items: ['Instagram & Facebook campaigns', 'Content creation & reels', 'Paid local advertising'],
     href: '/social-media-handling',
   },
   {
     icon: 'edit_note',
     title: 'Content Marketing',
-    desc: 'Drive traffic and generate leads.',
-    items: ['SEO blog writing', 'Website content', 'Strategic content planning'],
+    desc: 'Increase search visibility.',
+    items: ['SEO blogs & website content', 'Targeted keyword optimization', 'Authority-building content'],
     href: '/content-marketing',
   },
   {
     icon: 'psychology',
     title: 'Business Consulting',
-    desc: 'Scale your business with clarity.',
-    items: ['Growth strategy', 'Market positioning', 'Conversion optimization'],
+    desc: 'Improve growth systems.',
+    items: ['Local market strategy', 'Lead generation funnels', 'Branding & positioning'],
     href: '/business-consulting',
   },
 ];
 
 const process = [
-  { n: '01', label: 'Business Analysis', desc: 'Understanding your professional corporate niche.' },
-  { n: '02', label: 'Market Research', desc: 'Analyzing the Whitefield IT & business ecosystem.' },
-  { n: '03', label: 'Strategy Development', desc: 'Crafting tailored paths to premium enterprise leads.' },
-  { n: '04', label: 'Execution', desc: 'Rolling out robust, technical SEO and performance ads.' },
-  { n: '05', label: 'Optimization', desc: 'Evaluating deep analytics for aggressive scaling.' },
+  { n: '01', label: 'Business Analysis', desc: 'Understanding your specific niche and local market.' },
+  { n: '02', label: 'Market Research', desc: 'Valsad market research & competitor analysis.' },
+  { n: '03', label: 'Strategy Development', desc: 'Crafting localized action plans for maximum leads.' },
+  { n: '04', label: 'Execution', desc: 'Launching campaigns, local SEO setups, and content.' },
+  { n: '05', label: 'Optimization', desc: 'Refining data to scale performance effectively.' },
 ];
 
 const results = [
-  { icon: 'trending_up', stat: 'High-quality', label: 'Corporate Leads' },
-  { icon: 'verified', stat: 'Increased', label: 'Brand Authority' },
-  { icon: 'people', stat: 'Better', label: 'Engagement' },
-  { icon: 'payments', stat: 'Higher', label: 'Conversions' },
-  { icon: 'bolt', stat: 'Scalable', label: 'Growth' },
+  { icon: 'trending_up', stat: 'Higher', label: 'Google Rankings' },
+  { icon: 'monetization_on', stat: 'More', label: 'Enquiries' },
+  { icon: 'people', stat: 'Increased', label: 'Foot Traffic' },
+  { icon: 'verified', stat: 'Strong', label: 'Brand Trust' },
+  { icon: 'bolt', stat: 'Consistent', label: 'Lead Flow' },
 ];
 
 const faqs = [
   {
-    q: 'Do you provide services in Whitefield Bangalore?',
-    a: 'Yes, we offer complete digital marketing services in Whitefield and nearby areas.',
+    q: 'Do you provide services in Valsad Gujarat?',
+    a: 'Yes, we provide complete digital marketing services in Valsad and nearby areas.',
   },
   {
-    q: 'Do you work with IT and corporate businesses?',
-    a: 'Yes, we specialize in IT companies, SaaS businesses, and corporate services.',
+    q: 'Which industries do you work with in Valsad?',
+    a: 'We work heavily with MSMEs, agriculture businesses, local retail, and service providers.',
   },
   {
-    q: 'Do you provide performance marketing?',
-    a: 'Yes, we focus on ROI-driven campaigns and lead generation.',
+    q: 'Do you provide local SEO services?',
+    a: 'Yes, we focus on Google ranking and generating high-quality local leads.',
   },
   {
     q: 'How can I get started?',
-    a: 'You can contact us through our website for consultation.',
+    a: 'You can contact us through our website for a free business consultation.',
   },
 ];
 
 const locationSilo = [
-  { city: 'Bangalore', href: '/digital-marketing-bangalore' },
-  { city: 'Karnataka', href: '/digital-marketing-karnataka' },
-  { city: 'Indiranagar', href: '/digital-marketing-indiranagar' },
-  { city: 'Koramangala', href: '/digital-marketing-koramangala' },
-  { city: 'HSR Layout', href: '/digital-marketing-hsr-layout' },
+  { city: 'Gujarat', href: '/digital-marketing-gujarat' },
+  { city: 'Surat', href: '/digital-marketing-surat' },
+  { city: 'Navsari', href: '/digital-marketing-navsari' },
+  { city: 'Vapi', href: '/digital-marketing-vapi' },
+  { city: 'Bharuch', href: '/digital-marketing-bharuch' },
 ];
 
 export default function Page() {
@@ -163,17 +163,17 @@ export default function Page() {
           <div className="relative z-10 max-w-5xl mx-auto text-center">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/[0.08] text-primary font-bold text-xs tracking-widest uppercase mb-5">
               <span className="relative flex h-1.5 w-1.5 shrink-0"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"/><span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary"/></span>
-              Performance-Driven Growth
+              Elevate Your Local Business & Trade
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold font-headline tracking-tight mb-5 leading-[1.05] text-white">
               Digital Marketing Services in<br/>
-              <span className="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent" style={{filter:'drop-shadow(0 0 28px rgba(174,198,255,0.3))'}}>Whitefield, Bangalore</span>
+              <span className="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent" style={{filter:'drop-shadow(0 0 28px rgba(174,198,255,0.3))'}}>Valsad, Gujarat</span>
             </h1>
             <p className="text-base sm:text-lg text-on-surface-variant max-w-2xl mx-auto mb-4 leading-relaxed">
-              Looking for expert digital marketing services in <span className="text-primary font-semibold">Whitefield, Bangalore?</span>
+              Looking for trusted digital marketing services in <span className="text-primary font-semibold">Valsad, Gujarat?</span>
             </p>
             <p className="text-sm sm:text-base text-on-surface-variant max-w-xl mx-auto mb-8 leading-relaxed">
-              At Veyber, we help IT companies, ecommerce brands, and service businesses in Whitefield grow with data-driven strategies, performance marketing, and scalable digital systems. We focus on ROI, lead generation, and long-term growth.
+              At Veyber, we help local businesses, MSMEs, and service providers in Valsad grow through <Link href="/content-marketing" className="text-primary hover:underline font-medium transition-colors">SEO</Link>, <Link href="/social-media-handling" className="text-primary hover:underline font-medium transition-colors">social media marketing</Link>, and <Link href="/business-consulting" className="text-primary hover:underline font-medium transition-colors">lead generation systems</Link> designed for consistent business growth. We focus on visibility, trust, and steady customer acquisition.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="group relative px-7 sm:px-9 py-3.5 sm:py-4 bg-gradient-to-r from-[#aec6ff] to-[#4f8eff] text-[#001a42] font-bold rounded-full text-base sm:text-lg overflow-hidden transition-all duration-300 hover:scale-[1.04] hover:shadow-[0_0_52px_rgba(174,198,255,0.38)] active:scale-95">
@@ -190,17 +190,17 @@ export default function Page() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               <div>
                 <h2 className="text-2xl sm:text-4xl font-bold font-headline mb-5 leading-tight">
-                  Why Businesses in Whitefield Need Digital Marketing
+                  Why Businesses in Valsad Need Digital Marketing
                 </h2>
                 <p className="text-on-surface-variant leading-relaxed mb-6">
-                  Whitefield is Bangalore’s leading IT and corporate hub, providing premium market potential.
+                  Valsad acts as a critical link between Gujarat and Maharashtra, mixing agriculture with dynamic MSMEs:
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                   {[
-                    { icon: 'domain', text: 'Tech parks & IT companies' },
-                    { icon: 'cases', text: 'Corporate offices' },
-                    { icon: 'monetization_on', text: 'High-income professionals' },
-                    { icon: 'insights', text: 'Rapid business growth' },
+                    { icon: 'agriculture', text: 'Agriculture & food businesses' },
+                    { icon: 'domain', text: 'Local MSMEs & service providers' },
+                    { icon: 'shopping_bag', text: 'Retail shops & clinics' },
+                    { icon: 'corporate_fare', text: 'High regional demand' },
                   ].map(({ icon, text }) => (
                     <div key={text} className="flex items-center gap-3 p-4 bg-surface-container rounded-xl border border-outline-variant/10 hover:border-primary/25 transition-all group">
                       <div className="w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
@@ -211,26 +211,26 @@ export default function Page() {
                   ))}
                 </div>
                 <p className="text-white font-semibold text-lg border-l-4 border-primary pl-4 py-2 border-outline-variant/10">
-                  👉 This creates high competition + <span className="text-primary">premium opportunities</span>.
+                  👉 This creates high search volume and <span className="text-primary">strong competition</span>.
                 </p>
               </div>
               <div className="bg-surface-container rounded-3xl border border-outline-variant/10 p-6 sm:p-8 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-primary/10 blur-[50px] rounded-full pointer-events-none"/>
-                <h3 className="text-xl font-bold text-white mb-5">To succeed, your business needs:</h3>
+                <h3 className="text-xl font-bold text-white mb-5">To grow here, businesses need:</h3>
                 <div className="space-y-4 mb-6">
                   {[
-                    { icon: 'visibility', t: 'Strong online visibility' },
-                    { icon: 'filter_alt', t: 'High-conversion funnels' },
-                    { icon: 'monitoring', t: 'Performance-driven campaigns' },
+                    { icon: 'travel_explore', t: 'Strong Google presence (Global & Local)' },
+                    { icon: 'my_location', t: 'Targeted local SEO ranking' },
+                    { icon: 'group_add', t: 'Consistent buyer lead generation' },
                   ].map((ind) => (
                     <div key={ind.t} className="flex items-center gap-3 p-4 bg-surface-container-high rounded-xl">
                       <span className="material-symbols-outlined text-primary text-[20px]">{ind.icon}</span>
                       <span className="text-sm font-medium text-white">{ind.t}</span>
                     </div>
-                   ))}
+                  ))}
                 </div>
                 <p className="text-on-surface-variant text-sm leading-relaxed border-t border-outline-variant/10 pt-4">
-                  We deploy corporate-level digital execution specifically built for generating high-quality B2B and top-tier consumer interactions.
+                  We implement robust digital architectures designed to dominate local and regional markets.
                 </p>
               </div>
             </div>
@@ -241,8 +241,8 @@ export default function Page() {
         <section className="px-4 sm:px-8 py-14 sm:py-24 bg-surface">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">Our Services in Whitefield</h2>
-              <p className="text-on-surface-variant max-w-xl mx-auto text-sm sm:text-base">Robust, data-driven systems crafted for enterprise and premier brand scaling.</p>
+              <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">Our Services in Valsad</h2>
+              <p className="text-on-surface-variant max-w-xl mx-auto text-sm sm:text-base">Comprehensive, end-to-end solutions that connect your brand with buyers.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {services.map(({ icon, title, desc, items, href }: { icon: string; title: string; desc: string; items: string[]; href: string; }) => (
@@ -274,11 +274,11 @@ export default function Page() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               <div>
-                <h2 className="text-2xl sm:text-4xl font-bold font-headline mb-5 leading-tight">Who We Work With in Whitefield</h2>
-                <p className="text-on-surface-variant leading-relaxed mb-6">We provide highly targeted digital growth engines to premier sectors and agile firms.</p>
+                <h2 className="text-2xl sm:text-4xl font-bold font-headline mb-5 leading-tight">Who We Work With in Valsad</h2>
+                <p className="text-on-surface-variant leading-relaxed mb-6">We deploy aggressive digital infrastructures tailored to local companies and brands.</p>
                 <div className="mb-8">
                   <div className="flex flex-wrap gap-2">
-                    {['IT companies & SaaS businesses', 'Ecommerce brands', 'Corporate service providers', 'Startups & SMEs', 'High-growth businesses'].map((ind) => (
+                    {['Local MSMEs', 'Agriculture & Food Export', 'Retail shops & local stores', 'Real estate agents', 'Service-based businesses'].map((ind) => (
                       <span key={ind} className="flex items-center gap-1.5 px-3 py-2 bg-surface-container rounded-xl border border-outline-variant/10 text-xs font-semibold text-white/80">
                         <span className="material-symbols-outlined text-primary text-[14px]">corporate_fare</span>
                         {ind}
@@ -291,11 +291,11 @@ export default function Page() {
                   <h3 className="text-lg font-bold text-white">Why Choose Veyber?</h3>
                   <ul className="space-y-3">
                     {[
-                      'ROI-focused marketing',
-                      'Corporate-level strategies',
-                      'Scalable growth systems',
-                      'Cost-effective vs large agencies',
-                      'Results-driven execution',
+                      'Strong local SEO expertise',
+                      'Targeted lead generation',
+                      'Competitive digital positioning',
+                      'Consistent performance',
+                      'ROI-driven approach',
                     ].map((text) => (
                       <li key={text} className="flex items-center gap-3">
                         <span className="material-symbols-outlined text-primary">verified</span>
@@ -309,8 +309,8 @@ export default function Page() {
               {/* Internal Location SILO */}
               <div className="bg-surface-container rounded-3xl border border-outline-variant/10 p-6 sm:p-8 relative overflow-hidden h-full flex flex-col justify-center">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-primary/10 blur-[50px] rounded-full pointer-events-none"/>
-                <h3 className="text-xl sm:text-2xl font-bold font-headline mb-4 relative z-10">Serving Whitefield & Nearby Areas</h3>
-                <p className="text-on-surface-variant text-sm mb-6 relative z-10">We deploy comprehensive business solutions across the broader IT corridor.</p>
+                <h3 className="text-xl sm:text-2xl font-bold font-headline mb-4 relative z-10">Serving Valsad & Nearby Areas</h3>
+                <p className="text-on-surface-variant text-sm mb-6 relative z-10">We serve the entire South Gujarat region and major local networks.</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 relative z-10">
                   {locationSilo.map((loc) => (
                     <Link key={loc.city} href={loc.href} className="flex items-center justify-between p-4 rounded-xl bg-surface-container-high hover:bg-surface-container-highest border border-outline-variant/10 hover:border-primary/30 transition-all font-semibold text-white text-sm group">
@@ -319,7 +319,7 @@ export default function Page() {
                     </Link>
                   ))}
                   <div className="col-span-full mt-2 text-center text-primary text-xs font-semibold">
-                    👉 And all nearby IT & commercial areas of Bangalore.
+                    👉 Powering Gujarat&apos;s digital growth securely.
                   </div>
                 </div>
               </div>
@@ -332,7 +332,7 @@ export default function Page() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12 sm:mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">Our Process</h2>
-              <p className="text-on-surface-variant max-w-xl mx-auto text-sm">An engineered, corporate-standard process focused wholly on verifiable KPI improvements.</p>
+              <p className="text-on-surface-variant max-w-xl mx-auto text-sm">A seamless, results-driven scaling process engineered for optimal market share.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
               {process.map(({ n, label, desc }) => (
@@ -353,7 +353,7 @@ export default function Page() {
         <section className="px-4 sm:px-8 py-14 sm:py-20 bg-surface-container-low">
           <div className="max-w-7xl mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl font-bold font-headline mb-3">Results You Can Expect</h2>
-            <p className="text-on-surface-variant text-sm mb-10 max-w-lg mx-auto">Our marketing frameworks multiply enterprise scale aggressively.</p>
+            <p className="text-on-surface-variant text-sm mb-10 max-w-lg mx-auto">Our systems are meticulously designed to enforce market dominance over competition.</p>
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
               {results.map(({ icon, stat, label }) => (
                 <div key={label} className="flex-1 min-w-[140px] max-w-[200px] bg-surface-container rounded-2xl border border-outline-variant/10 p-5 sm:p-7 flex flex-col items-center gap-3 hover:border-primary/25 hover:bg-surface-container-high transition-all duration-200">
@@ -373,7 +373,7 @@ export default function Page() {
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-10 sm:mb-14">
               <h2 className="text-2xl sm:text-3xl font-bold font-headline mb-3">Frequently Asked Questions</h2>
-              <p className="text-on-surface-variant text-sm">Valuable insights regarding our Whitefield engagement.</p>
+              <p className="text-on-surface-variant text-sm">Clear insights on how we operate locally in Valsad.</p>
             </div>
             <div className="flex flex-col gap-4">
               {faqs.map((item, i) => (
@@ -401,13 +401,13 @@ export default function Page() {
             <div className="relative z-10 p-8 sm:p-12 md:p-16">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary font-bold text-xs tracking-widest uppercase mb-6">
                 <span className="relative flex h-1.5 w-1.5 shrink-0"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"/><span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary"/></span>
-                Let&apos;s Grow Your Business in Whitefield
+                Let&apos;s Grow Your Business in Valsad
               </span>
               <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-white mb-4 tracking-tight drop-shadow-xl">
-                Ready to generate high-value leads and scale?
+                Ready to attract more local and broad leads?
               </h2>
               <p className="text-base sm:text-lg text-white/75 mb-8 max-w-xl mx-auto leading-relaxed drop-shadow">
-                Contact Veyber today for expert digital marketing services in Whitefield, Bangalore.
+                Contact Veyber today for dedicated digital marketing services in Valsad, Gujarat.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-7 sm:px-10 py-3.5 sm:py-5 bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-black rounded-full text-base sm:text-lg shadow-2xl hover:shadow-primary/40 transition-all active:scale-95 group">
@@ -420,6 +420,22 @@ export default function Page() {
                 </a>
               </div>
             </div>
+          </div>
+        </section>
+
+
+        {/* References */}
+        <section className="px-4 sm:px-8 py-8 border-t border-outline-variant/10 bg-surface">
+          <div className="max-w-7xl mx-auto text-center">
+            <p className="text-xs text-on-surface-variant">
+              <strong>Local Region References:</strong>{' '}
+              <a href={`https://en.wikipedia.org/wiki/Valsad`} target="_blank" rel="nofollow noopener noreferrer" className="hover:text-primary transition-colors">
+                Valsad Wikipedia Profile
+              </a>{' '}|{' '}
+              <a href={`https://www.google.com/maps/place/Valsad,+Gujarat`} target="_blank" rel="nofollow noopener noreferrer" className="hover:text-primary transition-colors">
+                Valsad on Google Maps
+              </a>
+            </p>
           </div>
         </section>
 

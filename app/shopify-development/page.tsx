@@ -274,11 +274,18 @@ export default function Page() {
   <div className="bg-surface-container rounded-2xl border border-outline-variant/10 p-6">
     <h3 className="text-base font-bold text-white mb-4">Shopify Development in Gujarat</h3>
     <div className="flex flex-wrap gap-2">
-    {['Vadodara','Ahmedabad','Surat','Rajkot','Anand','Entire Gujarat'].map((city) => (
-      <span key={city} className="flex items-center gap-1.5 px-3 py-2 bg-surface-container-high rounded-xl border border-outline-variant/10 text-xs font-semibold hover:border-primary/30 hover:text-primary transition-all">
+    {[
+      { name: 'Vadodara', url: '/digital-marketing-vadodara' },
+      { name: 'Ahmedabad', url: '/digital-marketing-ahmedabad' },
+      { name: 'Surat', url: '/digital-marketing-surat' },
+      { name: 'Rajkot', url: '/digital-marketing-rajkot' },
+      { name: 'Anand', url: '/digital-marketing-anand' },
+      { name: 'Entire Gujarat', url: '/service-locations' }
+    ].map(({ name, url }) => (
+      <Link key={name} href={url} className="flex items-center gap-1.5 px-3 py-2 bg-surface-container-high rounded-xl border border-outline-variant/10 text-xs font-semibold hover:border-primary/30 hover:text-primary transition-all">
         <span className="material-symbols-outlined text-primary text-[13px]">location_on</span>
-        {city}
-      </span>
+        {name}
+      </Link>
     ))}
     </div>
   </div>

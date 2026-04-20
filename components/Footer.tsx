@@ -150,6 +150,7 @@ export default function Footer() {
               {[
                 ['About Us', '/about'],
                 ['Contact',  '/contact'],
+                ['Locations Index', '/service-locations'],
                 ['Privacy Policy', '#'],
                 ['Terms of Service', '#'],
               ].map(([label, href]) => (

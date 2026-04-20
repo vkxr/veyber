@@ -57,10 +57,17 @@ export default function Page() {
   At Veyber, we help businesses across Vadodara, Ahmedabad, Surat, and all over Gujarat build, manage, and grow their digital presence with data-driven strategies and measurable results.
 </p>
 <div className="flex flex-wrap justify-center gap-2 text-xs font-semibold text-on-surface-variant">
-  {['Vadodara','Ahmedabad','Surat','Rajkot','Entire Gujarat'].map((city, i, arr) => (
-    <span key={city} className="flex items-center gap-1.5">
+  {[
+    { name: 'Vadodara', url: '/digital-marketing-vadodara' },
+    { name: 'Ahmedabad', url: '/digital-marketing-ahmedabad' },
+    { name: 'Surat', url: '/digital-marketing-surat' },
+    { name: 'Rajkot', url: '/digital-marketing-rajkot' },
+    { name: 'Entire Gujarat', url: '/service-locations' }
+  ].map((city, i, arr) => (
+    <span key={city.name} className="flex items-center gap-1.5">
       <span className="material-symbols-outlined text-primary text-[14px]">location_on</span>
-      {city}{i < arr.length - 1 && <span className="ml-1.5 text-outline-variant/40">·</span>}
+      <Link href={city.url} className="hover:text-primary transition-colors">{city.name}</Link>
+      {i < arr.length - 1 && <span className="ml-1.5 text-outline-variant/40">·</span>}
     </span>
   ))}
 </div>
@@ -313,11 +320,20 @@ export default function Page() {
 <h2 className="text-2xl sm:text-3xl font-bold font-headline mb-3">Our Presence in Gujarat</h2>
 <p className="text-on-surface-variant text-sm mb-8">Veyber proudly serves businesses across Gujarat and beyond.</p>
 <div className="flex flex-wrap justify-center gap-3 mb-8">
-{['Vadodara (Primary)','Ahmedabad','Surat','Anand','Bharuch','Nadiad','Rajkot','Pan India'].map((city) => (
-  <span key={city} className="flex items-center gap-2 px-4 py-2.5 bg-surface-container rounded-xl border border-outline-variant/10 hover:border-primary/30 hover:bg-surface-container-high transition-all text-sm font-semibold">
+{[
+  { city: 'Vadodara (Primary)', url: '/digital-marketing-vadodara' },
+  { city: 'Ahmedabad', url: '/digital-marketing-ahmedabad' },
+  { city: 'Surat', url: '/digital-marketing-surat' },
+  { city: 'Anand', url: '/digital-marketing-anand' },
+  { city: 'Bharuch', url: '/digital-marketing-bharuch' },
+  { city: 'Nadiad', url: '/digital-marketing-nadiad' },
+  { city: 'Rajkot', url: '/digital-marketing-rajkot' },
+  { city: 'Pan India', url: '/service-locations' }
+].map(({ city, url }) => (
+  <Link key={city} href={url} className="flex items-center gap-2 px-4 py-2.5 bg-surface-container rounded-xl border border-outline-variant/10 hover:border-primary/30 hover:bg-surface-container-high hover:text-primary transition-all text-sm font-semibold">
     <span className="material-symbols-outlined text-primary text-[16px]">location_on</span>
     {city}
-  </span>
+  </Link>
 ))}
 </div>
 <div className="bg-surface-container rounded-2xl border border-primary/15 p-5 sm:p-8 text-left max-w-2xl mx-auto">

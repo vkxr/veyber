@@ -303,8 +303,10 @@ export default function Page() {
                   </p>
                   
                   <div className="flex flex-wrap gap-2 relative z-10">
-                    {['Whitefield', 'Electronic City', 'Indiranagar', 'Koramangala', 'HSR Layout', 'Marathahalli', 'Sarjapur Road', 'Bellandur', 'Jayanagar', 'J.P. Nagar', 'Outer Ring Road', 'Manyata Tech Park', 'Brookefield', 'Kadubeesanahalli', 'Hebbal', 'Yelahanka', 'KR Puram', 'Banashankari', 'Basavanagudi', 'Malleshwaram', 'Vijayanagar', 'Nagarbhavi', 'Devanahalli', 'Hoskote', 'Kanakapura Road', 'Bannerghatta Road', 'Thanisandra', 'Kengeri', 'Attibele', 'MG Road', 'Brigade Road', 'Shivajinagar', 'Commercial Street', 'Richmond Town', 'Lavelle Road', 'Peenya', 'Bommasandra', 'Bidadi', 'Jigani', 'Nelamangala', 'Ulsoor'].map((area) => {
+                    {['BTM Layout', 'Rajajinagar', 'Whitefield', 'Electronic City', 'Indiranagar', 'Koramangala', 'HSR Layout', 'Marathahalli', 'Sarjapur Road', 'Bellandur', 'Jayanagar', 'J.P. Nagar', 'Outer Ring Road', 'Manyata Tech Park', 'Brookefield', 'Kadubeesanahalli', 'Hebbal', 'Yelahanka', 'KR Puram', 'Banashankari', 'Basavanagudi', 'Malleshwaram', 'Vijayanagar', 'Nagarbhavi', 'Devanahalli', 'Hoskote', 'Kanakapura Road', 'Bannerghatta Road', 'Thanisandra', 'Kengeri', 'Attibele', 'MG Road', 'Brigade Road', 'Shivajinagar', 'Commercial Street', 'Richmond Town', 'Lavelle Road', 'Peenya', 'Bommasandra', 'Bidadi', 'Jigani', 'Nelamangala', 'Ulsoor'].map((area) => {
                       const activeLinks: Record<string, string> = {
+                        'BTM Layout': '/digital-marketing-btm-layout',
+                        'Rajajinagar': '/digital-marketing-rajajinagar',
                         'Indiranagar': '/digital-marketing-indiranagar',
                         'Koramangala': '/digital-marketing-koramangala',
                         'HSR Layout': '/digital-marketing-hsr-layout',

@@ -139,7 +139,13 @@ const audiences = [
   'Businesses entering ecommerce',
 ];
 
-const cities = ['Vadodara', 'Ahmedabad', 'Surat', 'Rajkot', 'Entire Gujarat'];
+const cities = [
+  { name: 'Vadodara', url: '/digital-marketing-vadodara' },
+  { name: 'Ahmedabad', url: '/digital-marketing-ahmedabad' },
+  { name: 'Surat', url: '/digital-marketing-surat' },
+  { name: 'Rajkot', url: '/digital-marketing-rajkot' },
+  { name: 'Entire Gujarat', url: '/service-locations' }
+];
 
 const whyVeyber = [
   'Amazon-focused growth strategy',
@@ -324,10 +330,10 @@ export default function Page() {
   </p>
   <div className="flex flex-wrap gap-2 mb-8">
   {cities.map((city) => (
-    <span key={city} className="flex items-center gap-1.5 px-3 py-2 bg-surface-container rounded-xl border border-outline-variant/10 text-xs font-semibold hover:border-primary/30 hover:text-primary transition-all">
+    <Link key={city.name} href={city.url} className="flex items-center gap-1.5 px-3 py-2 bg-surface-container rounded-xl border border-outline-variant/10 text-xs font-semibold hover:border-primary/30 hover:text-primary transition-all">
       <span className="material-symbols-outlined text-primary text-[13px]">location_on</span>
-      {city}
-    </span>
+      {city.name}
+    </Link>
   ))}
   </div>
 

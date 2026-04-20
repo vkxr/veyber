@@ -348,16 +348,16 @@ export default function Page() {
 <p className="text-on-surface-variant mb-8 text-sm sm:text-base">We help businesses grow across major cities in Gujarat and beyond.</p>
 <div className="flex flex-wrap justify-center gap-3">
 {[
-  { city: 'Vadodara', icon: 'location_on' },
-  { city: 'Ahmedabad', icon: 'location_on' },
-  { city: 'Surat', icon: 'location_on' },
-  { city: 'Rajkot', icon: 'location_on' },
-  { city: 'Pan India', icon: 'public' },
-].map(({ city, icon }) => (
-  <div key={city} className="flex items-center gap-2 px-5 py-3 bg-surface-container rounded-xl border border-outline-variant/10 hover:border-primary/30 hover:bg-surface-container-high transition-all duration-200">
-    <span className="material-symbols-outlined text-primary text-[18px]">{icon}</span>
+  { city: 'Vadodara', icon: 'location_on', url: '/digital-marketing-vadodara' },
+  { city: 'Ahmedabad', icon: 'location_on', url: '/digital-marketing-ahmedabad' },
+  { city: 'Surat', icon: 'location_on', url: '/digital-marketing-surat' },
+  { city: 'Rajkot', icon: 'location_on', url: '/digital-marketing-rajkot' },
+  { city: 'Pan India', icon: 'public', url: '/service-locations' },
+].map(({ city, icon, url }) => (
+  <Link key={city} href={url} className="flex items-center gap-2 px-5 py-3 bg-surface-container rounded-xl border border-outline-variant/10 hover:border-primary/30 hover:bg-surface-container-high hover:text-primary transition-all duration-200">
+    <span className="material-symbols-outlined text-[18px]">{icon}</span>
     <span className="font-semibold text-sm">{city}</span>
-  </div>
+  </Link>
 ))}
 </div>
 </div>

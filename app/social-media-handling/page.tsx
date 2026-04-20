@@ -267,11 +267,19 @@ export default function Page() {
                 <div>
                   <p className="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-3">We proudly serve</p>
                   <div className="flex flex-wrap gap-2 mb-8">
-                    {['Vadodara (Primary Focus)','Ahmedabad','Surat','Rajkot','Anand','Bharuch','Entire Gujarat'].map((city) => (
-                      <span key={city} className="flex items-center gap-1.5 px-3 py-2 bg-surface-container rounded-xl border border-outline-variant/10 text-xs font-semibold hover:border-primary/30 hover:text-primary transition-all">
+                    {[
+                      { name: 'Vadodara (Primary Focus)', url: '/digital-marketing-vadodara' },
+                      { name: 'Ahmedabad', url: '/digital-marketing-ahmedabad' },
+                      { name: 'Surat', url: '/digital-marketing-surat' },
+                      { name: 'Rajkot', url: '/digital-marketing-rajkot' },
+                      { name: 'Anand', url: '/digital-marketing-anand' },
+                      { name: 'Bharuch', url: '/digital-marketing-bharuch' },
+                      { name: 'Entire Gujarat', url: '/service-locations' }
+                    ].map(({ name, url }) => (
+                      <Link key={name} href={url} className="flex items-center gap-1.5 px-3 py-2 bg-surface-container rounded-xl border border-outline-variant/10 text-xs font-semibold hover:border-primary/30 hover:text-primary transition-all">
                         <span className="material-symbols-outlined text-primary text-[14px]">location_on</span>
-                        {city}
-                      </span>
+                        {name}
+                      </Link>
                     ))}
                   </div>
                 </div>

@@ -4,9 +4,9 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Digital Marketing Services in Whitefield Bangalore | SEO & Performance – Veyber',
-  description: 'Looking for digital marketing services in Whitefield Bangalore? Veyber offers SEO, ecommerce, social media marketing & consulting services.',
-  keywords: 'Digital marketing services Whitefield, SEO company Whitefield Bangalore, Marketing agency Whitefield, Ecommerce marketing Whitefield, Social media marketing Whitefield, IT marketing Bangalore, Business consultant Whitefield',
+  title: 'Digital Marketing Services in BTM Layout Bangalore | Affordable SEO – Veyber',
+  description: 'Looking for digital marketing services in BTM Layout Bangalore? Veyber offers SEO, social media marketing, ecommerce & consulting services.',
+  keywords: 'Digital marketing services BTM Layout, SEO company BTM Layout Bangalore, Marketing agency BTM Layout, Affordable digital marketing BTM Layout, Social media marketing BTM Layout, Local SEO Bangalore BTM Layout, Business consultant BTM Layout',
 };
 
 const pageSchema = {
@@ -16,15 +16,15 @@ const pageSchema = {
   url: 'https://veyber.co.in',
   areaServed: {
     '@type': 'Place',
-    name: 'Whitefield, Bangalore',
+    name: 'BTM Layout, Bangalore',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Whitefield',
+    addressLocality: 'BTM Layout',
     addressRegion: 'Karnataka',
     addressCountry: 'India',
   },
-  description: 'Digital marketing services in Whitefield Bangalore including SEO, ecommerce, social media marketing and business consulting.',
+  description: 'Digital marketing services in BTM Layout Bangalore including SEO, social media marketing, ecommerce development and business consulting.',
 };
 
 const faqSchema = {
@@ -33,26 +33,26 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Do you provide services in Whitefield Bangalore?',
+      name: 'Do you provide services in BTM Layout Bangalore?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, we offer complete digital marketing services in Whitefield and nearby areas.',
+        text: 'Yes, we offer complete digital marketing services in BTM Layout and nearby areas.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Do you work with IT and corporate businesses?',
+      name: 'Do you work with students and startups?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, we specialize in IT companies, SaaS businesses, and corporate services.',
+        text: 'Yes, we specialize in startups, freelancers, and small businesses.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Do you provide performance marketing?',
+      name: 'Do you offer affordable marketing?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, we focus on ROI-driven campaigns and lead generation.',
+        text: 'Yes, we provide budget-friendly and ROI-focused solutions.',
       },
     },
     {
@@ -70,68 +70,68 @@ const services = [
   {
     icon: 'shopping_cart',
     title: 'Ecommerce Development',
-    desc: 'Build high-performance ecommerce platforms.',
-    items: ['Shopify, WooCommerce & custom ecommerce', 'Fast, secure & scalable', 'Conversion-focused design'],
+    desc: 'Start selling online quickly.',
+    items: ['Shopify, WooCommerce & custom websites', 'Budget-friendly solutions', 'Mobile-optimized design'],
     href: '/ecommerce-development',
   },
   {
     icon: 'storefront',
     title: 'Ecommerce Account Management',
-    desc: 'Maximize your marketplace growth.',
-    items: ['Amazon, Flipkart & Meesho management', 'Product listing optimization', 'Revenue-driven strategies'],
+    desc: 'Grow your online sales channels.',
+    items: ['Amazon, Flipkart & Meesho management', 'Product listing optimization', 'Sales improvement strategy'],
     href: '/account-management',
   },
   {
     icon: 'share',
     title: 'Social Media Marketing',
-    desc: 'Build a professional brand presence.',
-    items: ['LinkedIn, Instagram & Facebook management', 'Content creation & campaigns', 'Paid advertising'],
+    desc: 'Reach students and local customers.',
+    items: ['Instagram & Facebook management', 'Content creation & reels strategy', 'Paid ads campaigns'],
     href: '/social-media-handling',
   },
   {
     icon: 'edit_note',
     title: 'Content Marketing',
-    desc: 'Drive traffic and generate leads.',
-    items: ['SEO blog writing', 'Website content', 'Strategic content planning'],
+    desc: 'Increase visibility and traffic.',
+    items: ['SEO blog writing', 'Website content', 'Local keyword targeting'],
     href: '/content-marketing',
   },
   {
     icon: 'psychology',
     title: 'Business Consulting',
-    desc: 'Scale your business with clarity.',
-    items: ['Growth strategy', 'Market positioning', 'Conversion optimization'],
+    desc: 'Improve growth and performance.',
+    items: ['Business strategy', 'Local market planning', 'Lead generation systems'],
     href: '/business-consulting',
   },
 ];
 
 const process = [
-  { n: '01', label: 'Business Analysis', desc: 'Understanding your professional corporate niche.' },
-  { n: '02', label: 'Market Research', desc: 'Analyzing the Whitefield IT & business ecosystem.' },
-  { n: '03', label: 'Strategy Development', desc: 'Crafting tailored paths to premium enterprise leads.' },
-  { n: '04', label: 'Execution', desc: 'Rolling out robust, technical SEO and performance ads.' },
-  { n: '05', label: 'Optimization', desc: 'Evaluating deep analytics for aggressive scaling.' },
+  { n: '01', label: 'Business Analysis', desc: 'Understanding your operational targets and scope.' },
+  { n: '02', label: 'Market Research', desc: 'Analyzing the local BTM Layout audience deeply.' },
+  { n: '03', label: 'Strategy Creation', desc: 'Building affordable and scalable marketing funnels.' },
+  { n: '04', label: 'Execution', desc: 'Rolling out campaigns, websites, and SEO structuring.' },
+  { n: '05', label: 'Optimization', desc: 'Tweaking data to boost conversions continuously.' },
 ];
 
 const results = [
-  { icon: 'trending_up', stat: 'High-quality', label: 'Corporate Leads' },
-  { icon: 'verified', stat: 'Increased', label: 'Brand Authority' },
-  { icon: 'people', stat: 'Better', label: 'Engagement' },
-  { icon: 'payments', stat: 'Higher', label: 'Conversions' },
-  { icon: 'bolt', stat: 'Scalable', label: 'Growth' },
+  { icon: 'trending_up', stat: 'Better', label: 'Google Rankings' },
+  { icon: 'ads_click', stat: 'More', label: 'Local Inquiries' },
+  { icon: 'payments', stat: 'Affordable', label: 'Quality Leads' },
+  { icon: 'people', stat: 'Increased', label: 'Engagement' },
+  { icon: 'bolt', stat: 'Steady', label: 'Business Growth' },
 ];
 
 const faqs = [
   {
-    q: 'Do you provide services in Whitefield Bangalore?',
-    a: 'Yes, we offer complete digital marketing services in Whitefield and nearby areas.',
+    q: 'Do you provide services in BTM Layout Bangalore?',
+    a: 'Yes, we offer complete digital marketing services in BTM Layout and nearby areas.',
   },
   {
-    q: 'Do you work with IT and corporate businesses?',
-    a: 'Yes, we specialize in IT companies, SaaS businesses, and corporate services.',
+    q: 'Do you work with students and startups?',
+    a: 'Yes, we specialize in startups, freelancers, and small businesses.',
   },
   {
-    q: 'Do you provide performance marketing?',
-    a: 'Yes, we focus on ROI-driven campaigns and lead generation.',
+    q: 'Do you offer affordable marketing?',
+    a: 'Yes, we provide budget-friendly and ROI-focused solutions.',
   },
   {
     q: 'How can I get started?',
@@ -142,9 +142,11 @@ const faqs = [
 const locationSilo = [
   { city: 'Bangalore', href: '/digital-marketing-bangalore' },
   { city: 'Karnataka', href: '/digital-marketing-karnataka' },
-  { city: 'Indiranagar', href: '/digital-marketing-indiranagar' },
   { city: 'Koramangala', href: '/digital-marketing-koramangala' },
   { city: 'HSR Layout', href: '/digital-marketing-hsr-layout' },
+  { city: 'Whitefield', href: '/digital-marketing-whitefield' },
+  { city: 'Jayanagar', href: '/digital-marketing-jayanagar' },
+  { city: 'J.P. Nagar', href: '/digital-marketing-jp-nagar' },
 ];
 
 export default function Page() {
@@ -163,21 +165,21 @@ export default function Page() {
           <div className="relative z-10 max-w-5xl mx-auto text-center">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/[0.08] text-primary font-bold text-xs tracking-widest uppercase mb-5">
               <span className="relative flex h-1.5 w-1.5 shrink-0"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"/><span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary"/></span>
-              Performance-Driven Growth
+              Affordable Growth Marketing
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold font-headline tracking-tight mb-5 leading-[1.05] text-white">
               Digital Marketing Services in<br/>
-              <span className="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent" style={{filter:'drop-shadow(0 0 28px rgba(174,198,255,0.3))'}}>Whitefield, Bangalore</span>
+              <span className="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent" style={{filter:'drop-shadow(0 0 28px rgba(174,198,255,0.3))'}}>BTM Layout, Bangalore</span>
             </h1>
             <p className="text-base sm:text-lg text-on-surface-variant max-w-2xl mx-auto mb-4 leading-relaxed">
-              Looking for expert digital marketing services in <span className="text-primary font-semibold">Whitefield, Bangalore?</span>
+              Looking for result-driven digital marketing services in <span className="text-primary font-semibold">BTM Layout, Bangalore?</span>
             </p>
             <p className="text-sm sm:text-base text-on-surface-variant max-w-xl mx-auto mb-8 leading-relaxed">
-              At Veyber, we help IT companies, ecommerce brands, and service businesses in Whitefield grow with data-driven strategies, performance marketing, and scalable digital systems. We focus on ROI, lead generation, and long-term growth.
+              At Veyber, we help startups, small businesses, and local service providers in BTM Layout grow with SEO, social media marketing, and performance-based digital strategies. We focus on affordable growth, lead generation, and measurable results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="group relative px-7 sm:px-9 py-3.5 sm:py-4 bg-gradient-to-r from-[#aec6ff] to-[#4f8eff] text-[#001a42] font-bold rounded-full text-base sm:text-lg overflow-hidden transition-all duration-300 hover:scale-[1.04] hover:shadow-[0_0_52px_rgba(174,198,255,0.38)] active:scale-95">
-              <span className="relative z-10 flex items-center gap-2"><span className="material-symbols-outlined text-[20px]">rocket_launch</span>Scale Your Business</span>
+              <span className="relative z-10 flex items-center gap-2"><span className="material-symbols-outlined text-[20px]">rocket_launch</span>Get More Leads</span>
               <div className="absolute inset-0 translate-x-[-100%] skew-x-12 bg-gradient-to-r from-white/0 via-white/20 to-white/0 group-hover:translate-x-[100%] transition-transform duration-700"/>
             </Link>
             </div>
@@ -190,17 +192,17 @@ export default function Page() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               <div>
                 <h2 className="text-2xl sm:text-4xl font-bold font-headline mb-5 leading-tight">
-                  Why Businesses in Whitefield Need Digital Marketing
+                  Why Businesses in BTM Layout Need Digital Marketing
                 </h2>
                 <p className="text-on-surface-variant leading-relaxed mb-6">
-                  Whitefield is Bangalore’s leading IT and corporate hub, providing premium market potential.
+                  BTM Layout is one of Bangalore&apos;s busiest and most competitive areas, driven by youthful demographics.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                   {[
-                    { icon: 'domain', text: 'Tech parks & IT companies' },
-                    { icon: 'cases', text: 'Corporate offices' },
-                    { icon: 'monetization_on', text: 'High-income professionals' },
-                    { icon: 'insights', text: 'Rapid business growth' },
+                    { icon: 'school', text: 'Student population & coaching' },
+                    { icon: 'rocket', text: 'Startups & small businesses' },
+                    { icon: 'storefront', text: 'Local shops & services' },
+                    { icon: 'travel_explore', text: 'High online search activity' },
                   ].map(({ icon, text }) => (
                     <div key={text} className="flex items-center gap-3 p-4 bg-surface-container rounded-xl border border-outline-variant/10 hover:border-primary/25 transition-all group">
                       <div className="w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
@@ -211,17 +213,17 @@ export default function Page() {
                   ))}
                 </div>
                 <p className="text-white font-semibold text-lg border-l-4 border-primary pl-4 py-2 border-outline-variant/10">
-                  👉 This creates high competition + <span className="text-primary">premium opportunities</span>.
+                  👉 This creates high demand + <span className="text-primary">high competition</span>.
                 </p>
               </div>
               <div className="bg-surface-container rounded-3xl border border-outline-variant/10 p-6 sm:p-8 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-primary/10 blur-[50px] rounded-full pointer-events-none"/>
-                <h3 className="text-xl font-bold text-white mb-5">To succeed, your business needs:</h3>
+                <h3 className="text-xl font-bold text-white mb-5">To succeed here, businesses need:</h3>
                 <div className="space-y-4 mb-6">
                   {[
-                    { icon: 'visibility', t: 'Strong online visibility' },
-                    { icon: 'filter_alt', t: 'High-conversion funnels' },
-                    { icon: 'monitoring', t: 'Performance-driven campaigns' },
+                    { icon: 'ads_click', t: 'Strong Google visibility' },
+                    { icon: 'payments', t: 'Affordable lead generation' },
+                    { icon: 'my_location', t: 'Local SEO ranking' },
                   ].map((ind) => (
                     <div key={ind.t} className="flex items-center gap-3 p-4 bg-surface-container-high rounded-xl">
                       <span className="material-symbols-outlined text-primary text-[20px]">{ind.icon}</span>
@@ -230,7 +232,7 @@ export default function Page() {
                    ))}
                 </div>
                 <p className="text-on-surface-variant text-sm leading-relaxed border-t border-outline-variant/10 pt-4">
-                  We deploy corporate-level digital execution specifically built for generating high-quality B2B and top-tier consumer interactions.
+                  We supply precisely tuned strategies perfect for generating massive results across competitive commercial areas like BTM Layout.
                 </p>
               </div>
             </div>
@@ -241,8 +243,8 @@ export default function Page() {
         <section className="px-4 sm:px-8 py-14 sm:py-24 bg-surface">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">Our Services in Whitefield</h2>
-              <p className="text-on-surface-variant max-w-xl mx-auto text-sm sm:text-base">Robust, data-driven systems crafted for enterprise and premier brand scaling.</p>
+              <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">Our Services in BTM Layout</h2>
+              <p className="text-on-surface-variant max-w-xl mx-auto text-sm sm:text-base">Comprehensive, end-to-end solutions delivering performance without breaking budgets.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {services.map(({ icon, title, desc, items, href }: { icon: string; title: string; desc: string; items: string[]; href: string; }) => (
@@ -274,11 +276,11 @@ export default function Page() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               <div>
-                <h2 className="text-2xl sm:text-4xl font-bold font-headline mb-5 leading-tight">Who We Work With in Whitefield</h2>
-                <p className="text-on-surface-variant leading-relaxed mb-6">We provide highly targeted digital growth engines to premier sectors and agile firms.</p>
+                <h2 className="text-2xl sm:text-4xl font-bold font-headline mb-5 leading-tight">Who We Work With in BTM Layout</h2>
+                <p className="text-on-surface-variant leading-relaxed mb-6">We deploy powerful, youth-focused digital tactics to scale emerging companies in local tech hubs.</p>
                 <div className="mb-8">
                   <div className="flex flex-wrap gap-2">
-                    {['IT companies & SaaS businesses', 'Ecommerce brands', 'Corporate service providers', 'Startups & SMEs', 'High-growth businesses'].map((ind) => (
+                    {['Coaching institutes & trainers', 'Students & freelancers', 'Small businesses & startups', 'Local shops & service providers', 'Budget ecommerce sellers'].map((ind) => (
                       <span key={ind} className="flex items-center gap-1.5 px-3 py-2 bg-surface-container rounded-xl border border-outline-variant/10 text-xs font-semibold text-white/80">
                         <span className="material-symbols-outlined text-primary text-[14px]">corporate_fare</span>
                         {ind}
@@ -291,11 +293,11 @@ export default function Page() {
                   <h3 className="text-lg font-bold text-white">Why Choose Veyber?</h3>
                   <ul className="space-y-3">
                     {[
-                      'ROI-focused marketing',
-                      'Corporate-level strategies',
-                      'Scalable growth systems',
-                      'Cost-effective vs large agencies',
-                      'Results-driven execution',
+                      'Budget-friendly marketing solutions',
+                      'Strong local SEO expertise',
+                      'High-volume lead generation',
+                      'Startup-friendly approach',
+                      'ROI-focused execution',
                     ].map((text) => (
                       <li key={text} className="flex items-center gap-3">
                         <span className="material-symbols-outlined text-primary">verified</span>
@@ -309,8 +311,8 @@ export default function Page() {
               {/* Internal Location SILO */}
               <div className="bg-surface-container rounded-3xl border border-outline-variant/10 p-6 sm:p-8 relative overflow-hidden h-full flex flex-col justify-center">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-primary/10 blur-[50px] rounded-full pointer-events-none"/>
-                <h3 className="text-xl sm:text-2xl font-bold font-headline mb-4 relative z-10">Serving Whitefield & Nearby Areas</h3>
-                <p className="text-on-surface-variant text-sm mb-6 relative z-10">We deploy comprehensive business solutions across the broader IT corridor.</p>
+                <h3 className="text-xl sm:text-2xl font-bold font-headline mb-4 relative z-10">Serving BTM Layout & Nearby Areas</h3>
+                <p className="text-on-surface-variant text-sm mb-6 relative z-10">We extensively service all startup sectors across the inner IT corridors.</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 relative z-10">
                   {locationSilo.map((loc) => (
                     <Link key={loc.city} href={loc.href} className="flex items-center justify-between p-4 rounded-xl bg-surface-container-high hover:bg-surface-container-highest border border-outline-variant/10 hover:border-primary/30 transition-all font-semibold text-white text-sm group">
@@ -319,7 +321,7 @@ export default function Page() {
                     </Link>
                   ))}
                   <div className="col-span-full mt-2 text-center text-primary text-xs font-semibold">
-                    👉 And all nearby IT & commercial areas of Bangalore.
+                    👉 And all major neighboring areas of Bangalore.
                   </div>
                 </div>
               </div>
@@ -332,7 +334,7 @@ export default function Page() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12 sm:mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">Our Process</h2>
-              <p className="text-on-surface-variant max-w-xl mx-auto text-sm">An engineered, corporate-standard process focused wholly on verifiable KPI improvements.</p>
+              <p className="text-on-surface-variant max-w-xl mx-auto text-sm">A seamless, results-driven scaling process engineered for maximum ROI.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
               {process.map(({ n, label, desc }) => (
@@ -353,7 +355,7 @@ export default function Page() {
         <section className="px-4 sm:px-8 py-14 sm:py-20 bg-surface-container-low">
           <div className="max-w-7xl mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl font-bold font-headline mb-3">Results You Can Expect</h2>
-            <p className="text-on-surface-variant text-sm mb-10 max-w-lg mx-auto">Our marketing frameworks multiply enterprise scale aggressively.</p>
+            <p className="text-on-surface-variant text-sm mb-10 max-w-lg mx-auto">We provide exceptional local market returns for budget-conscious campaigns.</p>
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
               {results.map(({ icon, stat, label }) => (
                 <div key={label} className="flex-1 min-w-[140px] max-w-[200px] bg-surface-container rounded-2xl border border-outline-variant/10 p-5 sm:p-7 flex flex-col items-center gap-3 hover:border-primary/25 hover:bg-surface-container-high transition-all duration-200">
@@ -373,7 +375,7 @@ export default function Page() {
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-10 sm:mb-14">
               <h2 className="text-2xl sm:text-3xl font-bold font-headline mb-3">Frequently Asked Questions</h2>
-              <p className="text-on-surface-variant text-sm">Valuable insights regarding our Whitefield engagement.</p>
+              <p className="text-on-surface-variant text-sm">Clear insights regarding our BTM Layout processes.</p>
             </div>
             <div className="flex flex-col gap-4">
               {faqs.map((item, i) => (
@@ -401,13 +403,13 @@ export default function Page() {
             <div className="relative z-10 p-8 sm:p-12 md:p-16">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary font-bold text-xs tracking-widest uppercase mb-6">
                 <span className="relative flex h-1.5 w-1.5 shrink-0"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"/><span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary"/></span>
-                Let&apos;s Grow Your Business in Whitefield
+                Let&apos;s Grow Your Business in BTM Layout
               </span>
               <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-white mb-4 tracking-tight drop-shadow-xl">
-                Ready to generate high-value leads and scale?
+                Ready to get more leads and customers?
               </h2>
               <p className="text-base sm:text-lg text-white/75 mb-8 max-w-xl mx-auto leading-relaxed drop-shadow">
-                Contact Veyber today for expert digital marketing services in Whitefield, Bangalore.
+                Contact Veyber today for expert digital marketing services in BTM Layout, Bangalore.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-7 sm:px-10 py-3.5 sm:py-5 bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-black rounded-full text-base sm:text-lg shadow-2xl hover:shadow-primary/40 transition-all active:scale-95 group">

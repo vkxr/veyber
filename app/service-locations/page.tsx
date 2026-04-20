@@ -4,9 +4,9 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Digital Marketing Services in Gujarat | Vadodara, Ahmedabad, Surat & All Cities – Veyber',
-  description: 'Veyber offers ecommerce development, social media marketing, content marketing & business consulting services across Vadodara and all cities in Gujarat.',
-  keywords: 'Digital marketing services Gujarat, Ecommerce services Vadodara, Social media marketing Gujarat, Business consulting Gujarat, Digital agency Vadodara, Marketing company Gujarat, Ecommerce development Gujarat, Online marketing Vadodara',
+  title: 'Digital Marketing Service Locations | Gujarat, Bangalore & Karnataka – Veyber',
+  description: 'Veyber offers ecommerce development, SEO, social media marketing & business consulting across Vadodara, Ahmedabad, Surat, Bangalore, and all major regions.',
+  keywords: 'Digital marketing services Gujarat, Ecommerce services Vadodara, Marketing company Bangalore, Digital agency Karnataka, SEO company India, Online marketing Vadodara',
 };
 
 const pageSchema = {
@@ -14,25 +14,14 @@ const pageSchema = {
   '@type': 'LocalBusiness',
   name: 'Veyber',
   url: 'https://veyber.co.in',
-  areaServed: {
-    '@type': 'State',
-    name: 'Gujarat',
-  },
+  areaServed: [
+    { '@type': 'State', name: 'Gujarat' },
+    { '@type': 'State', name: 'Karnataka' }
+  ],
   serviceArea: [
-    'Vadodara',
-    'Ahmedabad',
-    'Surat',
-    'Rajkot',
-    'Gandhinagar',
-    'Anand',
-    'Bharuch',
-    'Navsari',
-    'Vapi',
-    'Valsad',
-    'Junagadh',
-    'Bhavnagar',
-    'Jamnagar',
-    'Morbi',
+    'Vadodara', 'Ahmedabad', 'Surat', 'Rajkot', 'Gandhinagar', 'Anand', 'Bharuch',
+    'Navsari', 'Vapi', 'Valsad', 'Junagadh', 'Bhavnagar', 'Jamnagar', 'Morbi',
+    'Bangalore', 'Whitefield', 'Electronic City', 'Koramangala', 'Indiranagar'
   ],
 };
 
@@ -42,18 +31,10 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Do you cover all cities in Gujarat?',
+      name: 'Do you cover all cities in Gujarat and Karnataka?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, we provide services across all cities and regions of Gujarat.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do you serve all areas in Vadodara?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, we cover all major areas including Alkapuri, Gotri, Manjalpur, Karelibaug, and more.',
+        text: 'Yes, we provide specialized digital marketing services across all major cities and emerging industrial regions of Gujarat and Karnataka (including Bangalore).',
       },
     },
     {
@@ -61,15 +42,15 @@ const faqSchema = {
       name: 'Do you offer remote services?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, we work with clients across Gujarat and India remotely.',
+        text: 'Absolutely. We work with clients across India remotely, offering fast communication and rapid execution.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Can I get local support in Vadodara?',
+      name: 'Can I get local support in Vadodara or Bangalore?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, Vadodara is our primary service hub.',
+        text: 'Yes, Vadodara is our primary operational hub, and we have targeted service solutions designed specifically for the Bangalore IT and industrial corridors.',
       },
     },
   ],
@@ -115,21 +96,106 @@ const services = [
 
 const faqs = [
   {
-    q: 'Do you cover all cities in Gujarat?',
-    a: 'Yes, we provide services across all cities and regions of Gujarat.',
-  },
-  {
-    q: 'Do you serve all areas in Vadodara?',
-    a: 'Yes, we cover all major areas including Alkapuri, Gotri, Manjalpur, Karelibaug, and more.',
+    q: 'Do you cover all cities in Gujarat and Karnataka?',
+    a: 'Yes, we provide specialized digital marketing services across all major cities and emerging industrial regions of Gujarat and Karnataka (including Bangalore).',
   },
   {
     q: 'Do you offer remote services?',
-    a: 'Yes, we work with clients across Gujarat and India remotely.',
+    a: 'Absolutely. We work with clients across India remotely, offering fast communication and rapid execution.',
   },
   {
-    q: 'Can I get local support in Vadodara?',
-    a: 'Yes, Vadodara is our primary service hub.',
+    q: 'Can I get local support in Vadodara or Bangalore?',
+    a: 'Yes, Vadodara is our primary operational hub, and we have targeted service solutions designed specifically for the Bangalore IT and industrial corridors.',
   },
+];
+
+const gujaratCities = [
+  { name: 'Ahmedabad', href: '/digital-marketing-ahmedabad' },
+  { name: 'Surat', href: '/digital-marketing-surat' },
+  { name: 'Vadodara', href: '/digital-marketing-vadodara' },
+  { name: 'Rajkot', href: '/digital-marketing-rajkot' },
+  { name: 'Gandhinagar', href: '/digital-marketing-gandhinagar' },
+  { name: 'Anand', href: '/digital-marketing-anand' },
+  { name: 'Bharuch', href: '/digital-marketing-bharuch' },
+  { name: 'Navsari', href: '/digital-marketing-navsari' },
+  { name: 'Vapi', href: '/digital-marketing-vapi' },
+  { name: 'Valsad', href: '/digital-marketing-valsad' },
+  { name: 'Junagadh', href: '/digital-marketing-junagadh' },
+  { name: 'Bhavnagar', href: '/digital-marketing-bhavnagar' },
+  { name: 'Jamnagar', href: '/digital-marketing-jamnagar' },
+  { name: 'Morbi', href: '/digital-marketing-morbi' },
+];
+
+const vadodaraAreas = [
+  { name: 'Alkapuri', href: '/digital-marketing-alkapuri' },
+  { name: 'Sayajigunj', href: '/digital-marketing-sayajigunj' },
+  { name: 'Fatehgunj', href: '/digital-marketing-fatehgunj' },
+  { name: 'Karelibaug', href: '/digital-marketing-karelibaug' },
+  { name: 'Nizampura', href: '/digital-marketing-nizampura' },
+  { name: 'Gotri', href: '/digital-marketing-gotri' },
+  { name: 'Subhanpura', href: '/digital-marketing-subhanpura' },
+  { name: 'Waghodia Road', href: '/digital-marketing-waghodia-road' },
+  { name: 'Ajwa Road', href: '/digital-marketing-ajwa-road' },
+  { name: 'Manjalpur', href: '/digital-marketing-manjalpur' },
+  { name: 'Makarpura', href: '/digital-marketing-makarpura' },
+  { name: 'Tarsali', href: '/digital-marketing-tarsali' },
+  { name: 'Harni', href: '/digital-marketing-harni' },
+  { name: 'Sama', href: '/digital-marketing-sama' },
+  { name: 'New VIP Road', href: '/digital-marketing-new-vip-road' },
+  { name: 'Chhani', href: '/digital-marketing-chhani' },
+  { name: 'Gorwa', href: '/digital-marketing-gorwa' },
+  { name: 'Akota', href: '/digital-marketing-akota' },
+];
+
+const karnatakaHubs = [
+  { name: 'Karnataka', href: '/digital-marketing-karnataka' },
+  { name: 'Bangalore', href: '/digital-marketing-bangalore' },
+];
+
+const bangaloreAreas = [
+  { name: 'Electronic City', href: '/digital-marketing-electronic-city' },
+  { name: 'Whitefield', href: '/digital-marketing-whitefield' },
+  { name: 'Koramangala', href: '/digital-marketing-koramangala' },
+  { name: 'Indiranagar', href: '/digital-marketing-indiranagar' },
+  { name: 'HSR Layout', href: '/digital-marketing-hsr-layout' },
+  { name: 'BTM Layout', href: '/digital-marketing-btm-layout' },
+  { name: 'Jayanagar', href: '/digital-marketing-jayanagar' },
+  { name: 'JP Nagar', href: '/digital-marketing-jp-nagar' },
+  { name: 'Marathahalli', href: '/digital-marketing-marathahalli' },
+  { name: 'Bellandur', href: '/digital-marketing-bellandur' },
+  { name: 'Sarjapur Road', href: '/digital-marketing-sarjapur-road' },
+  { name: 'Outer Ring Road', href: '/digital-marketing-outer-ring-road' },
+  { name: 'Manyata Tech Park', href: '/digital-marketing-manyata-tech-park' },
+  { name: 'Hebbal', href: '/digital-marketing-hebbal' },
+  { name: 'Peenya', href: '/digital-marketing-peenya' },
+  { name: 'Bommasandra', href: '/digital-marketing-bommasandra' },
+  { name: 'Bidadi', href: '/digital-marketing-bidadi' },
+  { name: 'Jigani', href: '/digital-marketing-jigani' },
+  { name: 'Rajajinagar', href: '/digital-marketing-rajajinagar' },
+  { name: 'Malleshwaram', href: '/digital-marketing-malleshwaram' },
+  { name: 'Basavanagudi', href: '/digital-marketing-basavanagudi' },
+  { name: 'Banashankari', href: '/digital-marketing-banashankari' },
+  { name: 'Vijayanagar', href: '/digital-marketing-vijayanagar' },
+  { name: 'Nagarbhavi', href: '/digital-marketing-nagarbhavi' },
+  { name: 'Kengeri', href: '/digital-marketing-kengeri' },
+  { name: 'Nelamangala', href: '/digital-marketing-nelamangala' },
+  { name: 'Devanahalli', href: '/digital-marketing-devanahalli' },
+  { name: 'Hoskote', href: '/digital-marketing-hoskote' },
+  { name: 'Attibele', href: '/digital-marketing-attibele' },
+  { name: 'KR Puram', href: '/digital-marketing-kr-puram' },
+  { name: 'Thanisandra', href: '/digital-marketing-thanisandra' },
+  { name: 'Kadubeesanahalli', href: '/digital-marketing-kadubeesanahalli' },
+  { name: 'Brookefield', href: '/digital-marketing-brookefield' },
+  { name: 'MG Road', href: '/digital-marketing-mg-road' },
+  { name: 'Brigade Road', href: '/digital-marketing-brigade-road' },
+  { name: 'Commercial Street', href: '/digital-marketing-commercial-street' },
+  { name: 'Lavelle Road', href: '/digital-marketing-lavelle-road' },
+  { name: 'Richmond Town', href: '/digital-marketing-richmond-town' },
+  { name: 'Shivajinagar', href: '/digital-marketing-shivajinagar' },
+  { name: 'Ulsoor', href: '/digital-marketing-ulsoor' },
+  { name: 'Bannerghatta Road', href: '/digital-marketing-bannerghatta-road' },
+  { name: 'Kanakapura Road', href: '/digital-marketing-kanakapura-road' },
+  { name: 'Yelahanka', href: '/digital-marketing-yelahanka' },
 ];
 
 export default function Page() {
@@ -151,112 +217,120 @@ export default function Page() {
               Locations & Coverage
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold font-headline tracking-tight mb-5 leading-[1.05] text-white">
-              Our Service Locations<br/>
-              <span className="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent" style={{filter:'drop-shadow(0 0 28px rgba(174,198,255,0.3))'}}>Across Gujarat</span>
+              Areas We <span className="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent" style={{filter:'drop-shadow(0 0 28px rgba(174,198,255,0.3))'}}>Operate In</span>
             </h1>
             <p className="text-base sm:text-lg text-on-surface-variant max-w-2xl mx-auto mb-4 leading-relaxed">
-              Serving Businesses Across Gujarat with <span className="text-primary font-semibold">Expert Digital Solutions</span>
+              Serving Businesses Across <span className="text-primary font-semibold">Gujarat & Karnataka</span>
             </p>
             <p className="text-sm sm:text-base text-on-surface-variant max-w-xl mx-auto mb-8 leading-relaxed">
-              At Veyber, we provide professional services including ecommerce development, account management, social media handling, content marketing, and business consulting across every major city and region of Gujarat. Our mission is to help businesses grow locally and scale digitally with high-performance strategies and execution.
+              At Veyber, we provide professional services including ecommerce development, account management, social media handling, content marketing, and business consulting. We help businesses grow locally and scale digitally with high-performance strategies across India&apos;s booming commercial areas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="group relative px-7 sm:px-9 py-3.5 sm:py-4 bg-gradient-to-r from-[#aec6ff] to-[#4f8eff] text-[#001a42] font-bold rounded-full text-base sm:text-lg overflow-hidden transition-all duration-300 hover:scale-[1.04] hover:shadow-[0_0_52px_rgba(174,198,255,0.38)] active:scale-95">
-              <span className="relative z-10 flex items-center gap-2"><span className="material-symbols-outlined text-[20px]">call</span>Get in Touch</span>
+            <Link href="#all-locations" className="group relative px-7 sm:px-9 py-3.5 sm:py-4 bg-gradient-to-r from-[#aec6ff] to-[#4f8eff] text-[#001a42] font-bold rounded-full text-base sm:text-lg overflow-hidden transition-all duration-300 hover:scale-[1.04] hover:shadow-[0_0_52px_rgba(174,198,255,0.38)] active:scale-95">
+              <span className="relative z-10 flex items-center gap-2"><span className="material-symbols-outlined text-[20px]">travel_explore</span>Explore All Areas</span>
               <div className="absolute inset-0 translate-x-[-100%] skew-x-12 bg-gradient-to-r from-white/0 via-white/20 to-white/0 group-hover:translate-x-[100%] transition-transform duration-700"/>
             </Link>
             </div>
           </div>
         </section>
 
-        {/* Primary Location & Coverage Grid */}
-        <section className="px-4 sm:px-8 py-14 sm:py-20 bg-surface-container-low">
+        {/* --- GUJARAT SECTION --- */}
+        <section id="all-locations" className="px-4 sm:px-8 py-14 sm:py-20 bg-surface border-t border-outline-variant/10">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-              
-              {/* Vadodara */}
-              <div className="group bg-surface-container p-6 sm:p-10 rounded-[2rem] border border-primary/20 hover:bg-surface-container-high transition-all duration-300 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-[40px] rounded-full pointer-events-none"/>
-                <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                  <span className="material-symbols-outlined text-primary text-[28px]">push_pin</span>
-                </div>
-                <h2 className="text-2xl sm:text-3xl font-bold font-headline mb-4">Vadodara – Our Core Service Hub</h2>
-                <p className="text-on-surface-variant leading-relaxed mb-6">
-                  Vadodara is our main operational hub, where we deeply understand the business ecosystem to deliver targeted, fast, and effective solutions.
-                </p>
-                <div className="space-y-3 mb-8">
-                  {['Local businesses', 'Startups', 'Ecommerce brands', 'Service providers'].map((item) => (
-                    <div key={item} className="flex items-center gap-3">
-                      <span className="material-symbols-outlined text-primary text-[18px]">verified</span>
-                      <span className="font-semibold text-white text-sm">{item}</span>
-                    </div>
-                  ))}
-                </div>
-                
-                <h3 className="text-lg font-bold text-white mb-4">Coverage in Vadodara</h3>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    'Alkapuri', 'Sayajigunj', 'Fatehgunj', 'Karelibaug', 'Nizampura', 'Gotri', 'Subhanpura', 
-                    'Waghodia Road', 'Ajwa Road', 'Manjalpur', 'Makarpura', 'Tarsali', 'Harni', 'Sama', 
-                    'New VIP Road', 'Chhani', 'Gorwa', 'Akota'
-                  ].map((area) => (
-                    <span key={area} className="px-3 py-1.5 bg-surface-container-high text-xs font-medium text-white/80 rounded-md border border-outline-variant/10">
-                      {area}
-                    </span>
-                  ))}
-                </div>
-                <p className="text-primary mt-6 text-sm font-semibold border-l-4 border-primary pl-3 py-1">
-                  Whether you are in the city center or outskirts, Veyber delivers fast and reliable service.
-                </p>
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center">
+                <span className="material-symbols-outlined text-primary text-[28px]">map</span>
               </div>
+              <div>
+                <h2 className="text-2xl sm:text-4xl font-bold font-headline">Gujarat Location Directory</h2>
+                <p className="text-on-surface-variant text-sm sm:text-base mt-1">Our comprehensive coverage across Gujarat state.</p>
+              </div>
+            </div>
 
-              {/* Gujarat */}
-              <div className="group bg-surface-container p-6 sm:p-10 rounded-[2rem] border border-outline-variant/10 hover:border-primary/25 transition-all duration-300">
-                <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                  <span className="material-symbols-outlined text-primary text-[28px]">map</span>
-                </div>
-                <h2 className="text-2xl sm:text-3xl font-bold font-headline mb-4">Complete Gujarat Coverage</h2>
-                <p className="text-on-surface-variant leading-relaxed mb-8">
-                  We proudly serve businesses across all major cities, regions, towns, and emerging areas of Gujarat.
-                </p>
-                
-                <div className="space-y-8">
-                  <div>
-                    <h4 className="text-white font-bold mb-3 flex items-center gap-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"/>Metro & Major Cities</h4>
-                    <div className="grid grid-cols-2 gap-2">
-                      {['Ahmedabad', 'Surat', 'Vadodara', 'Rajkot'].map(city => (
-                        <div key={city} className="bg-surface-container-high px-3 py-2 rounded-lg text-sm text-on-surface-variant">{city}</div>
-                      ))}
+            <div className="bg-surface-container rounded-3xl border border-outline-variant/10 p-6 sm:p-10 mb-10 overflow-hidden relative group hover:border-primary/30 transition-all duration-500 hover:shadow-[0_0_40px_rgba(174,198,255,0.05)]">
+              <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 blur-[100px] rounded-full pointer-events-none translate-x-1/3 -translate-y-1/3 group-hover:bg-primary/10 transition-colors duration-700"/>
+              
+              <Link href="/digital-marketing-gujarat" className="absolute top-6 sm:top-10 right-6 sm:right-10 inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 hover:border-primary/40 font-bold rounded-full text-sm transition-all duration-300 hover:scale-105 z-10 hidden sm:inline-flex">
+                View State Hub <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </Link>
+
+              <h3 className="text-xl font-bold text-white mb-6 relative z-10">Major Cities & Regions</h3>
+              <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 relative z-10">
+                {gujaratCities.map(city => (
+                  <Link key={city.name} href={city.href} className="group flex items-center justify-between px-4 py-3.5 bg-gradient-to-br from-white/[0.04] to-transparent hover:from-primary/10 hover:to-transparent border border-white/[0.05] hover:border-primary/30 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(174,198,255,0.1)]">
+                    <div className="flex items-center gap-3 overflow-hidden">
+                      <span className="material-symbols-outlined text-[18px] text-white/40 group-hover:text-primary transition-colors flex-shrink-0">location_on</span>
+                      <span className="text-sm font-semibold text-white/90 group-hover:text-white transition-colors truncate">{city.name}</span>
                     </div>
-                  </div>
-                  <div>
-                    <h4 className="text-white font-bold mb-3 flex items-center gap-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"/>Capital & Growing Cities</h4>
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                      {['Gandhinagar', 'Anand', 'Bharuch', 'Navsari'].map(city => (
-                        <div key={city} className="bg-surface-container-high px-3 py-2 rounded-lg text-sm text-on-surface-variant">{city}</div>
-                      ))}
+                    <span className="material-symbols-outlined text-[16px] text-white/20 group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0 ml-2">arrow_forward</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-surface-container rounded-3xl border border-outline-variant/10 p-6 sm:p-10 overflow-hidden relative group hover:border-primary/30 transition-all duration-500 hover:shadow-[0_0_40px_rgba(174,198,255,0.05)]">
+              <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary/5 blur-[80px] rounded-full pointer-events-none -translate-x-1/3 translate-y-1/3 group-hover:bg-primary/10 transition-colors duration-700"/>
+              <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2 relative z-10">
+                <span className="material-symbols-outlined text-primary">push_pin</span> 
+                Vadodara (Core Operations) Hubs
+              </h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 relative z-10">
+                {vadodaraAreas.map(area => (
+                  <Link key={area.name} href={area.href} className="group flex items-center gap-2.5 px-3.5 py-2.5 bg-gradient-to-br from-white/[0.03] to-transparent hover:from-primary/10 hover:to-transparent border border-white/[0.05] hover:border-primary/30 rounded-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_5px_15px_rgba(174,198,255,0.1)]">
+                    <span className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-primary transition-colors shrink-0"/>
+                    <span className="text-xs font-semibold text-white/80 group-hover:text-white transition-colors truncate">{area.name}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* --- KARNATAKA / BANGALORE SECTION --- */}
+        <section className="px-4 sm:px-8 py-14 sm:py-20 bg-surface-container-low border-t border-outline-variant/10">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center">
+                <span className="material-symbols-outlined text-primary text-[28px]">corporate_fare</span>
+              </div>
+              <div>
+                <h2 className="text-2xl sm:text-4xl font-bold font-headline">Bangalore & Karnataka Directory</h2>
+                <p className="text-on-surface-variant text-sm sm:text-base mt-1">Specialized IT, corporate, and industrial zone operations.</p>
+              </div>
+            </div>
+
+            <div className="bg-surface-container rounded-3xl border border-outline-variant/10 p-6 sm:p-10 mb-10 overflow-hidden relative group hover:border-primary/30 transition-all duration-500 hover:shadow-[0_0_40px_rgba(174,198,255,0.05)]">
+              <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 blur-[100px] rounded-full pointer-events-none translate-x-1/3 -translate-y-1/3 group-hover:bg-primary/10 transition-colors duration-700"/>
+              
+               <div className="flex flex-wrap gap-4 mb-8 relative z-10">
+                 {karnatakaHubs.map(hub => (
+                    <Link key={hub.name} href={hub.href} className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 hover:border-primary/40 font-bold rounded-full text-sm transition-all duration-300 hover:scale-105 z-10">
+                      View {hub.name} Hub <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+                    </Link>
+                 ))}
+               </div>
+              <h3 className="text-xl font-bold text-white mb-6 relative z-10">Bangalore Corridors & Micro-Markets</h3>
+              <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 relative z-10">
+                {bangaloreAreas.map(area => (
+                  <Link key={area.name} href={area.href} className="group flex items-center justify-between px-4 py-3.5 bg-gradient-to-br from-white/[0.04] to-transparent hover:from-primary/10 hover:to-transparent border border-white/[0.05] hover:border-primary/30 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(174,198,255,0.1)]">
+                    <div className="flex items-center gap-3 overflow-hidden">
+                      <span className="material-symbols-outlined text-[18px] text-white/40 group-hover:text-primary transition-colors flex-shrink-0">domain</span>
+                      <span className="text-sm font-semibold text-white/90 group-hover:text-white transition-colors truncate">{area.name}</span>
                     </div>
-                  </div>
-                  <div>
-                    <h4 className="text-white font-bold mb-3 flex items-center gap-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"/>Industrial & Emerging Areas</h4>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                      {['Vapi', 'Valsad', 'Junagadh', 'Bhavnagar', 'Jamnagar', 'Morbi'].map(city => (
-                        <div key={city} className="bg-surface-container-high px-3 py-2 rounded-lg text-sm text-on-surface-variant">{city}</div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+                    <span className="material-symbols-outlined text-[16px] text-white/20 group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0 ml-2">arrow_forward</span>
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
         {/* Our Services Regionally */}
-        <section className="px-4 sm:px-8 py-14 sm:py-24 bg-surface">
+        <section className="px-4 sm:px-8 py-14 sm:py-24 bg-surface border-t border-outline-variant/10">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12 sm:mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">Our Services Across All Locations</h2>
-              <p className="text-on-surface-variant max-w-xl mx-auto text-sm sm:text-base">Targeted digital growth and consulting services, anywhere in Gujarat.</p>
+              <p className="text-on-surface-variant max-w-xl mx-auto text-sm sm:text-base">Targeted digital growth and consulting services globally.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {services.map(({ icon, title, desc, items, href }: { icon: string; title: string; desc: string; items: string[]; href: string; }) => (
@@ -290,11 +364,11 @@ export default function Page() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               <div>
-                <h2 className="text-2xl sm:text-4xl font-bold font-headline mb-5 leading-tight">Why Businesses Across Gujarat Choose Veyber</h2>
+                <h2 className="text-2xl sm:text-4xl font-bold font-headline mb-5 leading-tight">Why Businesses Choose Veyber</h2>
                 <div className="space-y-4">
                   <ul className="space-y-4">
                     {[
-                      'Strong local expertise in Vadodara & Gujarat',
+                      'Strong local expertise across major hubs',
                       'Customized solutions based on city & market dynamics',
                       'Affordable scaling tools for startups & SMEs',
                       'Data-driven local SEO and growth strategies',
@@ -317,16 +391,16 @@ export default function Page() {
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-bold font-headline mb-4 relative z-10">Remote + Local Support</h3>
                 <p className="text-on-surface-variant text-base mb-6 leading-relaxed">
-                  We believe in borderless assistance paired with local insights.
+                  We believe in borderless assistance paired with hyper-local insights.
                 </p>
                 <div className="flex flex-col gap-3 relative z-10">
                   <div className="flex items-center gap-3 p-4 rounded-xl bg-surface-container-high border border-outline-variant/10 font-semibold text-white text-sm">
                     <span className="material-symbols-outlined text-primary">public</span>
-                    Online consultations across all of Gujarat
+                    Online consultations across India
                   </div>
                   <div className="flex items-center gap-3 p-4 rounded-xl bg-surface-container-high border border-outline-variant/10 font-semibold text-white text-sm">
                     <span className="material-symbols-outlined text-primary">home_pin</span>
-                    On-demand targeted support in Vadodara
+                    Targeted local SEO for high-intent queries
                   </div>
                   <div className="flex items-center gap-3 p-4 rounded-xl bg-surface-container-high border border-outline-variant/10 font-semibold text-white text-sm">
                     <span className="material-symbols-outlined text-primary">speed</span>
@@ -343,7 +417,7 @@ export default function Page() {
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-10 sm:mb-14">
               <h2 className="text-2xl sm:text-3xl font-bold font-headline mb-3">Frequently Asked Questions</h2>
-              <p className="text-on-surface-variant text-sm">Get answers about our coverage across Gujarat.</p>
+              <p className="text-on-surface-variant text-sm">Get answers about our global coverage.</p>
             </div>
             <div className="flex flex-col gap-4">
               {faqs.map((item, i) => (
@@ -371,13 +445,13 @@ export default function Page() {
             <div className="relative z-10 p-8 sm:p-12 md:p-16">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary font-bold text-xs tracking-widest uppercase mb-6">
                 <span className="relative flex h-1.5 w-1.5 shrink-0"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"/><span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary"/></span>
-                Let&apos;s Grow Your Business in Gujarat
+                Ready To Grow?
               </span>
               <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-white mb-4 tracking-tight drop-shadow-xl">
                 Looking for trusted digital services in your city?
               </h2>
               <p className="text-base sm:text-lg text-white/75 mb-8 max-w-xl mx-auto leading-relaxed drop-shadow">
-                Contact Veyber today and let&apos;s scale your business across Gujarat together.
+                Contact Veyber today and let&apos;s scale your business.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-7 sm:px-10 py-3.5 sm:py-5 bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-black rounded-full text-base sm:text-lg shadow-2xl hover:shadow-primary/40 transition-all active:scale-95 group">
