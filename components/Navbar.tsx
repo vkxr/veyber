@@ -69,6 +69,16 @@ export default function Navbar() {
 
           {/* Right side controls */}
           <div className="flex items-center gap-2 sm:gap-3">
+            {/* Login Link */}
+            <a
+              href="https://workflow.veyber.co.in/index.php/signin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-bold text-slate-300 hover:text-white transition-colors px-1 sm:px-2"
+            >
+              Login
+            </a>
+
             {/* Theme toggle */}
             <button
               onClick={toggleTheme}

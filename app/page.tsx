@@ -668,7 +668,7 @@ export default function Page() {
     a: 'Results vary by service and industry, but most clients see measurable improvements within 60–90 days. Our eCommerce and marketplace clients typically see revenue growth within the first month of optimized account management.'
   }
 ].map((item, i) => (
-  <details key={i} className="group bg-surface-container rounded-2xl border border-outline-variant/10 overflow-hidden open:border-primary/20 transition-all duration-200">
+  <details key={i} name="faq" className="group bg-surface-container rounded-2xl border border-outline-variant/10 overflow-hidden open:border-primary/20 transition-all duration-200">
     <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none gap-4">
       <h3 className="font-bold text-white text-base sm:text-lg">{item.q}</h3>
       <span className="flex-shrink-0 w-8 h-8 rounded-full border border-outline-variant/20 flex items-center justify-center text-on-surface-variant group-open:bg-primary/10 group-open:border-primary/30 group-open:text-primary transition-all duration-200">

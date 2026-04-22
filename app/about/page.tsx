@@ -90,9 +90,9 @@ export default function Page() {
   Company in Vadodara
 </h1>
 <p className="text-base sm:text-lg text-on-surface-variant leading-relaxed max-w-[560px] font-body mb-6">
-  Veyber is a results-driven <span className="text-primary font-semibold">digital marketing company in Vadodara</span>, helping businesses grow with powerful eCommerce, marketing, and consulting strategies.
+  Veyber is a results-driven <Link href="https://veyber.co.in" target="_blank" className="text-primary font-semibold hover:underline">digital marketing company in Vadodara</Link>, helping businesses grow with powerful eCommerce, marketing, and consulting strategies.
 </p>
-<p className="text-base text-on-surface-variant leading-relaxed max-w-[540px] mb-8">
+<p className="text-base sm:text-lg text-on-surface-variant leading-relaxed max-w-[560px] font-body mb-8">
   We work with startups, small businesses, and growing brands to build strong digital foundations and scalable growth systems. Our focus is simple — deliver real results, not just services.
 </p>
 <div className="flex flex-col sm:flex-row gap-4">
@@ -118,9 +118,10 @@ export default function Page() {
 />
 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent pointer-events-none"/>
 </div>
-<div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 p-5 sm:p-8 bg-surface-container-highest rounded-2xl shadow-xl border border-outline-variant/10">
-<div className="text-3xl sm:text-4xl font-bold font-headline text-primary">150+</div>
-<div className="text-sm font-medium text-on-surface-variant uppercase tracking-widest">Projects Delivered</div>
+<div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 p-5 sm:p-8 bg-surface-container-highest rounded-2xl shadow-xl border border-outline-variant/10 max-w-[260px]">
+<div className="text-3xl sm:text-4xl font-bold font-headline text-primary">7+ Years</div>
+<div className="text-sm font-medium text-on-surface-variant uppercase tracking-widest">Experience</div>
+<div className="text-xs text-on-surface-variant/80 mt-1">New presence, seasoned approach</div>
 </div>
 </div>
 </div>
@@ -233,7 +234,7 @@ export default function Page() {
 </div>
 <p className="text-on-surface italic mb-8 leading-relaxed">&quot;At Veyber, our goal is not just to provide services but to create real business impact. We understand the challenges businesses face in Vadodara and across Gujarat when it comes to digital growth. Every project we take is treated with dedication, responsibility, and a growth mindset.&quot;</p>
 <div>
-<div className="font-bold font-headline text-lg">Aryan Varma</div>
+<div className="font-bold font-headline text-lg">Arth Pancholi</div>
 <div className="text-primary text-sm font-medium">Founder &amp; CEO</div>
 </div>
 </div>
@@ -245,10 +246,10 @@ export default function Page() {
 <div className="flex gap-1 mb-4 text-primary">
   {'★★★★★'.split('').map((s, i) => <span key={i} className="text-sm">{s}</span>)}
 </div>
-<p className="text-on-surface italic mb-8 leading-relaxed">&quot;Success in today&apos;s digital world requires the right combination of strategy, execution, and consistency. At Veyber, we work closely with our clients to understand their goals and deliver solutions that truly make a difference. We believe in transparency, performance, and building long-term partnerships.&quot;</p>
+<p className="text-on-surface italic mb-8 leading-relaxed">&quot;Success in today&apos;s digital world depends on the right balance of strategy, execution, and operational excellence. At Veyber, we focus on building scalable systems and delivering solutions that drive real impact. We work closely with our clients to ensure every process is efficient, transparent, and aligned with long-term growth.&quot;</p>
 <div>
-<div className="font-bold font-headline text-lg">Meera Shah</div>
-<div className="text-primary text-sm font-medium">Co-Founder, Creative Head</div>
+<div className="font-bold font-headline text-lg">Vraj Gutam</div>
+<div className="text-primary text-sm font-medium">Co-Founder, Chief Technical &amp; Operating Head</div>
 </div>
 </div>
 {/* Co-Founder 2 */}
@@ -259,10 +260,10 @@ export default function Page() {
 <div className="flex gap-1 mb-4 text-primary">
   {'★★★★★'.split('').map((s, i) => <span key={i} className="text-sm">{s}</span>)}
 </div>
-<p className="text-on-surface italic mb-8 leading-relaxed">&quot;Our mission is to simplify digital growth for businesses in Vadodara and Gujarat. From eCommerce development to marketing and consulting, we ensure every service is aligned with business growth and measurable outcomes. We are committed to helping our clients scale with clarity and confidence.&quot;</p>
+<p className="text-on-surface italic mb-8 leading-relaxed">&quot;We believe marketing should do more than just create visibility—it should drive real business growth. As a team, we focus on building strategies that are clear, data-driven, and tailored to each business. Our goal is to help companies in Vadodara and across Gujarat grow with confidence, consistency, and measurable results.&quot;</p>
 <div>
-<div className="font-bold font-headline text-lg">Rohan Patel</div>
-<div className="text-primary text-sm font-medium">Co-Founder, CTO</div>
+<div className="font-bold font-headline text-lg">Vrajesh Mistry</div>
+<div className="text-primary text-sm font-medium">Co-Founder, Marketing Head</div>
 </div>
 </div>
 </div>
@@ -389,7 +390,7 @@ export default function Page() {
     a: 'Yes, all services are tailored based on your specific business goals, industry, and budget. We don\'t believe in one-size-fits-all packages.',
   },
 ].map((item, i) => (
-  <details key={i} className="group bg-surface-container rounded-2xl border border-outline-variant/10 overflow-hidden open:border-primary/20 transition-all duration-200">
+  <details key={i} name="faq" className="group bg-surface-container rounded-2xl border border-outline-variant/10 overflow-hidden open:border-primary/20 transition-all duration-200">
     <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none gap-4">
       <h3 className="font-bold text-white text-base sm:text-lg">{item.q}</h3>
       <span className="flex-shrink-0 w-8 h-8 rounded-full border border-outline-variant/20 flex items-center justify-center text-on-surface-variant group-open:bg-primary/10 group-open:border-primary/30 group-open:text-primary transition-all duration-200">

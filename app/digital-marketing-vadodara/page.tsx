@@ -401,7 +401,7 @@ export default function Page() {
             </div>
             <div className="flex flex-col gap-4">
               {faqs.map((item, i) => (
-                <details key={i} className="group bg-surface-container rounded-2xl border border-outline-variant/10 overflow-hidden open:border-primary/20 transition-all duration-200">
+                <details key={i} name="faq" className="group bg-surface-container rounded-2xl border border-outline-variant/10 overflow-hidden open:border-primary/20 transition-all duration-200">
                   <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none gap-4">
                     <h3 className="font-bold text-white text-sm sm:text-base">{item.q}</h3>
                     <span className="flex-shrink-0 w-8 h-8 rounded-full border border-outline-variant/20 flex items-center justify-center text-on-surface-variant group-open:bg-primary/10 group-open:border-primary/30 group-open:text-primary transition-all duration-200">
