@@ -4,9 +4,9 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Digital Marketing Service Locations | Gujarat, Bangalore & Karnataka – Veyber',
-  description: 'Veyber offers ecommerce development, SEO, social media marketing & business consulting across Vadodara, Ahmedabad, Surat, Bangalore, and all major regions.',
-  keywords: 'Digital marketing services Gujarat, Ecommerce services Vadodara, Marketing company Bangalore, Digital agency Karnataka, SEO company India, Online marketing Vadodara',
+  title: 'Digital Marketing Service Locations | Gujarat – Veyber',
+  description: 'Veyber offers ecommerce development, SEO, social media marketing & business consulting across Vadodara, Ahmedabad, Surat, Rajkot, and all major regions.',
+  keywords: 'Digital marketing services Gujarat, Ecommerce services Vadodara, Marketing company Gujarat, Digital agency Gujarat, SEO company India, Online marketing Vadodara',
 };
 
 const pageSchema = {
@@ -15,13 +15,11 @@ const pageSchema = {
   name: 'Veyber',
   url: 'https://veyber.co.in',
   areaServed: [
-    { '@type': 'State', name: 'Gujarat' },
-    { '@type': 'State', name: 'Karnataka' }
+    { '@type': 'State', name: 'Gujarat' }
   ],
   serviceArea: [
     'Vadodara', 'Ahmedabad', 'Surat', 'Rajkot', 'Gandhinagar', 'Anand', 'Bharuch',
-    'Navsari', 'Vapi', 'Valsad', 'Junagadh', 'Bhavnagar', 'Jamnagar', 'Morbi',
-    'Bangalore', 'Whitefield', 'Electronic City', 'Koramangala', 'Indiranagar'
+    'Navsari', 'Vapi', 'Valsad', 'Junagadh', 'Bhavnagar', 'Jamnagar', 'Morbi'
   ],
 };
 
@@ -31,10 +29,10 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Do you cover all cities in Gujarat and Karnataka?',
+      name: 'Do you cover all cities in Gujarat?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, we provide specialized digital marketing services across all major cities and emerging industrial regions of Gujarat and Karnataka (including Bangalore).',
+        text: 'Yes, we provide specialized digital marketing services across all major cities and emerging industrial regions of Gujarat.',
       },
     },
     {
@@ -47,10 +45,10 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Can I get local support in Vadodara or Bangalore?',
+      name: 'Can I get local support in Vadodara?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, Vadodara is our primary operational hub, and we have targeted service solutions designed specifically for the Bangalore IT and industrial corridors.',
+        text: 'Yes, Vadodara is our primary operational hub, and we have targeted service solutions designed specifically for the local and industrial corridors.',
       },
     },
   ],
@@ -96,16 +94,16 @@ const services = [
 
 const faqs = [
   {
-    q: 'Do you cover all cities in Gujarat and Karnataka?',
-    a: 'Yes, we provide specialized digital marketing services across all major cities and emerging industrial regions of Gujarat and Karnataka (including Bangalore).',
+    q: 'Do you cover all cities in Gujarat?',
+    a: 'Yes, we provide specialized digital marketing services across all major cities and emerging industrial regions of Gujarat.',
   },
   {
     q: 'Do you offer remote services?',
     a: 'Absolutely. We work with clients across India remotely, offering fast communication and rapid execution.',
   },
   {
-    q: 'Can I get local support in Vadodara or Bangalore?',
-    a: 'Yes, Vadodara is our primary operational hub, and we have targeted service solutions designed specifically for the Bangalore IT and industrial corridors.',
+    q: 'Can I get local support in Vadodara?',
+    a: 'Yes, Vadodara is our primary operational hub, and we have targeted service solutions designed specifically for the local and industrial corridors.',
   },
 ];
 
@@ -138,7 +136,7 @@ export default function Page() {
               Areas We <span className="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent" style={{filter:'drop-shadow(0 0 28px rgba(174,198,255,0.3))'}}>Operate In</span>
             </h1>
             <p className="text-base sm:text-lg text-on-surface-variant max-w-2xl mx-auto mb-4 leading-relaxed">
-              Serving Businesses Across <span className="text-primary font-semibold">Gujarat & Karnataka</span>
+              Serving Businesses Across <span className="text-primary font-semibold">Gujarat</span>
             </p>
             <p className="text-sm sm:text-base text-on-surface-variant max-w-xl mx-auto mb-8 leading-relaxed">
               At Veyber, we provide professional services including ecommerce development, account management, social media handling, content marketing, and business consulting. We help businesses grow locally and scale digitally with high-performance strategies across India&apos;s booming commercial areas.

@@ -51,11 +51,61 @@ export default function Navbar() {
   ];
 
   const servicesDropdown = [
-    { title: 'Ecommerce Development', href: '/ecommerce-development', icon: 'shopping_cart', desc: 'Shopify, WooCommerce & custom sites' },
-    { title: 'Account Management', href: '/account-management', icon: 'storefront', desc: 'Amazon, Flipkart, Meesho handling' },
-    { title: 'Social Media Handling', href: '/social-media-handling', icon: 'share', desc: 'Instagram & Facebook marketing' },
-    { title: 'Content Marketing', href: '/content-marketing', icon: 'edit_note', desc: 'SEO blog writing & strategy' },
-    { title: 'Business Consulting', href: '/business-consulting', icon: 'psychology', desc: 'Growth strategy & market research' },
+    { 
+      title: 'Ecommerce Development', 
+      href: '/ecommerce-development', 
+      icon: 'shopping_cart', 
+      desc: 'Shopify, WooCommerce & custom sites',
+      subLinks: [
+        { label: 'Shopify Development', href: '/shopify-development' },
+        { label: 'WooCommerce Development', href: '/woocommerce-development' },
+        { label: 'Custom Ecommerce', href: '/custom-ecommerce-development' },
+      ]
+    },
+    { 
+      title: 'Account Management', 
+      href: '/account-management', 
+      icon: 'storefront', 
+      desc: 'Amazon, Flipkart, Meesho handling',
+      subLinks: [
+        { label: 'Amazon Management', href: '/amazon-account-management' },
+        { label: 'Flipkart Management', href: '/flipkart-account-management' },
+        { label: 'Meesho Management', href: '/meesho-account-management' },
+      ]
+    },
+    { 
+      title: 'Social Media Handling', 
+      href: '/social-media-handling', 
+      icon: 'share', 
+      desc: 'Instagram & Facebook marketing',
+      subLinks: [
+        { label: 'Instagram Management', href: '/social-media-handling' },
+        { label: 'Facebook Marketing', href: '/social-media-handling' },
+        { label: 'Ad Campaigns', href: '/social-media-handling' },
+      ]
+    },
+    { 
+      title: 'Content Marketing', 
+      href: '/content-marketing', 
+      icon: 'edit_note', 
+      desc: 'SEO blog writing & strategy',
+      subLinks: [
+        { label: 'SEO Blog Writing', href: '/content-marketing' },
+        { label: 'Website Copywriting', href: '/content-marketing' },
+        { label: 'Keyword Strategy', href: '/content-marketing' },
+      ]
+    },
+    { 
+      title: 'Business Consulting', 
+      href: '/business-consulting', 
+      icon: 'psychology', 
+      desc: 'Growth strategy & market research',
+      subLinks: [
+        { label: 'Digital Strategy', href: '/business-consulting' },
+        { label: 'Market Research', href: '/business-consulting' },
+        { label: 'Brand Positioning', href: '/business-consulting' },
+      ]
+    },
   ];
 
   return (
@@ -80,17 +130,36 @@ export default function Navbar() {
                     </Link>
                     
                     <div className="absolute top-[100%] left-1/2 -translate-x-1/2 pt-4 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 w-[320px]">
-                      <div className="bg-surface-container border border-outline-variant/20 rounded-2xl shadow-2xl overflow-hidden p-2 backdrop-blur-xl">
+                      <div className="bg-surface-container border border-outline-variant/20 rounded-2xl shadow-2xl overflow-visible p-2 backdrop-blur-xl">
                         {servicesDropdown.map((service) => (
-                          <Link key={service.href} href={service.href} className="flex items-start gap-3 p-3 rounded-xl hover:bg-surface-container-high transition-colors group/item">
-                            <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover/item:bg-primary/20 transition-colors">
-                              <span className="material-symbols-outlined text-primary text-[20px]">{service.icon}</span>
-                            </div>
-                            <div>
-                              <h4 className="text-sm font-bold text-white mb-0.5 group-hover/item:text-primary transition-colors">{service.title}</h4>
-                              <p className="text-xs text-on-surface-variant line-clamp-1">{service.desc}</p>
-                            </div>
-                          </Link>
+                          <div key={service.href} className="relative group/item">
+                            <Link href={service.href} className="flex items-start gap-3 p-3 rounded-xl hover:bg-surface-container-high transition-colors">
+                              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover/item:bg-primary/20 transition-colors">
+                                <span className="material-symbols-outlined text-primary text-[20px]">{service.icon}</span>
+                              </div>
+                              <div className="flex-1">
+                                <div className="flex justify-between items-center">
+                                  <h4 className="text-sm font-bold text-white mb-0.5 group-hover/item:text-primary transition-colors">{service.title}</h4>
+                                  {service.subLinks && <span className="material-symbols-outlined text-[16px] text-white/30 group-hover/item:text-primary transition-colors">chevron_right</span>}
+                                </div>
+                                <p className="text-xs text-on-surface-variant line-clamp-1">{service.desc}</p>
+                              </div>
+                            </Link>
+                            
+                            {/* Flyout Sub-menu */}
+                            {service.subLinks && (
+                              <div className="absolute top-0 left-[100%] pl-2 opacity-0 -translate-x-2 invisible group-hover/item:opacity-100 group-hover/item:translate-x-0 group-hover/item:visible transition-all duration-300 w-[240px] z-50 pointer-events-none group-hover/item:pointer-events-auto">
+                                <div className="bg-surface-container border border-outline-variant/20 rounded-2xl shadow-2xl overflow-hidden p-2 backdrop-blur-xl flex flex-col gap-0.5">
+                                  {service.subLinks.map(sub => (
+                                    <Link key={sub.label} href={sub.href} className="flex items-center gap-2 p-2.5 rounded-xl hover:bg-surface-container-high transition-colors group/sub">
+                                      <span className="w-1.5 h-1.5 rounded-full bg-primary/30 group-hover/sub:bg-primary transition-colors shrink-0" />
+                                      <span className="text-xs font-medium text-white/70 group-hover/sub:text-primary transition-colors">{sub.label}</span>
+                                    </Link>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+                          </div>
                         ))}
                       </div>
                     </div>
@@ -186,15 +255,33 @@ export default function Navbar() {
                   </Link>
                   <div className="flex flex-col gap-1 pl-4 mb-2 border-l-2 border-primary/20 ml-6">
                     {servicesDropdown.map((service) => (
-                      <Link
-                        key={service.href}
-                        href={service.href}
-                        onClick={() => setMobileOpen(false)}
-                        className={`px-4 py-2 rounded-xl transition-all text-sm font-medium flex items-center gap-2 ${pathname === service.href ? 'text-primary bg-primary/10' : 'text-white/60 hover:text-white hover:bg-white/5'}`}
-                      >
-                        <span className="material-symbols-outlined text-[16px]">{service.icon}</span>
-                        {service.title}
-                      </Link>
+                      <details key={service.href} className="group/mob">
+                        <summary className={`px-4 py-2 rounded-xl transition-all text-sm font-medium flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden ${pathname === service.href ? 'text-primary bg-primary/10' : 'text-white/60 hover:text-white hover:bg-white/5'}`}>
+                          <div className="flex items-center gap-2">
+                            <span className="material-symbols-outlined text-[16px]">{service.icon}</span>
+                            {service.title}
+                          </div>
+                          {service.subLinks && <span className="material-symbols-outlined text-[18px] group-open/mob:rotate-180 transition-transform">expand_more</span>}
+                        </summary>
+                        
+                        {service.subLinks && (
+                          <div className="flex flex-col gap-1 pl-6 mt-1 mb-2 border-l border-white/10 ml-6">
+                            <Link href={service.href} onClick={() => setMobileOpen(false)} className="px-4 py-1.5 rounded-lg transition-all text-xs text-white/50 hover:text-white">
+                              Overview
+                            </Link>
+                            {service.subLinks.map(sub => (
+                              <Link
+                                key={sub.label}
+                                href={sub.href}
+                                onClick={() => setMobileOpen(false)}
+                                className={`px-4 py-1.5 rounded-lg transition-all text-xs ${pathname === sub.href ? 'text-primary' : 'text-white/50 hover:text-white'}`}
+                              >
+                                {sub.label}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </details>
                     ))}
                   </div>
                 </div>
