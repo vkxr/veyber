@@ -312,10 +312,7 @@ export default function Page() {
       { name: 'Vadodara (Primary)', url: '/digital-marketing-vadodara' },
       { name: 'Ahmedabad', url: '/digital-marketing-ahmedabad' },
       { name: 'Surat', url: '/digital-marketing-surat' },
-      { name: 'Rajkot', url: '/digital-marketing-rajkot' },
-      { name: 'Anand', url: '/digital-marketing-anand' },
-      { name: 'Bharuch', url: '/digital-marketing-bharuch' },
-      { name: 'Entire Gujarat', url: '/service-locations' }
+      { name: 'Rajkot', url: '/digital-marketing-rajkot' }
     ].map(({ name, url }) => (
       <Link key={name} href={url} className="flex items-center gap-1.5 px-3 py-2 bg-surface-container rounded-xl border border-outline-variant/10 text-xs font-semibold hover:border-primary/30 hover:text-primary transition-all">
         <span className="material-symbols-outlined text-primary text-[14px]">location_on</span>

@@ -307,39 +307,12 @@ export default function Page() {
                 </p>
                 
                 <div className="flex flex-wrap gap-2 mb-6 relative z-10">
-                  {locations.map((area) => {
-                    const activeLinks: Record<string, string> = {
-                      'Alkapuri': '/digital-marketing-alkapuri',
-                      'Fatehgunj': '/digital-marketing-fatehgunj',
-                      'Sayajigunj': '/digital-marketing-sayajigunj',
-                      'Karelibaug': '/digital-marketing-karelibaug',
-                      'Nizampura': '/digital-marketing-nizampura',
-                      'Subhanpura': '/digital-marketing-subhanpura',
-                      'Waghodia Road': '/digital-marketing-waghodia-road',
-                      'Gotri': '/digital-marketing-gotri',
-                      'Ajwa Road': '/digital-marketing-ajwa-road',
-                      'Makarpura': '/digital-marketing-makarpura',
-                      'Manjalpur': '/digital-marketing-manjalpur',
-                      'Tarsali': '/digital-marketing-tarsali',
-                      'Harni': '/digital-marketing-harni',
-                      'Sama': '/digital-marketing-sama',
-                      'New VIP Road': '/digital-marketing-new-vip-road',
-                      'Chhani': '/digital-marketing-chhani',
-                      'Gorwa': '/digital-marketing-gorwa',
-                      'Akota': '/digital-marketing-akota',
-                    };
-                    const href = activeLinks[area];
-                    
-                    return href ? (
-                      <Link key={area} href={href} className="px-3 py-1.5 bg-surface-container-high text-xs font-semibold text-white/80 rounded-md border border-outline-variant/10 hover:border-primary/50 hover:text-primary transition-all flex items-center gap-1.5 cursor-pointer group/loc">
-                        {area} <span className="material-symbols-outlined text-[14px] group-hover/loc:translate-x-0.5 group-hover/loc:-translate-y-0.5 transition-transform">arrow_outward</span>
-                      </Link>
-                    ) : (
-                      <span key={area} className="px-3 py-1.5 bg-surface-container-high text-xs font-semibold text-white/80 rounded-md border border-outline-variant/10">
-                        {area}
-                      </span>
-                    )
-                  })}
+                  {locations.map((area) => (
+                    <span key={area} className="px-3 py-1.5 bg-surface-container-high text-xs font-semibold text-white/80 rounded-md border border-outline-variant/10 flex items-center gap-1.5">
+                      <span className="material-symbols-outlined text-[14px] text-primary">location_on</span>
+                      {area}
+                    </span>
+                  ))}
                 </div>
                 <p className="text-primary text-sm font-bold border-t border-outline-variant/10 pt-4 relative z-10 flex items-center gap-2">
                   <span className="material-symbols-outlined text-[18px]">verified</span>

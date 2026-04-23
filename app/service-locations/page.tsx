@@ -114,88 +114,6 @@ const gujaratCities = [
   { name: 'Surat', href: '/digital-marketing-surat' },
   { name: 'Vadodara', href: '/digital-marketing-vadodara' },
   { name: 'Rajkot', href: '/digital-marketing-rajkot' },
-  { name: 'Gandhinagar', href: '/digital-marketing-gandhinagar' },
-  { name: 'Anand', href: '/digital-marketing-anand' },
-  { name: 'Bharuch', href: '/digital-marketing-bharuch' },
-  { name: 'Navsari', href: '/digital-marketing-navsari' },
-  { name: 'Vapi', href: '/digital-marketing-vapi' },
-  { name: 'Valsad', href: '/digital-marketing-valsad' },
-  { name: 'Junagadh', href: '/digital-marketing-junagadh' },
-  { name: 'Bhavnagar', href: '/digital-marketing-bhavnagar' },
-  { name: 'Jamnagar', href: '/digital-marketing-jamnagar' },
-  { name: 'Morbi', href: '/digital-marketing-morbi' },
-];
-
-const vadodaraAreas = [
-  { name: 'Alkapuri', href: '/digital-marketing-alkapuri' },
-  { name: 'Sayajigunj', href: '/digital-marketing-sayajigunj' },
-  { name: 'Fatehgunj', href: '/digital-marketing-fatehgunj' },
-  { name: 'Karelibaug', href: '/digital-marketing-karelibaug' },
-  { name: 'Nizampura', href: '/digital-marketing-nizampura' },
-  { name: 'Gotri', href: '/digital-marketing-gotri' },
-  { name: 'Subhanpura', href: '/digital-marketing-subhanpura' },
-  { name: 'Waghodia Road', href: '/digital-marketing-waghodia-road' },
-  { name: 'Ajwa Road', href: '/digital-marketing-ajwa-road' },
-  { name: 'Manjalpur', href: '/digital-marketing-manjalpur' },
-  { name: 'Makarpura', href: '/digital-marketing-makarpura' },
-  { name: 'Tarsali', href: '/digital-marketing-tarsali' },
-  { name: 'Harni', href: '/digital-marketing-harni' },
-  { name: 'Sama', href: '/digital-marketing-sama' },
-  { name: 'New VIP Road', href: '/digital-marketing-new-vip-road' },
-  { name: 'Chhani', href: '/digital-marketing-chhani' },
-  { name: 'Gorwa', href: '/digital-marketing-gorwa' },
-  { name: 'Akota', href: '/digital-marketing-akota' },
-];
-
-const karnatakaHubs = [
-  { name: 'Karnataka', href: '/digital-marketing-karnataka' },
-  { name: 'Bangalore', href: '/digital-marketing-bangalore' },
-];
-
-const bangaloreAreas = [
-  { name: 'Electronic City', href: '/digital-marketing-electronic-city' },
-  { name: 'Whitefield', href: '/digital-marketing-whitefield' },
-  { name: 'Koramangala', href: '/digital-marketing-koramangala' },
-  { name: 'Indiranagar', href: '/digital-marketing-indiranagar' },
-  { name: 'HSR Layout', href: '/digital-marketing-hsr-layout' },
-  { name: 'BTM Layout', href: '/digital-marketing-btm-layout' },
-  { name: 'Jayanagar', href: '/digital-marketing-jayanagar' },
-  { name: 'JP Nagar', href: '/digital-marketing-jp-nagar' },
-  { name: 'Marathahalli', href: '/digital-marketing-marathahalli' },
-  { name: 'Bellandur', href: '/digital-marketing-bellandur' },
-  { name: 'Sarjapur Road', href: '/digital-marketing-sarjapur-road' },
-  { name: 'Outer Ring Road', href: '/digital-marketing-outer-ring-road' },
-  { name: 'Manyata Tech Park', href: '/digital-marketing-manyata-tech-park' },
-  { name: 'Hebbal', href: '/digital-marketing-hebbal' },
-  { name: 'Peenya', href: '/digital-marketing-peenya' },
-  { name: 'Bommasandra', href: '/digital-marketing-bommasandra' },
-  { name: 'Bidadi', href: '/digital-marketing-bidadi' },
-  { name: 'Jigani', href: '/digital-marketing-jigani' },
-  { name: 'Rajajinagar', href: '/digital-marketing-rajajinagar' },
-  { name: 'Malleshwaram', href: '/digital-marketing-malleshwaram' },
-  { name: 'Basavanagudi', href: '/digital-marketing-basavanagudi' },
-  { name: 'Banashankari', href: '/digital-marketing-banashankari' },
-  { name: 'Vijayanagar', href: '/digital-marketing-vijayanagar' },
-  { name: 'Nagarbhavi', href: '/digital-marketing-nagarbhavi' },
-  { name: 'Kengeri', href: '/digital-marketing-kengeri' },
-  { name: 'Nelamangala', href: '/digital-marketing-nelamangala' },
-  { name: 'Devanahalli', href: '/digital-marketing-devanahalli' },
-  { name: 'Hoskote', href: '/digital-marketing-hoskote' },
-  { name: 'Attibele', href: '/digital-marketing-attibele' },
-  { name: 'KR Puram', href: '/digital-marketing-kr-puram' },
-  { name: 'Thanisandra', href: '/digital-marketing-thanisandra' },
-  { name: 'Kadubeesanahalli', href: '/digital-marketing-kadubeesanahalli' },
-  { name: 'Brookefield', href: '/digital-marketing-brookefield' },
-  { name: 'MG Road', href: '/digital-marketing-mg-road' },
-  { name: 'Brigade Road', href: '/digital-marketing-brigade-road' },
-  { name: 'Commercial Street', href: '/digital-marketing-commercial-street' },
-  { name: 'Lavelle Road', href: '/digital-marketing-lavelle-road' },
-  { name: 'Richmond Town', href: '/digital-marketing-richmond-town' },
-  { name: 'Shivajinagar', href: '/digital-marketing-shivajinagar' },
-  { name: 'Ulsoor', href: '/digital-marketing-ulsoor' },
-  { name: 'Bannerghatta Road', href: '/digital-marketing-bannerghatta-road' },
-  { name: 'Kanakapura Road', href: '/digital-marketing-kanakapura-road' },
-  { name: 'Yelahanka', href: '/digital-marketing-yelahanka' },
 ];
 
 export default function Page() {
@@ -249,10 +167,6 @@ export default function Page() {
 
             <div className="bg-surface-container rounded-3xl border border-outline-variant/10 p-6 sm:p-10 mb-10 overflow-hidden relative group hover:border-primary/30 transition-all duration-500 hover:shadow-[0_0_40px_rgba(174,198,255,0.05)]">
               <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 blur-[100px] rounded-full pointer-events-none translate-x-1/3 -translate-y-1/3 group-hover:bg-primary/10 transition-colors duration-700"/>
-              
-              <Link href="/digital-marketing-gujarat" className="absolute top-6 sm:top-10 right-6 sm:right-10 inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 hover:border-primary/40 font-bold rounded-full text-sm transition-all duration-300 hover:scale-105 z-10 hidden sm:inline-flex">
-                View State Hub <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-              </Link>
 
               <h3 className="text-xl font-bold text-white mb-6 relative z-10">Major Cities & Regions</h3>
               <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 relative z-10">
@@ -267,63 +181,9 @@ export default function Page() {
                 ))}
               </div>
             </div>
-
-            <div className="bg-surface-container rounded-3xl border border-outline-variant/10 p-6 sm:p-10 overflow-hidden relative group hover:border-primary/30 transition-all duration-500 hover:shadow-[0_0_40px_rgba(174,198,255,0.05)]">
-              <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary/5 blur-[80px] rounded-full pointer-events-none -translate-x-1/3 translate-y-1/3 group-hover:bg-primary/10 transition-colors duration-700"/>
-              <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2 relative z-10">
-                <span className="material-symbols-outlined text-primary">push_pin</span> 
-                Vadodara (Core Operations) Hubs
-              </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 relative z-10">
-                {vadodaraAreas.map(area => (
-                  <Link key={area.name} href={area.href} className="group flex items-center gap-2.5 px-3.5 py-2.5 bg-gradient-to-br from-white/[0.03] to-transparent hover:from-primary/10 hover:to-transparent border border-white/[0.05] hover:border-primary/30 rounded-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_5px_15px_rgba(174,198,255,0.1)]">
-                    <span className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-primary transition-colors shrink-0"/>
-                    <span className="text-xs font-semibold text-white/80 group-hover:text-white transition-colors truncate">{area.name}</span>
-                  </Link>
-                ))}
-              </div>
-            </div>
           </div>
         </section>
 
-        {/* --- KARNATAKA / BANGALORE SECTION --- */}
-        <section className="px-4 sm:px-8 py-14 sm:py-20 bg-surface-container-low border-t border-outline-variant/10">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-center gap-4 mb-8">
-              <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center">
-                <span className="material-symbols-outlined text-primary text-[28px]">corporate_fare</span>
-              </div>
-              <div>
-                <h2 className="text-2xl sm:text-4xl font-bold font-headline">Bangalore & Karnataka Directory</h2>
-                <p className="text-on-surface-variant text-sm sm:text-base mt-1">Specialized IT, corporate, and industrial zone operations.</p>
-              </div>
-            </div>
-
-            <div className="bg-surface-container rounded-3xl border border-outline-variant/10 p-6 sm:p-10 mb-10 overflow-hidden relative group hover:border-primary/30 transition-all duration-500 hover:shadow-[0_0_40px_rgba(174,198,255,0.05)]">
-              <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 blur-[100px] rounded-full pointer-events-none translate-x-1/3 -translate-y-1/3 group-hover:bg-primary/10 transition-colors duration-700"/>
-              
-               <div className="flex flex-wrap gap-4 mb-8 relative z-10">
-                 {karnatakaHubs.map(hub => (
-                    <Link key={hub.name} href={hub.href} className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 hover:border-primary/40 font-bold rounded-full text-sm transition-all duration-300 hover:scale-105 z-10">
-                      View {hub.name} Hub <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-                    </Link>
-                 ))}
-               </div>
-              <h3 className="text-xl font-bold text-white mb-6 relative z-10">Bangalore Corridors & Micro-Markets</h3>
-              <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 relative z-10">
-                {bangaloreAreas.map(area => (
-                  <Link key={area.name} href={area.href} className="group flex items-center justify-between px-4 py-3.5 bg-gradient-to-br from-white/[0.04] to-transparent hover:from-primary/10 hover:to-transparent border border-white/[0.05] hover:border-primary/30 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(174,198,255,0.1)]">
-                    <div className="flex items-center gap-3 overflow-hidden">
-                      <span className="material-symbols-outlined text-[18px] text-white/40 group-hover:text-primary transition-colors flex-shrink-0">domain</span>
-                      <span className="text-sm font-semibold text-white/90 group-hover:text-white transition-colors truncate">{area.name}</span>
-                    </div>
-                    <span className="material-symbols-outlined text-[16px] text-white/20 group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0 ml-2">arrow_forward</span>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Our Services Regionally */}
         <section className="px-4 sm:px-8 py-14 sm:py-24 bg-surface border-t border-outline-variant/10">

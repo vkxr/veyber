@@ -317,7 +317,8 @@ export default function Page() {
                   <div className="flex flex-wrap gap-2 relative z-10">
                     {[
                       { name: 'Vadodara', url: '/digital-marketing-vadodara' },
-                      { name: 'Anand', url: '/digital-marketing-anand' },
+                      { name: 'Surat', url: '/digital-marketing-surat' },
+                      { name: 'Rajkot', url: '/digital-marketing-rajkot' },
                     ].map((city) => (
                       <Link key={city.name} href={city.url} className="px-3 py-1.5 bg-surface-container-high text-xs font-semibold text-white/80 rounded-md border border-outline-variant/10 hover:border-primary/50 hover:text-primary transition-all flex items-center gap-1.5 cursor-pointer group">
                         {city.name} <span className="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">arrow_outward</span>

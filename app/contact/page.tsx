@@ -61,8 +61,7 @@ export default function Page() {
     { name: 'Vadodara', url: '/digital-marketing-vadodara' },
     { name: 'Ahmedabad', url: '/digital-marketing-ahmedabad' },
     { name: 'Surat', url: '/digital-marketing-surat' },
-    { name: 'Rajkot', url: '/digital-marketing-rajkot' },
-    { name: 'Entire Gujarat', url: '/service-locations' }
+    { name: 'Rajkot', url: '/digital-marketing-rajkot' }
   ].map((city, i, arr) => (
     <span key={city.name} className="flex items-center gap-1.5">
       <span className="material-symbols-outlined text-primary text-[14px]">location_on</span>
@@ -324,11 +323,7 @@ export default function Page() {
   { city: 'Vadodara (Primary)', url: '/digital-marketing-vadodara' },
   { city: 'Ahmedabad', url: '/digital-marketing-ahmedabad' },
   { city: 'Surat', url: '/digital-marketing-surat' },
-  { city: 'Anand', url: '/digital-marketing-anand' },
-  { city: 'Bharuch', url: '/digital-marketing-bharuch' },
-  { city: 'Nadiad', url: '/digital-marketing-nadiad' },
-  { city: 'Rajkot', url: '/digital-marketing-rajkot' },
-  { city: 'Pan India', url: '/service-locations' }
+  { city: 'Rajkot', url: '/digital-marketing-rajkot' }
 ].map(({ city, url }) => (
   <Link key={city} href={url} className="flex items-center gap-2 px-4 py-2.5 bg-surface-container rounded-xl border border-outline-variant/10 hover:border-primary/30 hover:bg-surface-container-high hover:text-primary transition-all text-sm font-semibold">
     <span className="material-symbols-outlined text-primary text-[16px]">location_on</span>

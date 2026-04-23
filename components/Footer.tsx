@@ -109,8 +109,6 @@ export default function Footer() {
                 ['Social Media Handling', '/social-media-handling'],
                 ['Content Marketing',     '/content-marketing'],
                 ['Graphic Design',        '/services#graphic-design'],
-                ['Business Consulting',   '/business-consulting'],
-                ['Digital Marketing Gujarat', '/digital-marketing-gujarat'],
               ].map(([label, href]) => (
                 <li key={label}>
                   <Link href={href} className="text-slate-500 text-sm hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 group">
@@ -130,8 +128,7 @@ export default function Footer() {
                 ['Vadodara', '/digital-marketing-vadodara'],
                 ['Ahmedabad', '/digital-marketing-ahmedabad'],
                 ['Surat', '/digital-marketing-surat'],
-                ['Karnataka', '/digital-marketing-karnataka'],
-                ['Bangalore', '/digital-marketing-bangalore'],
+                ['Rajkot', '/digital-marketing-rajkot'],
               ].map(([label, href]) => (
                 <li key={label}>
                   <Link href={href} className="text-slate-500 text-sm hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 group">

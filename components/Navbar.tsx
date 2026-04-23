@@ -50,6 +50,14 @@ export default function Navbar() {
     { label: 'Contact',  href: '/contact' },
   ];
 
+  const servicesDropdown = [
+    { title: 'Ecommerce Development', href: '/ecommerce-development', icon: 'shopping_cart', desc: 'Shopify, WooCommerce & custom sites' },
+    { title: 'Account Management', href: '/account-management', icon: 'storefront', desc: 'Amazon, Flipkart, Meesho handling' },
+    { title: 'Social Media Handling', href: '/social-media-handling', icon: 'share', desc: 'Instagram & Facebook marketing' },
+    { title: 'Content Marketing', href: '/content-marketing', icon: 'edit_note', desc: 'SEO blog writing & strategy' },
+    { title: 'Business Consulting', href: '/business-consulting', icon: 'psychology', desc: 'Growth strategy & market research' },
+  ];
+
   return (
     <>
       <nav className="site-nav fixed top-0 w-full z-50 bg-slate-900/60 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-[background-color,box-shadow] duration-300">
@@ -62,9 +70,37 @@ export default function Navbar() {
 
           {/* Desktop nav links */}
           <div className="hidden md:flex items-center gap-6 lg:gap-8">
-            {navLinks.map(({ label, href }) => (
-              <Link key={href} className={getLinkClass(href)} href={href}>{label}</Link>
-            ))}
+            {navLinks.map(({ label, href }) => {
+              if (label === 'Services') {
+                return (
+                  <div key={href} className="relative group">
+                    <Link href={href} className={`flex items-center gap-1 ${getLinkClass(href)}`}>
+                      {label}
+                      <span className="material-symbols-outlined text-[16px] transition-transform duration-300 group-hover:rotate-180">expand_more</span>
+                    </Link>
+                    
+                    <div className="absolute top-[100%] left-1/2 -translate-x-1/2 pt-4 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 w-[320px]">
+                      <div className="bg-surface-container border border-outline-variant/20 rounded-2xl shadow-2xl overflow-hidden p-2 backdrop-blur-xl">
+                        {servicesDropdown.map((service) => (
+                          <Link key={service.href} href={service.href} className="flex items-start gap-3 p-3 rounded-xl hover:bg-surface-container-high transition-colors group/item">
+                            <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover/item:bg-primary/20 transition-colors">
+                              <span className="material-symbols-outlined text-primary text-[20px]">{service.icon}</span>
+                            </div>
+                            <div>
+                              <h4 className="text-sm font-bold text-white mb-0.5 group-hover/item:text-primary transition-colors">{service.title}</h4>
+                              <p className="text-xs text-on-surface-variant line-clamp-1">{service.desc}</p>
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
+              return (
+                <Link key={href} className={getLinkClass(href)} href={href}>{label}</Link>
+              );
+            })}
           </div>
 
           {/* Right side controls */}
@@ -136,16 +172,45 @@ export default function Navbar() {
         </div>
 
         {/* Nav links */}
-        <nav className="flex flex-col gap-1 px-4 pt-6 flex-1">
-          {navLinks.map(({ label, href }) => (
-            <Link
-              key={href}
-              href={href}
-              className={`px-4 py-3 rounded-xl transition-all ${getMobileLinkClass(href)} ${pathname === href ? 'bg-primary/10' : 'hover:bg-white/5'}`}
-            >
-              {label}
-            </Link>
-          ))}
+        <nav className="flex flex-col gap-1 px-4 pt-6 flex-1 overflow-y-auto">
+          {navLinks.map(({ label, href }) => {
+            if (label === 'Services') {
+              return (
+                <div key={href} className="flex flex-col gap-1">
+                  <Link
+                    href={href}
+                    onClick={() => setMobileOpen(false)}
+                    className={`px-4 py-3 rounded-xl transition-all ${getMobileLinkClass(href)} ${pathname.startsWith('/services') || pathname === href ? 'bg-primary/10' : 'hover:bg-white/5'}`}
+                  >
+                    {label}
+                  </Link>
+                  <div className="flex flex-col gap-1 pl-4 mb-2 border-l-2 border-primary/20 ml-6">
+                    {servicesDropdown.map((service) => (
+                      <Link
+                        key={service.href}
+                        href={service.href}
+                        onClick={() => setMobileOpen(false)}
+                        className={`px-4 py-2 rounded-xl transition-all text-sm font-medium flex items-center gap-2 ${pathname === service.href ? 'text-primary bg-primary/10' : 'text-white/60 hover:text-white hover:bg-white/5'}`}
+                      >
+                        <span className="material-symbols-outlined text-[16px]">{service.icon}</span>
+                        {service.title}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              );
+            }
+            return (
+              <Link
+                key={href}
+                href={href}
+                onClick={() => setMobileOpen(false)}
+                className={`px-4 py-3 rounded-xl transition-all ${getMobileLinkClass(href)} ${pathname === href ? 'bg-primary/10' : 'hover:bg-white/5'}`}
+              >
+                {label}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Bottom CTA */}
