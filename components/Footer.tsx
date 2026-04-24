@@ -44,7 +44,7 @@ const socialLinks = [
   },
   {
     label: 'Email',
-    href: 'mailto:hello@veyber.in',
+    href: 'mailto:veyberservicespvtltd@gmail.com',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
         <rect x="2" y="4" width="20" height="16" rx="2"/>
@@ -91,11 +91,11 @@ export default function Footer() {
 
             {/* Location */}
             <div className="flex items-center gap-2 text-slate-500 text-sm">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 shrink-0">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 shrink-0 mt-0.5 self-start">
                 <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/>
                 <circle cx="12" cy="10" r="3"/>
               </svg>
-              <span>Vadodara, Gujarat, India</span>
+              <span>310, Maa Darshan Flats, near Panchvati,<br/>Ajwa Road, Vadodara - 390019</span>
             </div>
           </div>
 
@@ -166,7 +166,7 @@ export default function Footer() {
         {/* ── Bottom bar ── */}
         <div className="pt-7 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-slate-600 text-xs tracking-tight">
-            © {new Date().getFullYear()} <span className="text-slate-500 font-semibold">Veyber</span> · Built for growth
+            Developed by veyber.
           </p>
           <div className="flex items-center gap-2">
             <span className="relative flex h-2 w-2">

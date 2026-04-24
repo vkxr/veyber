@@ -91,29 +91,77 @@ export default function Page() {
       <main className="pt-[120px] pb-24">
 
 {/* Hero Section */}
-<header className="relative px-4 sm:px-8 pt-12 sm:pt-20 md:pt-28 mb-12 sm:mb-16 max-w-7xl mx-auto overflow-hidden">
-<div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 blur-[80px] rounded-full"/>
-<div className="relative z-10 max-w-3xl">
-<span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/[0.08] text-primary font-bold text-xs tracking-widest uppercase mb-5">
-  <span className="relative flex h-1.5 w-1.5 shrink-0"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"/><span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary"/></span>
-  Complete Digital Growth Solutions · Gujarat
-</span>
-<h1 className="text-3xl sm:text-5xl md:text-6xl font-headline font-extrabold tracking-tight text-white mb-5 leading-tight max-w-[700px]">
-  eCommerce Development & Digital Marketing Services in Gujarat
-</h1>
-<p className="text-base sm:text-lg text-on-surface-variant font-body leading-relaxed max-w-[580px] mb-4">
-  At Veyber, we provide end-to-end digital solutions designed to help businesses in Vadodara, Ahmedabad, Surat, and across Gujarat grow faster, smarter, and more profitably.
-</p>
-<p className="text-sm sm:text-base text-on-surface-variant leading-relaxed max-w-[540px] mb-8">
-  From building powerful eCommerce platforms to managing your online presence and scaling your business — we deliver results that matter.
-</p>
-{/* 5 core services pills */}
-<div className="flex flex-wrap gap-2">
-{['Digital Marketing', 'Web Services', 'eCommerce Development','Account Management','Social Media','Content Marketing','Business Consulting'].map((s) => (
-  <span key={s} className="px-3 py-1.5 text-xs font-bold bg-surface-container border border-outline-variant/15 rounded-full text-on-surface-variant hover:border-primary/30 hover:text-primary transition-all duration-200 cursor-default">{s}</span>
-))}
-</div>
-</div>
+<header className="relative px-4 sm:px-8 pt-12 sm:pt-20 md:pt-28 mb-12 sm:mb-16 max-w-7xl mx-auto">
+  {/* Background accents */}
+  <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-primary/20 blur-[120px] rounded-full pointer-events-none -translate-y-1/2"/>
+  
+  <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+    {/* Left Content */}
+    <div className="max-w-3xl">
+      <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/[0.08] text-primary font-bold text-xs tracking-widest uppercase mb-5">
+        <span className="relative flex h-1.5 w-1.5 shrink-0"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"/><span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary"/></span>
+        Complete Digital Growth Solutions · Gujarat
+      </span>
+      <h1 className="text-3xl sm:text-5xl md:text-6xl font-headline font-extrabold tracking-tight text-white mb-5 leading-tight">
+        eCommerce Development & Digital Marketing Services in Gujarat
+      </h1>
+      <p className="text-base sm:text-lg text-on-surface-variant font-body leading-relaxed max-w-[580px] mb-4">
+        At Veyber, we provide end-to-end digital solutions designed to help businesses in Vadodara, Ahmedabad, Surat, and across Gujarat grow faster, smarter, and more profitably.
+      </p>
+      <p className="text-sm sm:text-base text-on-surface-variant leading-relaxed max-w-[540px] mb-8">
+        From building powerful eCommerce platforms to managing your online presence and scaling your business — we deliver results that matter.
+      </p>
+      {/* Core services pills */}
+      <div className="flex flex-wrap gap-2">
+      {[
+        { name: 'Digital Marketing', href: '/digital-marketing' },
+        { name: 'Web Services', href: '/web-services' },
+        { name: 'eCommerce Development', href: '/ecommerce-development' },
+        { name: 'Account Management', href: '/ecommerce-account-management' },
+        { name: 'Social Media', href: '/social-media-handling' },
+        { name: 'Content Marketing', href: '/content-marketing' },
+        { name: 'Business Consulting', href: '/business-consulting' }
+      ].map((s) => (
+        <Link key={s.name} href={s.href} className="px-3 py-1.5 text-xs font-bold bg-surface-container border border-outline-variant/15 rounded-full text-on-surface-variant hover:border-primary/30 hover:text-primary transition-all duration-200 cursor-pointer">
+          {s.name}
+        </Link>
+      ))}
+      </div>
+    </div>
+    
+    {/* Right Visual */}
+    <div className="relative lg:h-[500px] w-full hidden lg:block">
+       <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent rounded-[2rem] z-10 pointer-events-none"/>
+       <Image 
+         src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=75" 
+         alt="Digital Marketing Agency Team"
+         fill
+         sizes="(max-width: 1024px) 100vw, 50vw"
+         className="object-cover rounded-[2rem] border border-white/10 shadow-2xl"
+         priority
+       />
+       {/* Floating badge 1 */}
+       <div className="absolute -left-8 top-12 bg-surface-container/90 backdrop-blur-md border border-white/10 p-4 rounded-2xl shadow-xl z-20 flex items-center gap-4 animate-bounce" style={{animationDuration: '3s'}}>
+         <div className="w-10 h-10 rounded-full bg-[#4ade80]/20 flex items-center justify-center text-[#4ade80]">
+           <span className="material-symbols-outlined">trending_up</span>
+         </div>
+         <div>
+           <p className="text-white font-bold text-sm">3x Growth</p>
+           <p className="text-on-surface-variant text-xs">Client Revenue</p>
+         </div>
+       </div>
+       {/* Floating badge 2 */}
+       <div className="absolute -right-8 bottom-12 bg-surface-container/90 backdrop-blur-md border border-white/10 p-4 rounded-2xl shadow-xl z-20 flex items-center gap-4 animate-bounce" style={{animationDuration: '4s', animationDelay: '1s'}}>
+         <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+           <span className="material-symbols-outlined">rocket_launch</span>
+         </div>
+         <div>
+           <p className="text-white font-bold text-sm">60+ Brands</p>
+           <p className="text-on-surface-variant text-xs">Scaled Successfully</p>
+         </div>
+       </div>
+    </div>
+  </div>
 </header>
 
 {/* Services Bento Grid */}
@@ -138,20 +186,19 @@ export default function Page() {
       <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 border border-white/20">
         <span className="material-symbols-outlined text-white">campaign</span>
       </div>
-      <span className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service 01</span>
       <h2 className="text-2xl font-headline font-bold text-white mb-3">Core Digital Marketing</h2>
       <p className="text-white/70 mb-5 font-body text-sm leading-relaxed">Get found, get clicks, get customers — through data-driven marketing that delivers measurable ROI.</p>
       <ul className="space-y-2.5 mb-5 flex-grow">
         <li className="flex items-center gap-3 text-sm text-white/80">
-          <span className="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+          <span className="material-symbols-outlined text-primary text-[16px]">troubleshoot</span>
           <Link href="/seo" className="hover:text-primary transition-colors hover:underline">SEO (Search Engine Optimization)</Link>
         </li>
         <li className="flex items-center gap-3 text-sm text-white/80">
-          <span className="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+          <span className="material-symbols-outlined text-primary text-[16px]">ads_click</span>
           <Link href="/google-ads" className="hover:text-primary transition-colors hover:underline">Google Ads (Search, Display, Shopping)</Link>
         </li>
         <li className="flex items-center gap-3 text-sm text-white/80">
-          <span className="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+          <span className="material-symbols-outlined text-primary text-[16px]">share</span>
           <Link href="/meta-ads" className="hover:text-primary transition-colors hover:underline">Meta Ads (Facebook & Instagram)</Link>
         </li>
       </ul>
@@ -180,20 +227,19 @@ export default function Page() {
       <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 border border-white/20">
         <span className="material-symbols-outlined text-white">code_blocks</span>
       </div>
-      <span className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service 02</span>
       <h2 className="text-2xl font-headline font-bold text-white mb-3">Web Services</h2>
       <p className="text-white/70 mb-5 font-body text-sm leading-relaxed">Beyond eCommerce — we build and maintain the digital infrastructure your business runs on.</p>
       <ul className="space-y-2.5 mb-5 flex-grow">
         <li className="flex items-center gap-3 text-sm text-white/80">
-          <span className="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+          <span className="material-symbols-outlined text-primary text-[16px]">web</span>
           <Link href="/web-services/development" className="hover:text-primary transition-colors hover:underline">Website Development</Link>
         </li>
         <li className="flex items-center gap-3 text-sm text-white/80">
-          <span className="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+          <span className="material-symbols-outlined text-primary text-[16px]">dns</span>
           <Link href="/web-services/hosting" className="hover:text-primary transition-colors hover:underline">Website Hosting</Link>
         </li>
         <li className="flex items-center gap-3 text-sm text-white/80">
-          <span className="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+          <span className="material-symbols-outlined text-primary text-[16px]">cloud_sync</span>
           <Link href="/web-services/devops" className="hover:text-primary transition-colors hover:underline">DevOps & Deployment</Link>
         </li>
       </ul>
@@ -226,14 +272,19 @@ export default function Page() {
 <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 border border-white/20">
   <span className="material-symbols-outlined text-white">shopping_cart</span>
 </div>
-<span className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service 03</span>
 <h2 className="text-2xl font-headline font-bold text-white mb-3">eCommerce Development</h2>
 <p className="text-white/70 mb-5 font-body text-sm leading-relaxed">Build a high-performing online store that converts visitors into customers. We develop custom, scalable, and SEO-friendly eCommerce websites tailored to your business needs.</p>
 <ul className="space-y-2.5 mb-5 flex-grow">
-{['Shopify, WooCommerce & Custom Development','Mobile-Responsive Design','Payment Gateway Integration','Speed Optimization','SEO-Ready Structure'].map((item) => (
-  <li key={item} className="flex items-center gap-3 text-sm text-white/80">
-    <span className="material-symbols-outlined text-primary text-[16px]">check_circle</span>
-    {item}
+{[
+  { label: 'Shopify, WooCommerce & Custom Development', icon: 'storefront' },
+  { label: 'Mobile-Responsive Design', icon: 'smartphone' },
+  { label: 'Payment Gateway Integration', icon: 'payments' },
+  { label: 'Speed Optimization', icon: 'speed' },
+  { label: 'SEO-Ready Structure', icon: 'travel_explore' }
+].map((item) => (
+  <li key={item.label} className="flex items-center gap-3 text-sm text-white/80">
+    <span className="material-symbols-outlined text-primary text-[16px]">{item.icon}</span>
+    {item.label}
   </li>
 ))}
 </ul>
@@ -264,14 +315,19 @@ export default function Page() {
 <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 border border-white/20">
   <span className="material-symbols-outlined text-white">trending_up</span>
 </div>
-<span className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service 04</span>
 <h2 className="text-2xl font-headline font-bold text-white mb-3">eCommerce Account Management</h2>
 <p className="text-white/70 mb-5 font-body text-sm leading-relaxed">Managing marketplaces like Amazon & Flipkart can be complex — we make it simple and profitable.</p>
 <ul className="space-y-2.5 mb-5 flex-grow">
-{['Product Listing Optimization','Catalog Management','Amazon & Flipkart Account Handling','PPC Advertising Campaigns','Order & Inventory Management'].map((item) => (
-  <li key={item} className="flex items-center gap-3 text-sm text-white/80">
-    <span className="material-symbols-outlined text-primary text-[16px]">monitoring</span>
-    {item}
+{[
+  { label: 'Product Listing Optimization', icon: 'format_list_bulleted' },
+  { label: 'Catalog Management', icon: 'inventory_2' },
+  { label: 'Amazon & Flipkart Account Handling', icon: 'manage_accounts' },
+  { label: 'PPC Advertising Campaigns', icon: 'campaign' },
+  { label: 'Order & Inventory Management', icon: 'local_shipping' }
+].map((item) => (
+  <li key={item.label} className="flex items-center gap-3 text-sm text-white/80">
+    <span className="material-symbols-outlined text-primary text-[16px]">{item.icon}</span>
+    {item.label}
   </li>
 ))}
 </ul>
@@ -302,14 +358,19 @@ export default function Page() {
 />
 <div className="absolute inset-0 bg-gradient-to-t from-black/96 via-black/65 to-black/15"/>
 <div className="relative flex flex-col justify-end flex-grow p-5 sm:p-8">
-<span className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service 05</span>
 <h2 className="text-2xl font-headline font-bold text-white mb-3">Social Media Handling</h2>
 <p className="text-white/70 text-sm leading-relaxed mb-4">Build a strong brand presence and engage your audience with strategic social media management.</p>
 <ul className="space-y-2 mb-4">
-{['Content Planning & Posting','Instagram & Facebook Management','Ad Campaign Management','Audience Growth Strategy','Performance Tracking'].map((item) => (
-  <li key={item} className="flex items-center gap-2 text-xs text-white/75">
-    <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary"/>
-    {item}
+{[
+  { label: 'Content Planning & Posting', icon: 'edit_calendar' },
+  { label: 'Instagram & Facebook Management', icon: 'thumb_up' },
+  { label: 'Ad Campaign Management', icon: 'ads_click' },
+  { label: 'Audience Growth Strategy', icon: 'group_add' },
+  { label: 'Performance Tracking', icon: 'monitoring' }
+].map((item) => (
+  <li key={item.label} className="flex items-center gap-2 text-xs text-white/75">
+    <span className="material-symbols-outlined text-primary text-[14px]">{item.icon}</span>
+    {item.label}
   </li>
 ))}
 </ul>
@@ -340,14 +401,19 @@ export default function Page() {
 <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-4 border border-white/20">
   <span className="material-symbols-outlined text-white">article</span>
 </div>
-<span className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service 06</span>
 <h2 className="text-2xl font-headline font-bold text-white mb-3">Content Marketing</h2>
 <p className="text-white/70 mb-4 font-body text-sm leading-relaxed">Content is the backbone of digital success — and we create content that ranks and converts.</p>
 <ul className="space-y-2 mb-4 flex-grow">
-{['SEO Blog Writing','Website Content','Social Media Content','Copywriting for Ads','Keyword Strategy'].map((item) => (
-  <li key={item} className="flex items-start gap-2.5 text-xs text-white/75">
-    <span className="material-symbols-outlined text-primary text-[14px] mt-0.5">edit_note</span>
-    <span>{item}</span>
+{[
+  { label: 'SEO Blog Writing', icon: 'history_edu' },
+  { label: 'Website Content', icon: 'web_stories' },
+  { label: 'Social Media Content', icon: 'post_add' },
+  { label: 'Copywriting for Ads', icon: 'campaign' },
+  { label: 'Keyword Strategy', icon: 'key' }
+].map((item) => (
+  <li key={item.label} className="flex items-start gap-2.5 text-xs text-white/75">
+    <span className="material-symbols-outlined text-primary text-[14px] mt-0.5">{item.icon}</span>
+    <span>{item.label}</span>
   </li>
 ))}
 </ul>
@@ -378,14 +444,19 @@ export default function Page() {
 <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-4 border border-white/20">
   <span className="material-symbols-outlined text-white">palette</span>
 </div>
-<span className="text-tertiary text-xs font-bold uppercase tracking-widest mb-2">Bonus Service</span>
 <h2 className="text-2xl font-headline font-bold text-white mb-3">Graphic Design</h2>
 <p className="text-white/70 mb-4 font-body text-sm leading-relaxed">Bold visuals that communicate instantly — from brand identity to campaign creatives that stop the scroll.</p>
 <ul className="space-y-2 mb-4 flex-grow">
-{['Brand Identity & Logo Design','Social Media Graphics','Ad Creatives','Marketing Collateral','Style Guides'].map((item) => (
-  <li key={item} className="flex items-start gap-2.5 text-xs text-white/75">
-    <span className="material-symbols-outlined text-tertiary text-[14px] mt-0.5">brush</span>
-    <span>{item}</span>
+{[
+  { label: 'Brand Identity & Logo Design', icon: 'fingerprint' },
+  { label: 'Social Media Graphics', icon: 'image' },
+  { label: 'Ad Creatives', icon: 'view_carousel' },
+  { label: 'Marketing Collateral', icon: 'feed' },
+  { label: 'Style Guides', icon: 'format_color_fill' }
+].map((item) => (
+  <li key={item.label} className="flex items-start gap-2.5 text-xs text-white/75">
+    <span className="material-symbols-outlined text-tertiary text-[14px] mt-0.5">{item.icon}</span>
+    <span>{item.label}</span>
   </li>
 ))}
 </ul>
@@ -414,14 +485,19 @@ export default function Page() {
 <div className="relative z-10 p-6 sm:p-10">
 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
 <div>
-<span className="text-tertiary font-headline font-bold text-xs uppercase tracking-[0.2em] mb-3 block">Service 07 · Strategic Advisory</span>
 <h2 className="text-2xl sm:text-3xl font-headline font-bold text-white mb-4">Business Consulting</h2>
 <p className="text-white/70 text-base sm:text-lg leading-relaxed mb-6">We don't just execute — we guide your business toward sustainable growth with data-driven strategy and expert insights.</p>
 <div className="space-y-3 mb-6">
-{['Business Strategy Development','Digital Growth Planning','Market Research & Competitor Analysis','Revenue Optimization','Branding Strategy'].map((item) => (
-  <div key={item} className="flex items-center gap-3">
-    <div className="w-2 h-2 rounded-full bg-tertiary shrink-0"/>
-    <span className="text-white/85 font-medium text-sm">{item}</span>
+{[
+  { label: 'Business Strategy Development', icon: 'insights' },
+  { label: 'Digital Growth Planning', icon: 'map' },
+  { label: 'Market Research & Competitor Analysis', icon: 'query_stats' },
+  { label: 'Revenue Optimization', icon: 'payments' },
+  { label: 'Branding Strategy', icon: 'campaign' }
+].map((item) => (
+  <div key={item.label} className="flex items-center gap-3">
+    <span className="material-symbols-outlined text-tertiary text-[16px]">{item.icon}</span>
+    <span className="text-white/85 font-medium text-sm">{item.label}</span>
   </div>
 ))}
 </div>
@@ -443,7 +519,7 @@ export default function Page() {
   { val: '3x', label: 'Revenue Growth' },
   { val: '60+', label: 'Brands Scaled' },
   { val: '90%', label: 'Client Retention' },
-  { val: '$12M+', label: 'Revenue Driven' },
+  { val: '₹12M+', label: 'Revenue Driven' },
 ].map(({ val, label }) => (
   <div key={label} className="bg-white/10 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-white/15 flex flex-col gap-2">
     <span className="text-2xl sm:text-3xl font-black text-white">{val}</span>
@@ -490,21 +566,35 @@ export default function Page() {
 <p className="text-on-surface-variant mb-10 text-sm sm:text-base">We proudly offer our digital services across Gujarat and beyond.</p>
 <div className="flex flex-wrap justify-center gap-3">
 {[
-  { city: 'Vadodara', icon: 'location_on' },
-  { city: 'Ahmedabad', icon: 'location_on' },
-  { city: 'Surat', icon: 'location_on' },
-  { city: 'Rajkot', icon: 'location_on' },
+  { city: 'Vadodara', icon: 'location_on', href: '/digital-marketing-vadodara' },
+  { city: 'Ahmedabad', icon: 'location_on', href: '/digital-marketing-ahmedabad' },
+  { city: 'Surat', icon: 'location_on', href: '/digital-marketing-surat' },
+  { city: 'Rajkot', icon: 'location_on', href: '/digital-marketing-rajkot' },
   { city: 'Anand', icon: 'location_on' },
   { city: 'Bharuch', icon: 'location_on' },
   { city: 'Nadiad', icon: 'location_on' },
   { city: 'Entire Gujarat', icon: 'map' },
   { city: 'Pan India', icon: 'public' },
-].map(({ city, icon }) => (
-  <div key={city} className="flex items-center gap-2 px-5 py-3 bg-surface-container rounded-xl border border-outline-variant/10 hover:border-primary/30 hover:bg-surface-container-high transition-all duration-200">
-    <span className="material-symbols-outlined text-primary text-[18px]">{icon}</span>
-    <span className="font-semibold text-sm">{city}</span>
-  </div>
-))}
+].map(({ city, icon, href }) => {
+  const content = (
+    <>
+      <span className="material-symbols-outlined text-primary text-[18px]">{icon}</span>
+      <span className="font-semibold text-sm">{city}</span>
+    </>
+  );
+  
+  const className = "flex items-center gap-2 px-5 py-3 bg-surface-container rounded-xl border border-outline-variant/10 hover:border-primary/30 hover:bg-surface-container-high transition-all duration-200 cursor-pointer";
+
+  return href ? (
+    <Link key={city} href={href} className={className}>
+      {content}
+    </Link>
+  ) : (
+    <div key={city} className={className}>
+      {content}
+    </div>
+  );
+})}
 </div>
 </div>
 </section>
@@ -539,7 +629,7 @@ export default function Page() {
   </div>
   <div className="w-px h-8 bg-white/20"/>
   <div className="text-center">
-    <div className="text-2xl font-black text-white leading-none mb-1">$50M+</div>
+    <div className="text-2xl font-black text-white leading-none mb-1">₹50M+</div>
     <div className="text-[11px] text-white/50 uppercase tracking-widest font-semibold">Revenue Generated</div>
   </div>
   <div className="w-px h-8 bg-white/20"/>

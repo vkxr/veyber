@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ProcessSection from '@/components/ProcessSection';
 
 export const metadata: Metadata = {
   title: 'Meesho Account Management Services in Gujarat | Meesho Experts - Veyber',
@@ -167,11 +168,26 @@ const results = [
 ];
 
 const process = [
-  'Account Audit',
-  'Strategy Planning',
-  'Listing and Catalog Optimization',
-  'Performance Monitoring',
-  'Scaling and Growth',
+  {
+    label: 'Account Audit',
+    desc: 'We review your Meesho catalog, pricing, seller profile, and current performance to identify the most important fixes first.',
+  },
+  {
+    label: 'Strategy Planning',
+    desc: 'A practical growth plan is built around your product mix, competition level, pricing flexibility, and business goals.',
+  },
+  {
+    label: 'Listing and Catalog Optimization',
+    desc: 'We improve titles, descriptions, variants, categorization, and catalog quality so products are easier to discover and convert.',
+  },
+  {
+    label: 'Performance Monitoring',
+    desc: 'Orders, visibility, ratings, returns, and account metrics are tracked continuously so issues can be corrected before they compound.',
+  },
+  {
+    label: 'Scaling and Growth',
+    desc: 'Winning products, pricing moves, and promotional opportunities are expanded carefully to support steadier long-term growth.',
+  },
 ];
 
 const faqItems = [
@@ -356,19 +372,6 @@ export default function Page() {
     </div>
   </div>
 
-  <div className="bg-surface-container rounded-2xl border border-outline-variant/10 p-5">
-    <h3 className="text-sm font-bold text-white mb-4 uppercase tracking-widest">Our Process</h3>
-    <div className="space-y-3">
-    {process.map((step, index) => (
-      <div key={step} className="flex items-center gap-4">
-        <span className="w-8 h-8 rounded-full bg-primary/10 text-primary font-bold text-xs flex items-center justify-center shrink-0">
-          {String(index + 1).padStart(2, '0')}
-        </span>
-        <span className="text-sm text-white font-medium">{step}</span>
-      </div>
-    ))}
-    </div>
-  </div>
 </div>
 
 <div className="bg-surface-container rounded-2xl border border-outline-variant/10 p-6 sm:p-8 relative overflow-hidden">
@@ -389,6 +392,12 @@ export default function Page() {
 
 </div>
 </section>
+
+<ProcessSection
+  title="Our Process"
+  description="A Meesho-specific workflow built to improve catalog quality, strengthen seller performance, and create scalable growth."
+  steps={process}
+/>
 
 <section className="px-4 sm:px-8 py-12 sm:py-16 bg-surface">
 <div className="max-w-7xl mx-auto">

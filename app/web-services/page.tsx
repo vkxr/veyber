@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ProcessSection from '@/components/ProcessSection';
 
 export const metadata: Metadata = {
   title: 'Web Services in Gujarat | Web Dev, Hosting & DevOps – Veyber',
@@ -277,27 +278,18 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Process */}
-        <section className="px-4 sm:px-8 py-14 sm:py-24 bg-surface">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">Our Proven Process</h2>
-              <p className="text-on-surface-variant max-w-xl mx-auto text-sm">A structured, transparent workflow that delivers consistent results.</p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[{"n":"01","label":"Requirements Gathering","desc":"We define the technical stack, architecture requirements, and hosting needs."},{"n":"02","label":"Design & Prototyping","desc":"Creating wireframes and UI designs focused on user experience and conversion."},{"n":"03","label":"Development","desc":"Writing clean, scalable code using modern frameworks like React and Next.js."},{"n":"04","label":"Infrastructure Setup","desc":"Configuring servers, databases, and continuous integration pipelines."},{"n":"05","label":"Testing & QA","desc":"Rigorous testing for performance, security, and cross-browser compatibility."},{"n":"06","label":"Deployment & Maintenance","desc":"Going live with zero downtime and providing ongoing server monitoring and updates."}].map((step: any, i: number) => (
-                <div key={i} className="relative bg-surface-container rounded-2xl border border-outline-variant/10 p-6 overflow-hidden group hover:border-primary/25 hover:bg-surface-container-high transition-all duration-200">
-                  <div className="absolute top-3 right-3 text-5xl font-black text-outline-variant/15 font-headline leading-none pointer-events-none">{step.n}</div>
-                  <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                    <span className="material-symbols-outlined text-primary text-[18px]">check</span>
-                  </div>
-                  <h3 className="font-bold text-white mb-2 pt-2">{step.label}</h3>
-                  <p className="text-on-surface-variant text-sm leading-relaxed">{step.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <ProcessSection
+          title="Our Proven Process"
+          description="A structured, transparent workflow that delivers consistent results."
+          steps={[
+            { n: '01', label: 'Requirements Gathering', desc: 'We define the technical stack, architecture requirements, and hosting needs.' },
+            { n: '02', label: 'Design & Prototyping', desc: 'Creating wireframes and UI designs focused on user experience and conversion.' },
+            { n: '03', label: 'Development', desc: 'Writing clean, scalable code using modern frameworks like React and Next.js.' },
+            { n: '04', label: 'Infrastructure Setup', desc: 'Configuring servers, databases, and continuous integration pipelines.' },
+            { n: '05', label: 'Testing & QA', desc: 'Rigorous testing for performance, security, and cross-browser compatibility.' },
+            { n: '06', label: 'Deployment & Maintenance', desc: 'Going live with zero downtime and providing ongoing server monitoring and updates.' },
+          ]}
+        />
 
         {/* Results */}
         <section className="px-4 sm:px-8 py-14 sm:py-20 bg-surface-container-low">

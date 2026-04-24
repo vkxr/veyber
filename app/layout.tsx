@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
@@ -29,10 +30,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark" suppressHydrationWarning>
       <head>
         {/* Anti-FOUC: sync theme from localStorage before first paint */}
-        <script dangerouslySetInnerHTML={{__html:`(function(){try{var t=localStorage.getItem('veyber-theme');if(t==='light'){document.documentElement.classList.remove('dark')}else{document.documentElement.classList.add('dark')}}catch(e){}})();`}}/>
+        <Script id="theme-sync" strategy="beforeInteractive" dangerouslySetInnerHTML={{__html:`(function(){try{var t=localStorage.getItem('veyber-theme');if(t==='light'){document.documentElement.classList.remove('dark')}else{document.documentElement.classList.add('dark')}}catch(e){}})();`}}/>
         {/* Preconnect to external origins for faster resource loading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -40,7 +41,7 @@ export default function RootLayout({
         {/* Material Symbols — narrowed to weight 400 only + display=swap for non-blocking */}
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0&display=swap" rel="stylesheet" />
         {/* Organization Schema — structured data for search engines */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+        <Script id="org-schema" type="application/ld+json" strategy="beforeInteractive" dangerouslySetInnerHTML={{__html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
           "name": "Veyber",
@@ -56,8 +57,8 @@ export default function RootLayout({
           "sameAs": [],
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+91-98765-43210",
-            "email": "hello@veyber.in",
+            "telephone": "+91-6355183655",
+            "email": "veyberservicespvtltd@gmail.com",
             "contactType": "customer service",
             "areaServed": "IN",
             "availableLanguage": "English"

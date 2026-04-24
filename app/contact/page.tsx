@@ -17,7 +17,7 @@ const contactSchema = {
   name: 'Veyber',
   url: 'https://veyber.co.in',
   logo: 'https://veyber.co.in/veyber-logo.png',
-  email: 'admin@veyber.co.in',
+  email: 'veyberservicespvtltd@gmail.com',
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+91-6355183655',
@@ -95,7 +95,7 @@ export default function Page() {
 
       <div className="space-y-3">
         {/* Email */}
-        <a href="mailto:admin@veyber.co.in" className="flex items-center gap-4 p-4 bg-surface-container rounded-2xl border border-outline-variant/10 group hover:border-primary/25 transition-colors">
+        <a href="mailto:veyberservicespvtltd@gmail.com" className="flex items-center gap-4 p-4 bg-surface-container rounded-2xl border border-outline-variant/10 group hover:border-primary/25 transition-colors">
           <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
               <rect x="2" y="4" width="20" height="16" rx="2"/>
@@ -104,7 +104,7 @@ export default function Page() {
           </div>
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-on-surface-variant mb-0.5">Email Us</p>
-            <p className="text-sm font-medium text-on-surface group-hover:text-primary transition-colors">admin@veyber.co.in</p>
+            <p className="text-sm font-medium text-on-surface group-hover:text-primary transition-colors">veyberservicespvtltd@gmail.com</p>
           </div>
         </a>
 
@@ -142,7 +142,7 @@ export default function Page() {
           </div>
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-on-surface-variant mb-0.5">Our Location</p>
-            <p className="text-sm font-medium text-on-surface">Vadodara, Gujarat, India</p>
+            <p className="text-sm font-medium text-on-surface">310, Maa Darshan Flats, near Panchvati, Ajwa Road, Vadodara - 390019</p>
           </div>
         </div>
       </div>
@@ -270,14 +270,20 @@ export default function Page() {
 <div className="bg-surface-container rounded-2xl border border-primary/15 p-5 sm:p-8 text-left max-w-2xl mx-auto">
   <p className="text-sm text-on-surface-variant mb-3 font-medium">Searching for:</p>
   {[
-    '"Best eCommerce Development Company in Vadodara"',
-    '"eCommerce Account Management Services in Gujarat"',
-    '"Social Media Agency in Vadodara"',
-  ].map((query) => (
-    <div key={query} className="flex items-center gap-3 py-2 border-b border-outline-variant/10 last:border-0">
-      <span className="material-symbols-outlined text-primary text-[16px] shrink-0">search</span>
-      <span className="text-sm text-on-surface italic">{query}</span>
-    </div>
+    { text: '"Best eCommerce Development Company in Vadodara"', q: 'Best eCommerce Development Company in Vadodara' },
+    { text: '"eCommerce Account Management Services in Gujarat"', q: 'eCommerce Account Management Services in Gujarat' },
+    { text: '"Social Media Agency in Vadodara"', q: 'Social Media Agency in Vadodara' },
+  ].map(({ text, q }) => (
+    <a 
+      key={text} 
+      href={`https://www.google.com/search?q=${encodeURIComponent(q)}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-3 py-2 px-2 -mx-2 rounded-lg border-b border-outline-variant/10 last:border-0 hover:bg-primary/5 transition-colors cursor-pointer group"
+    >
+      <span className="material-symbols-outlined text-primary text-[16px] shrink-0 group-hover:scale-110 transition-transform">search</span>
+      <span className="text-sm text-on-surface italic group-hover:text-primary transition-colors">{text}</span>
+    </a>
   ))}
   <p className="text-primary font-bold text-sm mt-4">You&apos;re in the right place.</p>
 </div>
@@ -303,7 +309,7 @@ export default function Page() {
       <span className="material-symbols-outlined text-[20px]">call</span>
       Call Us Now
     </a>
-    <a href="mailto:admin@veyber.co.in" className="inline-flex items-center justify-center gap-2 px-7 py-4 text-white font-bold rounded-full border border-white/20 hover:border-primary/40 hover:bg-primary/10 transition-all active:scale-95">
+    <a href="mailto:veyberservicespvtltd@gmail.com" className="inline-flex items-center justify-center gap-2 px-7 py-4 text-white font-bold rounded-full border border-white/20 hover:border-primary/40 hover:bg-primary/10 transition-all active:scale-95">
       <span className="material-symbols-outlined text-[20px]">mail</span>
       Email Us
     </a>

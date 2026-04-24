@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ProcessSection from '@/components/ProcessSection';
 
 export const metadata: Metadata = {
   title: 'Ecommerce Account Management Services in Gujarat | Amazon & Flipkart Experts - Veyber',
@@ -163,12 +164,30 @@ const results = [
 ];
 
 const process = [
-  'Account Audit',
-  'Strategy Planning',
-  'Listing Optimization',
-  'Campaign Setup',
-  'Monitoring and Scaling',
-  'Reporting and Improvement',
+  {
+    label: 'Account Audit',
+    desc: 'We review your catalog, marketplace visibility, ad performance, and account health to spot the biggest growth blockers first.',
+  },
+  {
+    label: 'Strategy Planning',
+    desc: 'A channel-specific roadmap is created around your products, margins, marketplace fit, and realistic revenue goals.',
+  },
+  {
+    label: 'Listing Optimization',
+    desc: 'We improve product titles, descriptions, structure, and conversion signals so your listings compete more effectively.',
+  },
+  {
+    label: 'Campaign Setup',
+    desc: 'Marketplace ads, promotions, and performance tracking are configured to support profitable traffic and cleaner decision-making.',
+  },
+  {
+    label: 'Monitoring and Scaling',
+    desc: 'We monitor sales, ROAS, visibility, and account metrics closely, then scale what is working while tightening weak areas.',
+  },
+  {
+    label: 'Reporting and Improvement',
+    desc: 'Regular reporting keeps the strategy transparent while new opportunities, fixes, and growth actions are prioritized month after month.',
+  },
 ];
 
 const faqItems = [
@@ -377,23 +396,16 @@ export default function Page() {
     </p>
   </div>
 
-  <div className="bg-surface-container rounded-2xl border border-outline-variant/10 p-6 sm:p-8">
-    <h3 className="text-xl font-bold font-headline mb-5">Our Process</h3>
-    <div className="space-y-3">
-    {process.map((step, index) => (
-      <div key={step} className="flex items-center gap-4">
-        <span className="w-8 h-8 rounded-full bg-primary/10 text-primary font-bold text-xs flex items-center justify-center shrink-0">
-          {String(index + 1).padStart(2, '0')}
-        </span>
-        <span className="text-sm text-white font-medium">{step}</span>
-      </div>
-    ))}
-    </div>
-  </div>
 </div>
 
 </div>
 </section>
+
+<ProcessSection
+  title="Our Process"
+  description="A marketplace-focused workflow designed to improve visibility, tighten operations, and scale profitable seller growth."
+  steps={process}
+/>
 
 <section className="px-4 sm:px-8 py-12 sm:py-16 bg-surface">
 <div className="max-w-7xl mx-auto">

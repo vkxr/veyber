@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ProcessSection from '@/components/ProcessSection';
 
 export const metadata: Metadata = {
   title: 'WooCommerce Development Company in Gujarat | Vadodara Experts - Veyber',
@@ -326,26 +327,11 @@ export default function Page() {
 </div>
 </section>
 
-<section className="px-4 sm:px-8 py-14 sm:py-24 bg-surface">
-<div className="max-w-7xl mx-auto">
-<div className="text-center mb-12 sm:mb-16">
-  <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">Our Development Process</h2>
-  <p className="text-on-surface-variant max-w-xl mx-auto text-sm">A transparent, milestone-driven process designed to produce a stable, scalable ecommerce store.</p>
-</div>
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-{process.map(({ n, label, desc }) => (
-  <div key={n} className="relative bg-surface-container rounded-2xl border border-outline-variant/10 p-6 overflow-hidden group hover:border-primary/25 hover:bg-surface-container-high transition-all duration-200">
-    <div className="absolute top-3 right-3 text-5xl font-black text-outline-variant/15 font-headline leading-none pointer-events-none">{n}</div>
-    <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-      <span className="material-symbols-outlined text-primary text-[18px]">check</span>
-    </div>
-    <h3 className="font-bold text-white mb-2 pt-2">{label}</h3>
-    <p className="text-on-surface-variant text-sm leading-relaxed">{desc}</p>
-  </div>
-))}
-</div>
-</div>
-</section>
+<ProcessSection
+  title="Our Development Process"
+  description="A transparent, milestone-driven process designed to produce a stable, scalable ecommerce store."
+  steps={process}
+/>
 
 <section className="px-4 sm:px-8 py-12 sm:py-16 bg-surface-container-low">
 <div className="max-w-7xl mx-auto">

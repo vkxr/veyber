@@ -22,7 +22,7 @@ export default function LazyMap() {
       {show ? (
         <iframe
           title="Veyber location — Vadodara, Gujarat"
-          src="https://maps.google.com/maps?q=Vadodara,Gujarat,India&z=13&output=embed"
+          src="https://maps.google.com/maps?q=310,+Maa+Darshan+Flats,+near+Panchvati,+Ajwa+Road,+Vadodara+-+390019&z=15&output=embed"
           width="100%"
           height="100%"
           style={{border:0, filter:'saturate(0.85) brightness(0.92)'}}
@@ -45,8 +45,8 @@ export default function LazyMap() {
         </div>
       </div>
       {/* Bottom label */}
-      <div className="pointer-events-none absolute bottom-0 inset-x-0 h-12 bg-gradient-to-t from-black/40 to-transparent flex items-end px-4 pb-3">
-        <span className="text-white text-xs font-semibold drop-shadow">📍 Vadodara, Gujarat, India</span>
+      <div className="pointer-events-none absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent flex items-end px-4 pt-8 pb-3">
+        <span className="text-white text-xs font-semibold drop-shadow leading-tight">📍 310, Maa Darshan Flats, near Panchvati,<br/>Ajwa Road, Vadodara - 390019</span>
       </div>
     </div>
   );

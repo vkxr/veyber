@@ -1,7 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
+import Script from 'next/script';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ProcessSection from '@/components/ProcessSection';
 
 export const metadata: Metadata = {
   title: 'Website Development Services in Gujarat | Custom Web Solutions – Veyber',
@@ -73,8 +76,8 @@ const faqSchema = {
 export default function Page() {
   return (
     <div className="flex flex-col min-h-screen">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <Script id="page-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
+      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Navbar />
       <main className="pt-[120px]">
 
@@ -277,25 +280,125 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Process */}
-        <section className="px-4 sm:px-8 py-14 sm:py-24 bg-surface">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">Our Proven Process</h2>
-              <p className="text-on-surface-variant max-w-xl mx-auto text-sm">A structured, transparent workflow that delivers consistent results.</p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[{"n":"01","label":"Discovery","desc":"Understanding your brand, target audience, and website goals."},{"n":"02","label":"Wireframing","desc":"Mapping out the structure and user journey of the website."},{"n":"03","label":"UI Design","desc":"Crafting pixel-perfect designs that align with your brand identity."},{"n":"04","label":"Development","desc":"Writing clean, semantic, and highly optimized code."},{"n":"05","label":"Testing","desc":"Ensuring flawless performance across all browsers and devices."},{"n":"06","label":"Launch","desc":"Deploying the site to production and handing over the keys."}].map((step: any, i: number) => (
-                <div key={i} className="relative bg-surface-container rounded-2xl border border-outline-variant/10 p-6 overflow-hidden group hover:border-primary/25 hover:bg-surface-container-high transition-all duration-200">
-                  <div className="absolute top-3 right-3 text-5xl font-black text-outline-variant/15 font-headline leading-none pointer-events-none">{step.n}</div>
-                  <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                    <span className="material-symbols-outlined text-primary text-[18px]">check</span>
-                  </div>
-                  <h3 className="font-bold text-white mb-2 pt-2">{step.label}</h3>
-                  <p className="text-on-surface-variant text-sm leading-relaxed">{step.desc}</p>
+        <ProcessSection
+          title="Our Proven Process"
+          description="A structured, transparent workflow that delivers consistent results."
+          steps={[
+            { n: '01', label: 'Discovery', desc: 'Understanding your brand, target audience, and website goals.' },
+            { n: '02', label: 'Wireframing', desc: 'Mapping out the structure and user journey of the website.' },
+            { n: '03', label: 'UI Design', desc: 'Crafting pixel-perfect designs that align with your brand identity.' },
+            { n: '04', label: 'Development', desc: 'Writing clean, semantic, and highly optimized code.' },
+            { n: '05', label: 'Testing', desc: 'Ensuring flawless performance across all browsers and devices.' },
+            { n: '06', label: 'Launch', desc: 'Deploying the site to production and handing over the keys.' },
+          ]}
+        />
+
+        {/* Portfolio / Our Works */}
+        <section className="py-14 sm:py-24 bg-surface border-y border-outline-variant/10 overflow-hidden relative">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent pointer-events-none" />
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 mb-10 text-center relative z-10">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/[0.08] text-primary font-bold text-xs tracking-widest uppercase mb-4">
+              <span className="relative flex h-1.5 w-1.5 shrink-0"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"/><span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary"/></span>
+              Our Works
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">Website Portfolio</h2>
+            <p className="text-on-surface-variant max-w-xl mx-auto text-sm sm:text-base">
+              A glimpse into some of the stunning, high-performance websites we've built for our clients across various industries.
+            </p>
+          </div>
+          
+          <div className="relative w-full overflow-hidden flex flex-col gap-6 pb-8 group">
+            <style dangerouslySetInnerHTML={{__html: `
+              @keyframes marqueeLeft {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+              }
+              @keyframes marqueeRight {
+                0% { transform: translateX(-50%); }
+                100% { transform: translateX(0); }
+              }
+              .animate-marquee-left {
+                animation: marqueeLeft 80s linear infinite;
+              }
+              .animate-marquee-right {
+                animation: marqueeRight 80s linear infinite;
+              }
+              .group:hover .animate-marquee-left,
+              .group:hover .animate-marquee-right {
+                animation-play-state: paused;
+              }
+            `}} />
+            {/* First Row - Moving Left */}
+            <div className="flex animate-marquee-left whitespace-nowrap min-w-max">
+              {[...Array(2)].map((_, i) => (
+                <div key={i} className="flex gap-4 sm:gap-6 px-2 sm:px-3">
+                  {[
+                    { name: 'Pal Fashions', img: '/portfolio/palfashions.webp', url: 'https://www.palfashions.com/' },
+                    { name: 'Rama Realty', img: '/portfolio/rama-realty.webp', url: 'https://rama-realty.com/' },
+                    { name: 'Mukesh Uniform', img: '/portfolio/mukeshuniform.webp', url: 'https://mukeshuniform.com/' },
+                    { name: 'House It Now', img: '/portfolio/houseitnow.webp', url: 'https://houseitnow.in/' },
+                    { name: 'Ambaji Jewellers', img: '/portfolio/ambajijewellers.webp', url: 'https://ambajijewellers.com/' },
+                    { name: 'Divya Fashion', img: '/portfolio/divyafashion.webp', url: 'https://divyafashionmumbai.com/' },
+                    { name: 'Purnima Sarees', img: '/portfolio/purnimasarees.webp', url: 'https://purnimasarees.com/' },
+                    { name: 'Colors Designer Wear', img: '/portfolio/colorsdesignerwear.webp', url: 'https://colorsdesignerwear.in/' },
+                    { name: 'Vijay Kataria', img: '/portfolio/vijaykataria.webp', url: 'https://vijaykataria.in/' },
+                    { name: 'Arihant Media', img: '/portfolio/arihantmedia.webp', url: 'https://arihantmedia.co.in/index.php' },
+                    { name: 'Biz Marketing Services', img: '/portfolio/bizmarketing.webp', url: 'https://bizmarketingservices.in/' },
+                    { name: 'Marketing Agency London', img: '/portfolio/marketingagencylondon.webp', url: 'https://marketingagencylondon.uk/' }
+                  ].map((site) => (
+                    <a href={site.url} target="_blank" rel="noopener noreferrer" key={site.name} className="relative force-dark w-[280px] sm:w-[450px] aspect-[16/10] rounded-2xl overflow-hidden border border-outline-variant/15 flex-shrink-0 group/card block transition-all hover:shadow-2xl hover:-translate-y-2 hover:border-primary/50 bg-neutral-900">
+                      <Image src={site.img} alt={site.name} fill sizes="(max-width: 640px) 280px, 450px" className="object-cover object-top transition-transform duration-700 group-hover/card:scale-105" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-4 opacity-0 group-hover/card:translate-y-0 group-hover/card:opacity-100 transition-all duration-300">
+                        <div className="flex items-center justify-between">
+                          <h3 className="text-white font-bold text-lg">{site.name}</h3>
+                          <span className="material-symbols-outlined text-white bg-white/20 p-1.5 rounded-full backdrop-blur-sm">open_in_new</span>
+                        </div>
+                        <p className="text-white/70 text-xs mt-1 truncate">{site.url.replace('https://', '')}</p>
+                      </div>
+                    </a>
+                  ))}
                 </div>
               ))}
             </div>
+
+            {/* Second Row - Moving Right */}
+            <div className="flex animate-marquee-right whitespace-nowrap min-w-max">
+              {[...Array(2)].map((_, i) => (
+                <div key={i} className="flex gap-4 sm:gap-6 px-2 sm:px-3">
+                  {[
+                    { name: 'Computer Service Near Me', img: '/portfolio/computerservice.webp', url: 'https://computerservicenearme.in/' },
+                    { name: 'HSTL Site', img: '/portfolio/hstl.webp', url: 'https://hstl.site/' },
+                    { name: 'KVRS Virtual Assistant', img: '/portfolio/kvrsvirtual.webp', url: 'https://kvrsvirtualassistant.com/' },
+                    { name: 'KVRS', img: '/portfolio/kvrs.webp', url: 'https://kvrs.co.in/' },
+                    { name: 'My Fibroid Clinic', img: '/portfolio/myfibroid.webp', url: 'https://myfibroidclinic.com/' },
+                    { name: 'Knee Pain 360', img: '/portfolio/kneepain.webp', url: 'https://kneepain360.com/' },
+                    { name: 'My Hemorrhoid Clinic', img: '/portfolio/myhemorrhoid.webp', url: 'https://myhemorrhoidclinic.com/' },
+                    { name: 'Geo Treasures Nexus', img: '/portfolio/geotreasures.webp', url: 'https://geotreasuresnexus.com/' },
+                    { name: 'Geo Mine Enviro Experts', img: '/portfolio/geomine.webp', url: 'https://geomineenviroexperts.com/' },
+                    { name: 'Property Pedia', img: '/portfolio/propertypedia.webp', url: 'https://propertyppedia.com/' },
+                    { name: 'Brand Channel UK', img: '/portfolio/brandchannel.webp', url: 'https://brandchannel.co.uk/' },
+                    { name: 'Veyber', img: '/portfolio/veyber.webp', url: 'https://veyber.co.in/' }
+                  ].map((site) => (
+                    <a href={site.url} target="_blank" rel="noopener noreferrer" key={site.name} className="relative force-dark w-[280px] sm:w-[450px] aspect-[16/10] rounded-2xl overflow-hidden border border-outline-variant/15 flex-shrink-0 group/card block transition-all hover:shadow-2xl hover:-translate-y-2 hover:border-primary/50 bg-neutral-900">
+                      <Image src={site.img} alt={site.name} fill sizes="(max-width: 640px) 280px, 450px" className="object-cover object-top transition-transform duration-700 group-hover/card:scale-105" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-4 opacity-0 group-hover/card:translate-y-0 group-hover/card:opacity-100 transition-all duration-300">
+                        <div className="flex items-center justify-between">
+                          <h3 className="text-white font-bold text-lg">{site.name}</h3>
+                          <span className="material-symbols-outlined text-white bg-white/20 p-1.5 rounded-full backdrop-blur-sm">open_in_new</span>
+                        </div>
+                        <p className="text-white/70 text-xs mt-1 truncate">{site.url.replace('https://', '')}</p>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              ))}
+            </div>
+
+            {/* Gradients to fade edges */}
+            <div className="absolute top-0 bottom-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-surface to-transparent pointer-events-none" />
+            <div className="absolute top-0 bottom-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-surface to-transparent pointer-events-none" />
           </div>
         </section>
 

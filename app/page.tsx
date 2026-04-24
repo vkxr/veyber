@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ProcessTimeline from '@/components/ProcessTimeline';
 
 export default function Page() {
   return (
@@ -12,10 +13,10 @@ export default function Page() {
 <section className="relative px-4 sm:px-8 py-12 sm:py-20 md:py-28 flex flex-col items-center overflow-hidden" style={{background:'radial-gradient(ellipse 110% 55% at 50% -5%, rgba(174,198,255,0.07) 0%, transparent 70%)'}}>
 {/* Subtle grid overlay */}
 <div className="pointer-events-none absolute inset-0 opacity-[0.022]" style={{backgroundImage:'linear-gradient(rgba(174,198,255,0.6) 1px,transparent 1px),linear-gradient(90deg,rgba(174,198,255,0.6) 1px,transparent 1px)',backgroundSize:'64px 64px'}}/>
-{/*  Background Glows — reduced blur radius for performance  */}
-<div className="pointer-events-none absolute -top-[20%] -left-[15%] w-[780px] h-[780px] bg-primary/10 blur-[80px] rounded-full"/>
-<div className="pointer-events-none absolute -bottom-[20%] -right-[10%] w-[680px] h-[680px] bg-secondary-container/12 blur-[70px] rounded-full"/>
-<div className="pointer-events-none absolute top-[18%] left-1/2 -translate-x-1/2 w-[900px] h-[360px] bg-primary/5 blur-[60px] rounded-full"/>
+{/*  Background Glows — Hardware Accelerated  */}
+<div className="pointer-events-none absolute -top-[20%] -left-[15%] w-[780px] h-[780px] rounded-full" style={{background: 'radial-gradient(circle, rgba(174,198,255,0.1) 0%, transparent 70%)'}}/>
+<div className="pointer-events-none absolute -bottom-[20%] -right-[10%] w-[680px] h-[680px] rounded-full" style={{background: 'radial-gradient(circle, rgba(174,198,255,0.12) 0%, transparent 70%)'}}/>
+<div className="pointer-events-none absolute top-[18%] left-1/2 -translate-x-1/2 w-[900px] h-[360px] rounded-full" style={{background: 'radial-gradient(circle, rgba(174,198,255,0.05) 0%, transparent 70%)'}}/>
 <div className="relative z-10 text-center max-w-5xl mx-auto">
 <span className="hero-content-anim inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/[0.08] text-primary font-bold text-xs tracking-widest uppercase mb-5 shadow-[0_0_24px_rgba(174,198,255,0.12)]">
   <span className="relative flex h-1.5 w-1.5 shrink-0"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"/><span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary"/></span>
@@ -39,9 +40,9 @@ export default function Page() {
 </div>
 {/*  Premium Visual  */}
 <div className="hero-content-anim hidden sm:block mt-16 sm:mt-20 w-full max-w-6xl mx-auto relative px-4" style={{animationDelay:'0.45s'}}>
-{/* Radial glow behind dashboard — reduced blur */}
-<div className="pointer-events-none absolute inset-x-8 -top-20 h-[520px] rounded-full bg-primary/10 blur-[60px]"/>
-<div className="pointer-events-none absolute inset-x-32 top-1/3 h-[200px] rounded-full bg-[#4f8eff]/8 blur-[40px]"/>
+{/* Radial glow behind dashboard — Hardware Accelerated */}
+<div className="pointer-events-none absolute inset-x-8 -top-20 h-[520px] rounded-full" style={{background: 'radial-gradient(circle, rgba(174,198,255,0.1) 0%, transparent 70%)'}}/>
+<div className="pointer-events-none absolute inset-x-32 top-1/3 h-[200px] rounded-full" style={{background: 'radial-gradient(circle, rgba(79,142,255,0.08) 0%, transparent 70%)'}}/>
 {/* Float + deep shadow wrapper */}
 <div className="hero-dashboard-float" style={{filter:'drop-shadow(0 56px 100px rgba(0,0,0,0.70)) drop-shadow(0 0 80px rgba(174,198,255,0.09))'}}>
 <div className="bg-surface-container-low rounded-3xl border border-primary/12 shadow-2xl p-4 overflow-hidden" style={{transform:'perspective(1600px) rotateX(4.5deg)'}}>
@@ -113,7 +114,7 @@ export default function Page() {
       <div className="grid grid-cols-4 gap-2">
         <div className="bg-[#1d1e32] rounded-xl p-2.5 border border-white/5">
           <div className="text-[7px] text-white/35 mb-1 uppercase tracking-wider">Revenue</div>
-          <div className="text-[13px] font-black text-white leading-none mb-1">$2.4M</div>
+          <div className="text-[13px] font-black text-white leading-none mb-1">₹2.4M</div>
           <div className="text-[8px] text-[#4ade80] font-semibold flex items-center gap-0.5">
             <span className="material-symbols-outlined" style={{fontSize:'9px'}}>arrow_upward</span>+32%
           </div>
@@ -177,7 +178,7 @@ export default function Page() {
               <circle cx="252" cy="18" r="7" fill="#aec6ff" fillOpacity="0.15"/>
               {/* Tooltip */}
               <rect x="218" y="1" width="52" height="20" rx="4" fill="#27283d"/>
-              <text x="244" y="15" textAnchor="middle" fill="#aec6ff" fontSize="7.5" fontWeight="700">$287K</text>
+              <text x="244" y="15" textAnchor="middle" fill="#aec6ff" fontSize="7.5" fontWeight="700">₹287K</text>
             </svg>
           </div>
           <div className="flex justify-between pt-1">
@@ -213,10 +214,10 @@ export default function Page() {
             <div className="text-[9px] font-bold text-white mb-2.5">Top Brands</div>
             <div className="flex flex-col gap-2.5">
               {[
-                {name:'NovaTech Pro', rev:'$82K', pct:82},
-                {name:'UrbanEdge', rev:'$61K', pct:61},
-                {name:'ZenHome Co.', rev:'$44K', pct:44},
-                {name:'PureLife', rev:'$29K', pct:29},
+                {name:'NovaTech Pro', rev:'₹82K', pct:82},
+                {name:'UrbanEdge', rev:'₹61K', pct:61},
+                {name:'ZenHome Co.', rev:'₹44K', pct:44},
+                {name:'PureLife', rev:'₹29K', pct:29},
               ].map((b,i) => (
                 <div key={i}>
                   <div className="flex justify-between mb-1">
@@ -258,7 +259,7 @@ export default function Page() {
   </div>
   <div>
     <p className="text-[9px] text-white/40 uppercase tracking-wider font-semibold leading-none mb-1">Monthly Revenue</p>
-    <p className="text-[17px] font-black text-white leading-none tracking-tight">$287K</p>
+    <p className="text-[17px] font-black text-white leading-none tracking-tight">₹287K</p>
   </div>
 </div>
 
@@ -311,23 +312,22 @@ export default function Page() {
 </div>
 </div>
 </div>
-<div className="lg:col-span-7 grid grid-cols-2 gap-4">
-<div className="bg-surface-container-high p-5 sm:p-8 rounded-3xl border border-outline-variant/10 flex flex-col justify-between">
-<span className="material-symbols-outlined text-primary text-4xl sm:text-5xl mb-3 sm:mb-4" data-icon="shopping_cart">shopping_cart</span>
-<h3 className="text-lg sm:text-2xl font-bold text-white">eCommerce Specialist</h3>
-</div>
-<div className="bg-surface-container-high p-5 sm:p-8 rounded-3xl border border-outline-variant/10 flex flex-col justify-between">
-<span className="material-symbols-outlined text-primary text-4xl sm:text-5xl mb-3 sm:mb-4" data-icon="query_stats">query_stats</span>
-<h3 className="text-lg sm:text-2xl font-bold text-white">Account Management</h3>
-</div>
-<div className="bg-surface-container-high p-5 sm:p-8 rounded-3xl border border-outline-variant/10 flex flex-col justify-between">
-<span className="material-symbols-outlined text-primary text-4xl sm:text-5xl mb-3 sm:mb-4" data-icon="movie_edit">movie_edit</span>
-<h3 className="text-lg sm:text-2xl font-bold text-white">Content Marketing</h3>
-</div>
-<div className="bg-surface-container-high p-5 sm:p-8 rounded-3xl border border-outline-variant/10 flex flex-col justify-between">
-<span className="material-symbols-outlined text-primary text-4xl sm:text-5xl mb-3 sm:mb-4" data-icon="groups">groups</span>
-<h3 className="text-lg sm:text-2xl font-bold text-white">Social Growth</h3>
-</div>
+<div className="lg:col-span-7 relative w-full h-full min-h-[300px] sm:min-h-[400px] lg:min-h-[500px] rounded-[2rem] overflow-hidden shadow-[0_0_50px_rgba(174,198,255,0.1)] border border-white/10 group">
+  <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 transition-opacity duration-500 group-hover:opacity-0"/>
+  <Image
+    src="/who_we_are_growth_v2.png"
+    alt="Digital Growth Systems and eCommerce Marketing by Veyber"
+    fill
+    className="object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
+    sizes="(max-width: 1024px) 100vw, 60vw"
+  />
+  <div className="absolute inset-0 bg-gradient-to-tr from-[#0b0c1f] via-transparent to-[#4f8eff]/10 opacity-80 z-10"></div>
+  <div className="absolute bottom-6 left-6 right-6 z-20">
+    <div className="inline-flex items-center gap-2 px-4 py-2 bg-black/40 backdrop-blur-md rounded-full border border-white/10">
+      <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+      <span className="text-white text-xs font-bold uppercase tracking-widest">Building Growth</span>
+    </div>
+  </div>
 </div>
 </div>
 </div>
@@ -529,9 +529,10 @@ export default function Page() {
 <div className="relative z-20 p-6 sm:p-12">
 <h3 className="text-2xl sm:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight drop-shadow-lg">Scale Without<br/>Friction.</h3>
 <p className="text-base sm:text-lg text-white/80 mb-6 sm:mb-8 max-w-sm leading-relaxed drop-shadow">Industry-focused approach combined with scalable solutions for high-performance brands.</p>
-<div className="flex flex-wrap gap-3">
-<span className="px-4 py-2 bg-primary/30 text-white border border-primary/40 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm">Global Focus</span>
-<span className="px-4 py-2 bg-white/10 text-white border border-white/20 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm">Industry Led</span>
+<div className="flex items-center gap-3 mt-8">
+  <span className="text-white/90 font-bold uppercase tracking-[0.15em] text-xs sm:text-sm drop-shadow-md">Global Focus</span>
+  <span className="text-primary/70 text-lg drop-shadow-md">|</span>
+  <span className="text-white/90 font-bold uppercase tracking-[0.15em] text-xs sm:text-sm drop-shadow-md">Industry Led</span>
 </div>
 </div>
 </div>
@@ -554,32 +555,12 @@ export default function Page() {
 <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6">How We Work</h2>
 <p className="text-on-surface-variant">A precision-engineered workflow designed for maximum efficiency and results.</p>
 </div>
-<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-{/*  Step 1  */}
-<div className="relative p-5 sm:p-8 bg-surface-container-low rounded-3xl border border-outline-variant/10 overflow-hidden group">
-<div className="absolute top-3 right-3 text-5xl sm:text-6xl font-black text-outline-variant opacity-20">01</div>
-<h4 className="text-base sm:text-xl font-bold text-white mb-3 sm:mb-4 pt-8 sm:pt-10">Understanding Your Business</h4>
-<p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed">We dive deep into your market position, competitors, and growth bottlenecks.</p>
-</div>
-{/*  Step 2  */}
-<div className="relative p-5 sm:p-8 bg-surface-container rounded-3xl border border-outline-variant/10 overflow-hidden group">
-<div className="absolute top-3 right-3 text-5xl sm:text-6xl font-black text-outline-variant opacity-20">02</div>
-<h4 className="text-base sm:text-xl font-bold text-white mb-3 sm:mb-4 pt-8 sm:pt-10">Strategy Development</h4>
-<p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed">Crafting a bespoke roadmap focused on ROI and sustainable scalability.</p>
-</div>
-{/*  Step 3  */}
-<div className="relative p-5 sm:p-8 bg-surface-container-high rounded-3xl border border-outline-variant/10 overflow-hidden group">
-<div className="absolute top-3 right-3 text-5xl sm:text-6xl font-black text-outline-variant opacity-20">03</div>
-<h4 className="text-base sm:text-xl font-bold text-white mb-3 sm:mb-4 pt-8 sm:pt-10">Execution &amp; Optimization</h4>
-<p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed">Launch with precision. Constant A/B testing and refining for peak performance.</p>
-</div>
-{/*  Step 4  */}
-<div className="relative p-5 sm:p-8 bg-surface-container-highest rounded-3xl border border-outline-variant/10 overflow-hidden group">
-<div className="absolute top-3 right-3 text-5xl sm:text-6xl font-black text-outline-variant opacity-20">04</div>
-<h4 className="text-base sm:text-xl font-bold text-white mb-3 sm:mb-4 pt-8 sm:pt-10">Continuous Growth Tracking</h4>
-<p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed">Scaling winning formulas and exploring new horizons for your brand.</p>
-</div>
-</div>
+    <ProcessTimeline steps={[
+      {label: 'Information Gathering', desc: 'We determine your needs, provide custom suggestions and outline the development process.', icon: 'lightbulb'},
+      {label: 'Strategy & Planning', desc: 'We create requirements documents, wireframes, prototypes, and a complete sitemap.', icon: 'architecture'},
+      {label: 'Design & Development', desc: 'We build HTML/CSS templates and code the programming functionalities for your brand.', icon: 'code'},
+      {label: 'Testing & Launch', desc: 'We run beta testing, speed checks, get your final approval, and successfully go live.', icon: 'rocket_launch'}
+    ]} />
 </div>
 </section>
 {/*  Interactive Impact Gallery  */}
@@ -596,7 +577,7 @@ export default function Page() {
     <div className="flex flex-col lg:flex-row gap-4 lg:h-[500px] w-full">
       {/* Card 1 */}
       <div className="group relative flex-1 lg:hover:flex-[3] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2rem] overflow-hidden cursor-pointer border border-white/10 hover:border-primary/40 shadow-xl bg-neutral-900 min-h-[300px] lg:min-h-0">
-        <Image src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=75" alt="Analytics" fill className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-100" />
+        <Image src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=75" alt="Analytics" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw" className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-100" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#07080f] via-[#07080f]/70 to-transparent group-hover:from-black/80 transition-colors duration-500"/>
         
         <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 flex flex-col justify-end h-full">
@@ -623,9 +604,37 @@ export default function Page() {
         </div>
       </div>
 
+      {/* Card 1.5: Planning */}
+      <div className="group relative flex-1 lg:hover:flex-[3] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2rem] overflow-hidden cursor-pointer border border-white/10 hover:border-[#0ea5e9]/40 shadow-xl bg-neutral-900 min-h-[300px] lg:min-h-0">
+        <Image src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=75" alt="Planning" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw" className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-100" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#07080f] via-[#07080f]/70 to-transparent group-hover:from-black/80 transition-colors duration-500"/>
+        
+        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 flex flex-col justify-end h-full">
+          <div className="flex items-center gap-4 mb-3">
+            <div className="w-12 h-12 rounded-full bg-[#0ea5e9]/20 backdrop-blur-md flex items-center justify-center border border-[#0ea5e9]/30 text-[#0ea5e9] shrink-0 transition-transform group-hover:scale-110 duration-500">
+              <span className="material-symbols-outlined text-2xl">account_tree</span>
+            </div>
+            <h3 className="text-2xl md:text-3xl font-black text-white whitespace-nowrap">Planning</h3>
+          </div>
+          <h4 className="text-lg font-bold text-white whitespace-nowrap overflow-hidden text-ellipsis transition-all duration-500">Roadmap & Blueprint</h4>
+          
+          <div className="grid grid-rows-[1fr] lg:grid-rows-[0fr] lg:group-hover:grid-rows-[1fr] transition-all duration-500 ease-in-out">
+            <div className="overflow-hidden">
+              <div className="pt-4 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                <p className="text-white/70 text-sm leading-relaxed line-clamp-3">
+                  We outline the entire project roadmap, defining clear milestones, technology stacks, and user journeys before writing a single line of code.
+                </p>
+                <div className="mt-4 px-4 py-1.5 bg-[#0ea5e9]/20 inline-block rounded-full border border-[#0ea5e9]/30 text-[#0ea5e9] text-xs font-bold uppercase tracking-widest">
+                  Architecture
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* Card 2 */}
       <div className="group relative flex-1 lg:hover:flex-[3] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2rem] overflow-hidden cursor-pointer border border-white/10 hover:border-[#f0661b]/40 shadow-xl bg-neutral-900 min-h-[300px] lg:min-h-0">
-        <Image src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=75" alt="Creative" fill className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-100" />
+        <Image src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=75" alt="Creative" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw" className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-100" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#07080f] via-[#07080f]/70 to-transparent group-hover:from-black/80 transition-colors duration-500"/>
         
         <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 flex flex-col justify-end h-full">
@@ -654,7 +663,7 @@ export default function Page() {
 
       {/* Card 3 */}
       <div className="group relative flex-1 lg:hover:flex-[3] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2rem] overflow-hidden cursor-pointer border border-white/10 hover:border-[#4ade80]/40 shadow-xl bg-neutral-900 min-h-[300px] lg:min-h-0">
-        <Image src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=75" alt="Code" fill className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-100" />
+        <Image src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=75" alt="Code" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw" className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-100" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#07080f] via-[#07080f]/70 to-transparent group-hover:from-black/80 transition-colors duration-500"/>
         
         <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 flex flex-col justify-end h-full">
@@ -683,7 +692,7 @@ export default function Page() {
 
       {/* Card 4 */}
       <div className="group relative flex-1 lg:hover:flex-[3] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2rem] overflow-hidden cursor-pointer border border-white/10 hover:border-purple-400/40 shadow-xl bg-neutral-900 min-h-[300px] lg:min-h-0">
-        <Image src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=75" alt="Scale" fill className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-100" />
+        <Image src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=75" alt="Scale" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw" className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-100" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#07080f] via-[#07080f]/70 to-transparent group-hover:from-black/80 transition-colors duration-500"/>
         
         <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 flex flex-col justify-end h-full">

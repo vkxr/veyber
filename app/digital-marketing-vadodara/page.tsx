@@ -2,106 +2,85 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ProcessSection from '@/components/ProcessSection';
 
 export const metadata: Metadata = {
-  title: 'Digital Marketing Services in Vadodara | Ecommerce, SMM & SEO – Veyber',
-  description: 'Looking for digital marketing services in Vadodara? Veyber offers ecommerce development, social media marketing, content marketing & consulting services.',
-  keywords: 'Digital marketing services Vadodara, Ecommerce development Vadodara, Social media marketing Vadodara, Business consultant Vadodara, Digital agency Vadodara, SEO services Vadodara, Online marketing Vadodara, Ecommerce services Vadodara',
+  title: 'Digital Marketing Services in Vadodara | SEO, eCommerce & Google Ads – Veyber',
+  description: 'Veyber is Vadodara\'s local digital marketing agency offering SEO, eCommerce development, Google Ads, Meta Ads, and marketplace account management. Serving businesses across Alkapuri, Fatehgunj, Gotri, Karelibaug & all of Vadodara.',
+  keywords: 'digital marketing services in Vadodara, digital marketing agency Vadodara, SEO company Vadodara, eCommerce development Vadodara, Google Ads agency Vadodara, digital marketing Baroda, SEO services Vadodara Baroda, social media marketing Vadodara, Amazon account management Vadodara, Meta ads agency Vadodara, website development Vadodara, best digital marketing agency in Vadodara for small business, SEO company near me in Vadodara, eCommerce website development in Vadodara Gujarat, Google Ads agency in Vadodara for lead generation, Amazon Flipkart account management Vadodara, digital marketing services in Baroda Gujarat',
 };
 
-const pageSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Veyber',
-  url: 'https://veyber.co.in',
-  areaServed: {
-    '@type': 'City',
-    name: 'Vadodara',
-  },
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Vadodara',
-    addressRegion: 'Gujarat',
-    addressCountry: 'India',
-  },
-  description: 'Digital marketing services in Vadodara including ecommerce development, social media marketing, content marketing and business consulting.',
-};
+const pageSchema = {"@context":"https://schema.org","@type":"LocalBusiness","name":"Veyber","url":"https://veyber.co.in","logo":"https://veyber.co.in/logo.png","telephone":["+916355183655","+917202061270","+918238757883"],"email":"veyberservicespvtltd@gmail.com","address":{"@type":"PostalAddress","streetAddress":"310, Maa Darshan Flats, Nr. Panchvati, Ajwa Road","addressLocality":"Vadodara","addressRegion":"Gujarat","postalCode":"390019","addressCountry":"IN"},"areaServed":[{"@type":"City","name":"Vadodara, Gujarat"},{"@type":"State","name":"Gujarat"}],"description":"Veyber is a Vadodara-based digital marketing agency offering SEO, eCommerce development, Google Ads, Meta Ads, social media marketing, and marketplace account management for businesses across Vadodara and Gujarat.","hasOfferCatalog":{"@type":"OfferCatalog","name":"Digital Marketing Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"SEO Services"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Google Ads Management"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Meta Ads (Facebook & Instagram)"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"eCommerce Website Development"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Amazon & Flipkart Account Management"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Social Media Marketing"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Website Hosting"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"DevOps & Deployment"}}]}};
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'Do you provide services in all areas of Vadodara?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, we cover all major areas including Gotri, Manjalpur, Karelibaug, and more.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can you help local businesses grow?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, we specialize in helping Vadodara-based businesses grow online.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do you offer ecommerce services?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, we provide complete ecommerce development and management.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How can I contact you?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'You can contact us through our website or call for consultation.',
-      },
-    },
-  ],
-};
+const faqSchema = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Veyber have an office in Vadodara?","acceptedAnswer":{"@type":"Answer","text":"Yes. Veyber is based in Vadodara at 310, Maa Darshan Flats, Nr. Panchvati, Ajwa Road, Vadodara 390019. You can reach us at +91 6355183655, +91 7202061270, or +91 8238757883, or email us at veyberservicespvtltd@gmail.com. We serve businesses across all areas of Vadodara including Alkapuri, Fatehgunj, Karelibaug, Manjalpur, Gotri, and more."}},{"@type":"Question","name":"Which Vadodara businesses benefit most from SEO?","acceptedAnswer":{"@type":"Answer","text":"Businesses across manufacturing, healthcare, education, real estate, eCommerce, and professional services in Vadodara see strong SEO results. Vadodara also uses both the names 'Vadodara' and 'Baroda' in searches — we build strategies that capture both, effectively doubling your local keyword coverage compared to agencies that target only one name."}},{"@type":"Question","name":"Can you help a local business in Vadodara get more inquiries from Google?","acceptedAnswer":{"@type":"Answer","text":"Yes. Local SEO is one of our core services. We optimize your Google Business Profile, build citations on Gujarat-specific directories like JustDial and Sulekha, create neighborhood-level landing pages for areas like Alkapuri, Fatehgunj, and Gotri, and target high-intent searches like 'near me' queries that bring customers who are ready to call or visit."}},{"@type":"Question","name":"How is Veyber different from other digital marketing agencies in Vadodara?","acceptedAnswer":{"@type":"Answer","text":"Veyber is a Vadodara-based agency that combines eCommerce development, marketplace account management (Amazon, Flipkart, Meesho), digital marketing, and web services under one roof. Most local agencies do only one or two of these. For businesses that sell products both through their own website and on marketplaces, having one team managing the entire digital presence produces significantly better results than working with multiple vendors."}},{"@type":"Question","name":"Do you offer eCommerce services specifically for Vadodara businesses?","acceptedAnswer":{"@type":"Answer","text":"Yes. We build Shopify, WooCommerce, and custom MERN stack eCommerce stores for businesses in Vadodara and manage Amazon, Flipkart, and Meesho accounts. For a Vadodara business selling locally and wanting to expand nationally through marketplaces, this combination of a well-built online store plus optimized marketplace listings is the most effective growth path."}}]};
 
 const services = [
   {
-    icon: 'shopping_cart',
-    title: 'Ecommerce Development in Vadodara',
-    desc: 'Build powerful online stores that drive sales.',
-    items: ['Shopify, WooCommerce & custom websites', 'Mobile-friendly & SEO-optimized', 'Payment gateway integration'],
-    href: '/ecommerce-development',
+    "icon": "search",
+    "title": "SEO — Get Found on Google in Vadodara and Baroda",
+    "desc": "Vadodara has a unique local SEO advantage: the city is searched under both 'Vadodara' and 'Baroda' — two names with overlapping but distinct search audiences. We build keyword strategies that capture both, targeting area-level searches like 'digital marketing agency Alkapuri', 'eCommerce website developer Fatehgunj', and 'SEO company near Sayajigunj'. We also optimize your Google Business Profile, build local citations on Gujarat directories, and create neighborhood-level content that ranks for hyperlocal searches.",
+    "items": [
+      "Local SEO",
+      "Keyword Strategy",
+      "Google Business Profile"
+    ],
+    "href": "/seo"
   },
   {
-    icon: 'storefront',
-    title: 'Ecommerce Account Management',
-    desc: 'Grow your marketplace sales with expert management.',
-    items: ['Amazon, Flipkart & Meesho account handling', 'Product listing optimization', 'Sales growth strategies'],
-    href: '/account-management',
+    "icon": "shopping_cart",
+    "title": "eCommerce Website Development",
+    "desc": "We build Shopify, WooCommerce, and custom MERN stack eCommerce stores for Vadodara businesses — whether you are a manufacturer wanting to sell directly to consumers, a retailer going online for the first time, or a brand scaling up from a marketplace to your own D2C store. Every store we build is mobile-first, fast-loading, payment-gateway-integrated, and SEO-ready from day one.",
+    "items": [
+      "Shopify",
+      "WooCommerce",
+      "Custom D2C Stores"
+    ],
+    "href": "/ecommerce-development"
   },
   {
-    icon: 'share',
-    title: 'Social Media Handling in Vadodara',
-    desc: 'Turn your social media into a growth engine.',
-    items: ['Instagram & Facebook management', 'Content creation & posting', 'Paid advertising campaigns'],
-    href: '/social-media-handling',
+    "icon": "storefront",
+    "title": "eCommerce Account Management",
+    "desc": "For Vadodara businesses selling physical products, marketplace presence is non-negotiable. We set up and manage Amazon, Flipkart, and Meesho accounts — handling product listing optimization, catalog management, PPC advertising on the marketplace, and inventory management. Optimized marketplace listings combined with a well-built own website is the combination that grows product businesses fastest.",
+    "items": [
+      "Amazon",
+      "Flipkart",
+      "Meesho"
+    ],
+    "href": "/account-management"
   },
   {
-    icon: 'edit_note',
-    title: 'Content Marketing Services',
-    desc: 'Rank on Google and attract customers.',
-    items: ['SEO blog writing', 'Website content', 'Content strategy & planning'],
-    href: '/content-marketing',
+    "icon": "ads_click",
+    "title": "Google Ads",
+    "desc": "Vadodara's competitive business landscape means that for many categories — real estate, healthcare, education, services — Google Ads is the fastest way to generate qualified leads. We run Search Ads targeting people in Vadodara and Baroda actively searching for your service, Display Ads for brand awareness, and remarketing campaigns for visitors who did not convert. Every rupee is tracked to an outcome.",
+    "items": [
+      "Search Ads",
+      "Display Ads",
+      "Remarketing"
+    ],
+    "href": "/google-ads"
   },
   {
-    icon: 'psychology',
-    title: 'Business Consulting in Vadodara',
-    desc: 'Scale your business with expert guidance.',
-    items: ['Growth strategy', 'Market research', 'Business optimization'],
-    href: '/business-consulting',
+    "icon": "hub",
+    "title": "Meta Ads — Facebook & Instagram",
+    "desc": "Vadodara has a strong and active Facebook and Instagram user base. We run Meta Ads campaigns for local businesses targeting people in specific Vadodara neighborhoods — Gotri, Karelibaug, Manjalpur, Waghodia Road — with lead generation ads, offer promotions, and product catalog ads for eCommerce brands.",
+    "items": [
+      "Lead Generation",
+      "Offer Promotions",
+      "Catalog Ads"
+    ],
+    "href": "/meta-ads"
   },
+  {
+    "icon": "share",
+    "title": "Social Media Marketing",
+    "desc": "We create and manage Instagram and Facebook accounts for Vadodara businesses — content planning, regular posting, community engagement, and paid promotion. For local businesses in Vadodara, a consistent and professional social media presence builds the trust that converts followers into customers.",
+    "items": [
+      "Content Planning",
+      "Community Engagement",
+      "Paid Promotion"
+    ],
+    "href": "/social-media-handling"
+  }
 ];
 
 const process = [
@@ -122,27 +101,47 @@ const results = [
 
 const faqs = [
   {
-    q: 'Do you provide services in all areas of Vadodara?',
-    a: 'Yes, we cover all major areas including Gotri, Manjalpur, Karelibaug, and more.',
+    "q": "Does Veyber have an office in Vadodara?",
+    "a": "Yes. Veyber is based in Vadodara at 310, Maa Darshan Flats, Nr. Panchvati, Ajwa Road, Vadodara 390019. You can reach us at +91 6355183655, +91 7202061270, or +91 8238757883, or email us at veyberservicespvtltd@gmail.com. We serve businesses across all areas of Vadodara including Alkapuri, Fatehgunj, Karelibaug, Manjalpur, Gotri, and more."
   },
   {
-    q: 'Can you help local businesses grow?',
-    a: 'Yes, we specialize in helping Vadodara-based businesses grow online.',
+    "q": "Which Vadodara businesses benefit most from SEO?",
+    "a": "Businesses across manufacturing, healthcare, education, real estate, eCommerce, and professional services in Vadodara see strong SEO results. Vadodara also uses both the names 'Vadodara' and 'Baroda' in searches — we build strategies that capture both, effectively doubling your local keyword coverage compared to agencies that target only one name."
   },
   {
-    q: 'Do you offer ecommerce services?',
-    a: 'Yes, we provide complete ecommerce development and management.',
+    "q": "Can you help a local business in Vadodara get more inquiries from Google?",
+    "a": "Yes. Local SEO is one of our core services. We optimize your Google Business Profile, build citations on Gujarat-specific directories like JustDial and Sulekha, create neighborhood-level landing pages for areas like Alkapuri, Fatehgunj, and Gotri, and target high-intent searches like 'near me' queries that bring customers who are ready to call or visit."
   },
   {
-    q: 'How can I contact you?',
-    a: 'You can contact us through our website or call for consultation.',
+    "q": "How is Veyber different from other digital marketing agencies in Vadodara?",
+    "a": "Veyber is a Vadodara-based agency that combines eCommerce development, marketplace account management (Amazon, Flipkart, Meesho), digital marketing, and web services under one roof. Most local agencies do only one or two of these. For businesses that sell products both through their own website and on marketplaces, having one team managing the entire digital presence produces significantly better results than working with multiple vendors."
   },
+  {
+    "q": "Do you offer eCommerce services specifically for Vadodara businesses?",
+    "a": "Yes. We build Shopify, WooCommerce, and custom MERN stack eCommerce stores for businesses in Vadodara and manage Amazon, Flipkart, and Meesho accounts. For a Vadodara business selling locally and wanting to expand nationally through marketplaces, this combination of a well-built online store plus optimized marketplace listings is the most effective growth path."
+  }
 ];
 
 const locations = [
-  'Alkapuri', 'Fatehgunj', 'Sayajigunj', 'Karelibaug', 'Nizampura', 'Gotri', 
-  'Subhanpura', 'Waghodia Road', 'Ajwa Road', 'Manjalpur', 'Makarpura', 
-  'Tarsali', 'Harni', 'Sama', 'New VIP Road', 'Chhani', 'Gorwa', 'Akota'
+  "Alkapuri",
+  "Fatehgunj",
+  "Sayajigunj",
+  "Karelibaug",
+  "Nizampura",
+  "Gotri",
+  "Subhanpura",
+  "Waghodia Road",
+  "Ajwa Road",
+  "Manjalpur",
+  "Makarpura",
+  "Tarsali",
+  "Harni",
+  "Sama",
+  "New VIP Road",
+  "Chhani",
+  "Gorwa",
+  "Akota",
+  "Entire Vadodara and nearby areas"
 ];
 
 export default function Page() {
@@ -161,18 +160,31 @@ export default function Page() {
           <div className="relative z-10 max-w-5xl mx-auto text-center">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/[0.08] text-primary font-bold text-xs tracking-widest uppercase mb-5">
               <span className="relative flex h-1.5 w-1.5 shrink-0"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"/><span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary"/></span>
-              Your Local Veyber Experts
+              Vadodara's local digital marketing agency
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold font-headline tracking-tight mb-5 leading-[1.05] text-white">
-              Digital Marketing Services<br/>
-              <span className="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent" style={{filter:'drop-shadow(0 0 28px rgba(174,198,255,0.3))'}}>In Vadodara</span>
+              Digital Marketing Services<br /><span className="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent" style={{filter:'drop-shadow(0 0 28px rgba(174,198,255,0.3))'}}>In Vadodara</span>
             </h1>
-            <p className="text-base sm:text-lg text-on-surface-variant max-w-2xl mx-auto mb-4 leading-relaxed">
-              Grow Your Business with Veyber – <span className="text-primary font-semibold">Local Experts in Vadodara</span>
+            <p className="text-base sm:text-lg text-on-surface-variant max-w-2xl mx-auto mb-4 leading-relaxed font-semibold text-primary">
+              Built here. Focused on your growth.
             </p>
-            <p className="text-sm sm:text-base text-on-surface-variant max-w-xl mx-auto mb-8 leading-relaxed">
-              Looking for reliable digital marketing and business growth services in Vadodara? At Veyber, we help businesses in Vadodara build a strong online presence, generate leads, and scale their operations with result-driven digital solutions. Whether you&apos;re a startup, local business, or ecommerce brand—we deliver strategies that actually work in the Vadodara market.
-            </p>
+            <div className="max-w-3xl mx-auto mb-16 relative group mt-8 text-center sm:text-left">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent rounded-[1.5rem] blur-xl group-hover:blur-2xl transition-all duration-500 opacity-50 pointer-events-none"></div>
+              <div className="relative p-5 sm:p-8 bg-surface-container/40 backdrop-blur-xl border border-white/10 rounded-2xl flex flex-col items-center sm:items-start text-center sm:text-left shadow-2xl">
+                <span className="material-symbols-outlined text-primary text-[28px] mb-4 opacity-80">public</span>
+                <div className="text-sm sm:text-base leading-[1.8] font-medium max-w-2xl">
+                  {(() => {
+                    const text = `Veyber is headquartered in Vadodara at Ajwa Road — and when we say we understand the Vadodara market, we mean it from the inside. We know that your customers search for you as both 'Vadodara' and 'Baroda'. We know the difference between marketing to a manufacturer in Makarpura versus a retailer in Alkapuri. And we know that most businesses in this city are still in the early stages of their digital presence — which means the opportunity to get ahead of your competition right now is very real. We offer end-to-end digital services for Vadodara businesses — from building your eCommerce website and managing your Amazon and Flipkart accounts, to running your SEO, Google Ads, Meta Ads, and social media. One team, one strategy, one point of contact.`;
+                    const sentences = text.split('. ').filter(Boolean).map(s => s.endsWith('.') ? s : s + '.');
+                    return sentences.map((s, i) => (
+                      <span key={i} className={i === 0 ? "text-white" : "text-white/60"}>
+                        {s} {i !== sentences.length - 1 && ' '}
+                      </span>
+                    ));
+                  })()}
+                </div>
+              </div>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="group relative px-7 sm:px-9 py-3.5 sm:py-4 bg-gradient-to-r from-[#aec6ff] to-[#4f8eff] text-[#001a42] font-bold rounded-full text-base sm:text-lg overflow-hidden transition-all duration-300 hover:scale-[1.04] hover:shadow-[0_0_52px_rgba(174,198,255,0.38)] active:scale-95">
               <span className="relative z-10 flex items-center gap-2"><span className="material-symbols-outlined text-[20px]">rocket_launch</span>Scale Your Business</span>
@@ -183,83 +195,99 @@ export default function Page() {
         </section>
 
         {/* Why Choose Us & Target Market */}
-        <section className="px-4 sm:px-8 py-14 sm:py-20 bg-surface-container-low">
+        <section className="px-4 sm:px-8 py-14 sm:py-20 bg-surface">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-              <div>
-                <h2 className="text-2xl sm:text-4xl font-bold font-headline mb-5 leading-tight">
-                  Why Choose Veyber in Vadodara?
-                </h2>
-                <p className="text-on-surface-variant leading-relaxed mb-6">
-                  Vadodara is a fast-growing business hub with increasing competition. To stand out, you need:
-                </p>
-                <div className="flex flex-col gap-3 mb-6">
-                  {[
-                    { icon: 'visibility', text: 'Strong online presence' },
-                    { icon: 'track_changes', text: 'Targeted marketing strategies' },
-                    { icon: 'forum', text: 'Consistent customer engagement' },
-                  ].map(({ icon, text }) => (
-                    <div key={text} className="flex items-center gap-4 p-4 bg-surface-container rounded-xl border border-outline-variant/10 hover:border-primary/25 transition-all group">
-                      <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                        <span className="material-symbols-outlined text-primary text-[20px]">{icon}</span>
-                      </div>
-                      <span className="font-semibold text-white">{text}</span>
-                    </div>
-                  ))}
+            <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
+              <div className="lg:w-1/2 lg:sticky lg:top-32">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs sm:text-sm font-semibold mb-6">
+                  <span className="material-symbols-outlined text-[16px]">insights</span>
+                  Market Context
                 </div>
-                <p className="text-white font-semibold text-lg border-l-4 border-primary pl-4 py-2 border-outline-variant/10">
-                  👉 Veyber provides localized strategies tailored for Vadodara businesses.
-                </p>
+                <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black font-headline mb-5 leading-[1.1] text-white tracking-tight">
+                  Why Vadodara Businesses Need Digital Marketing in 2025
+                </h2>
+                <div className="text-sm sm:text-base text-on-surface-variant leading-[1.8] font-medium space-y-4">
+                  {(() => {
+                    const text = `Vadodara is Gujarat's third-largest city and one of its most commercially active — home to ONGC, GSFC, L&T, a large MSME manufacturing sector, MS University, and one of the state's most active retail economies. The city's business ecosystem is diverse, competitive, and increasingly digital. Search data shows that 'digital marketing agency Vadodara' gets over 1,300 searches per month — and that number grows every year as more Vadodara businesses realize that Google, Instagram, and marketplaces like Amazon and Flipkart are now where their customers find them first, not word of mouth or JustDial alone. Businesses that build a strong digital presence in Vadodara right now are claiming first-mover advantage in their category. The window is open — but it will not stay open indefinitely.`;
+                    const sentences = text.split('. ').filter(Boolean).map(s => s.endsWith('.') ? s : s + '.');
+                    const paragraphs = [];
+                    for (let i = 0; i < sentences.length; i += 2) {
+                      paragraphs.push(sentences.slice(i, i + 2).join(' '));
+                    }
+                    return paragraphs.map((p, i) => (
+                      <p key={i} className={i === 0 ? "text-white/90" : "text-white/50"}>
+                        {p}
+                      </p>
+                    ));
+                  })()}
+                </div>
               </div>
-              <div className="bg-surface-container rounded-3xl border border-outline-variant/10 p-6 sm:p-8 relative overflow-hidden h-full flex flex-col justify-center">
-                <div className="absolute top-0 right-0 w-40 h-40 bg-primary/10 blur-[50px] rounded-full pointer-events-none"/>
-                <h3 className="text-xl sm:text-2xl font-bold font-headline text-white mb-6">Who We Work With</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 relative z-10 w-full">
-                  {[
-                    'Local businesses in Vadodara',
-                    'Startups & entrepreneurs',
-                    'Ecommerce sellers',
-                    'Service providers',
-                    'Growing brands'
-                  ].map((ind) => (
-                    <div key={ind} className="flex items-center gap-3 p-4 bg-surface-container-high rounded-xl border border-outline-variant/5">
-                      <span className="material-symbols-outlined text-primary text-[18px]">verified</span>
-                      <span className="text-sm font-semibold text-white">{ind}</span>
-                    </div>
-                  ))}
+
+              <div className="lg:w-1/2 w-full">
+                <div className="bg-gradient-to-b from-surface-container-high to-surface-container rounded-3xl border border-white/5 p-6 sm:p-8 relative overflow-hidden shadow-2xl">
+                  <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-primary/10 blur-[60px] rounded-full pointer-events-none"></div>
+                  <h3 className="text-xl sm:text-2xl font-bold font-headline text-white mb-6 relative z-10">Who We Work With in Vadodara</h3>
+                  <div className="flex flex-col gap-3 relative z-10 w-full">
+                    {[
+  "Manufacturing and industrial businesses in Makarpura and Gorwa",
+  "Retail and eCommerce businesses selling on Amazon, Flipkart, or their own store",
+  "Service providers — doctors, lawyers, consultants, architects — wanting more Google inquiries",
+  "Startups and entrepreneurs building their first digital presence",
+  "Educational institutions and coaching institutes targeting Vadodara students",
+  "Real estate developers and agents targeting buyers in Vadodara"
+].map((ind) => (
+                      <div key={ind} className="group flex items-center gap-4 p-4 bg-white/[0.02] hover:bg-white/[0.05] rounded-xl border border-white/[0.05] transition-all duration-300">
+                        <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                          <span className="material-symbols-outlined text-primary text-[20px]">verified</span>
+                        </div>
+                        <span className="text-sm sm:text-base font-medium text-white/90 group-hover:text-white transition-colors">{ind}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Our Services in Vadodara */}
-        <section className="px-4 sm:px-8 py-14 sm:py-24 bg-surface">
+        <section className="px-4 sm:px-8 py-14 sm:py-24 bg-surface-container-low">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">Our Services in Vadodara</h2>
-              <p className="text-on-surface-variant max-w-xl mx-auto text-sm sm:text-base">Targeted digital solutions designed to accelerate growth in the local ecosystem.</p>
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs sm:text-sm font-semibold mb-6">
+                <span className="material-symbols-outlined text-[16px]">business_center</span>
+                Core Offerings
+              </span>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black font-headline mb-4 tracking-tight text-white">Our Services in Vadodara</h2>
+              <p className="text-on-surface-variant text-sm sm:text-base max-w-2xl mx-auto font-medium">Targeted digital solutions designed to accelerate growth in the local ecosystem.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {services.map(({ icon, title, desc, items, href }: { icon: string; title: string; desc: string; items: string[]; href: string; }) => (
-                <div key={title} className="group bg-surface-container p-6 sm:p-8 rounded-2xl border border-outline-variant/10 hover:border-primary/25 hover:bg-surface-container-high transition-all duration-300 flex flex-col">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors duration-300">
-                    <span className="material-symbols-outlined text-primary text-[22px]">{icon}</span>
+                <Link href={href} key={title} className="group relative bg-surface-container p-6 sm:p-8 rounded-3xl border border-white/5 hover:border-primary/30 transition-all duration-500 flex flex-col overflow-hidden hover:-translate-y-2 shadow-xl hover:shadow-2xl">
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-primary/10 blur-[40px] rounded-full group-hover:bg-primary/20 transition-colors duration-500 pointer-events-none"></div>
+                  
+                  <div className="w-12 h-12 bg-white/[0.03] border border-white/10 rounded-[14px] flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-primary/10 group-hover:border-primary/20 transition-all duration-500">
+                    <span className="material-symbols-outlined text-white/80 group-hover:text-primary text-[22px]">{icon}</span>
                   </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-2">{title}</h3>
-                  <p className="text-on-surface-variant text-sm leading-relaxed mb-4">{desc}</p>
-                  <ul className="space-y-1.5 mb-6 flex-grow">
+                  
+                  <h3 className="text-lg sm:text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">{title}</h3>
+                  
+                  <p className="text-sm text-white/50 leading-[1.8] mb-5 flex-grow line-clamp-3 group-hover:text-white/70 transition-colors">
+                    {desc}
+                  </p>
+                  
+                  <div className="space-y-2.5 mb-6">
                     {items.map((item) => (
-                      <li key={item} className="flex items-center gap-2 text-xs text-on-surface-variant">
-                        <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary"/>
-                        {item}
-                      </li>
+                      <div key={item} className="flex items-start gap-2 text-xs text-white/60">
+                        <span className="material-symbols-outlined text-primary/50 text-[16px] shrink-0 mt-0.5">check</span>
+                        <span className="font-medium">{item}</span>
+                      </div>
                     ))}
-                  </ul>
-                  <Link href={href} className="inline-flex items-center gap-1.5 text-sm font-bold text-primary group/link">
-                    Explore Service <span className="material-symbols-outlined text-[16px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
-                  </Link>
-                </div>
+                  </div>
+
+                  <div className="mt-auto pt-5 border-t border-white/5 flex items-center gap-1.5 text-primary text-sm font-semibold group-hover:gap-3 transition-all">
+                    Explore Service <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -272,23 +300,23 @@ export default function Page() {
               
               {/* Trust Section */}
               <div className="h-full flex flex-col justify-center">
-                <h2 className="text-2xl sm:text-4xl font-bold font-headline mb-5 leading-tight">Why Local Businesses Trust Veyber</h2>
-                <p className="text-on-surface-variant leading-relaxed mb-8">We are not a remote, disconnected agency. We understand the fabric of the city&apos;s business dynamics.</p>
+                <h2 className="text-2xl sm:text-4xl font-bold font-headline mb-5 leading-tight">Why Choose Veyber in Vadodara?</h2>
+                <p className="text-on-surface-variant leading-relaxed mb-8">We are not a remote, disconnected agency. We understand the fabric of the city's business dynamics.</p>
                 
                 <div className="space-y-4 mb-8">
                   <ul className="space-y-4">
                     {[
-                      'Deep understanding of Vadodara market',
-                      'Customized solutions (not generic)',
-                      'Affordable pricing',
-                      'Dedicated support',
-                      'Result-focused approach',
-                    ].map((text) => (
-                      <li key={text} className="flex items-center gap-4 p-4 bg-surface-container rounded-xl border border-outline-variant/10">
-                        <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+  "We are physically here — 310, Maa Darshan Flats, Ajwa Road, Vadodara 390019",
+  "Vadodara + Baroda dual-name keyword strategy — we capture both search audiences",
+  "End-to-end services — eCommerce, marketplaces, SEO, ads, and social under one roof",
+  "Affordable for local SMEs — real results without big-agency overhead",
+  "Direct communication — no account manager chain, you talk to the team doing the work"
+].map((text) => (
+                      <li key={text} className="flex items-start gap-4 p-4 bg-surface-container rounded-xl border border-outline-variant/10">
+                        <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
                           <span className="material-symbols-outlined text-primary text-[16px]">done</span>
                         </div>
-                        <span className="font-semibold text-white text-sm">{text}</span>
+                        <span className="font-semibold text-white text-sm leading-relaxed">{text}</span>
                       </li>
                     ))}
                   </ul>
@@ -324,27 +352,11 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Process */}
-        <section className="px-4 sm:px-8 py-14 sm:py-24 bg-surface">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">Our Process</h2>
-              <p className="text-on-surface-variant max-w-xl mx-auto text-sm">Strategic workflows fine-tuned for our local Vadodara clients.</p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-              {process.map(({ n, label, desc }) => (
-                <div key={n} className="relative bg-surface-container rounded-2xl border border-outline-variant/10 p-6 overflow-hidden group hover:border-primary/25 hover:bg-surface-container-high transition-all duration-200">
-                  <div className="absolute top-3 right-3 text-5xl font-black text-outline-variant/15 font-headline leading-none pointer-events-none">{n}</div>
-                  <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                    <span className="material-symbols-outlined text-primary text-[18px]">check</span>
-                  </div>
-                  <h3 className="font-bold text-white mb-2 pt-2 text-sm">{label}</h3>
-                  <p className="text-on-surface-variant text-xs leading-relaxed">{desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <ProcessSection
+          title="Our Process"
+          description="Strategic workflows fine-tuned for our local Vadodara clients."
+          steps={process}
+        />
 
         {/* Results */}
         <section className="px-4 sm:px-8 py-14 sm:py-20 bg-surface-container-low">
@@ -398,7 +410,7 @@ export default function Page() {
             <div className="relative z-10 p-8 sm:p-12 md:p-16">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary font-bold text-xs tracking-widest uppercase mb-6">
                 <span className="relative flex h-1.5 w-1.5 shrink-0"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"/><span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary"/></span>
-                Let&apos;s Grow Your Business in Vadodara
+                Let's Grow Your Business in Vadodara
               </span>
               <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-white mb-4 tracking-tight drop-shadow-xl">
                 Ready to scale your business in Vadodara?
