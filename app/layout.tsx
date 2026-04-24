@@ -9,6 +9,18 @@ export const metadata: Metadata = {
   title: "Veyber | eCommerce Development & Digital Marketing Company in Vadodara",
   description: "Veyber is a leading digital solutions company offering eCommerce development, account management, social media marketing, content marketing, and business consulting services. Grow your business with expert strategies.",
   keywords: "ecommerce development company in Vadodara, ecommerce account management services India, social media marketing agency Vadodara, content marketing services India, business consultant in Vadodara, Shopify development company India, Amazon account management services",
+  openGraph: {
+    title: 'Veyber | eCommerce Development & Digital Marketing Company in Vadodara',
+    description: 'Veyber is a leading digital solutions company offering eCommerce development, account management, social media marketing, content marketing, and business consulting services. Grow your business with expert strategies.',
+    url: 'https://veyber.co.in/',
+    siteName: 'Veyber',
+    images: [
+      {
+        url: 'https://veyber.co.in/images/og-banner.jpg',
+      },
+    ],
+    type: 'website',
+  },
 };
 
 export default function RootLayout({

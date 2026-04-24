@@ -52,6 +52,28 @@ export default function Navbar() {
 
   const servicesDropdown = [
     { 
+      title: 'Core Digital Marketing', 
+      href: '/digital-marketing', 
+      icon: 'campaign', 
+      desc: 'SEO, Google Ads, Meta Ads',
+      subLinks: [
+        { label: 'SEO', href: '/seo' },
+        { label: 'Google Ads', href: '/google-ads' },
+        { label: 'Meta Ads', href: '/meta-ads' },
+      ]
+    },
+    { 
+      title: 'Web Services', 
+      href: '/web-services', 
+      icon: 'code_blocks', 
+      desc: 'Web Dev, Hosting, DevOps',
+      subLinks: [
+        { label: 'Website Development', href: '/web-services/development' },
+        { label: 'Website Hosting', href: '/web-services/hosting' },
+        { label: 'DevOps & Deployment', href: '/web-services/devops' },
+      ]
+    },
+    { 
       title: 'Ecommerce Development', 
       href: '/ecommerce-development', 
       icon: 'shopping_cart', 

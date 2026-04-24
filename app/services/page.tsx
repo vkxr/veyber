@@ -5,35 +5,82 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Our Services | eCommerce, Digital Marketing & Consulting in Gujarat | Veyber',
-  description: "Explore Veyber's eCommerce development, account management, social media handling, content marketing & business consulting services in Vadodara & Gujarat. Grow your business today.",
+  title: 'Our Services | Ecommerce, Digital Marketing & Web Development in Gujarat | Veyber',
+  description: 'Veyber offers eCommerce website development, marketplace account management, digital marketing, social media marketing, and web services for businesses in Vadodara, Surat, Ahmedabad & across Gujarat.',
   keywords: 'ecommerce development company in Vadodara, digital marketing services Gujarat, ecommerce account management India, social media marketing Vadodara, business consultant Gujarat, Shopify development Vadodara, Amazon account management India',
+  openGraph: {
+    title: 'Our Services | Ecommerce, Digital Marketing & Web Development in Gujarat | Veyber',
+    description: 'Veyber offers eCommerce website development, marketplace account management, digital marketing, social media marketing, and web services for businesses in Vadodara, Surat, Ahmedabad & across Gujarat.',
+    url: 'https://veyber.co.in/services',
+    siteName: 'Veyber',
+    images: [
+      {
+        url: 'https://veyber.co.in/images/og-banner.jpg',
+      },
+    ],
+    type: 'website',
+  },
 };
 
 const serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  serviceType: 'Digital Marketing & eCommerce Services',
-  provider: {
-    '@type': 'Organization',
-    name: 'Veyber',
-    url: 'https://veyber.in',
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Ecommerce, Digital Marketing & Web Services",
+  "provider": {
+    "@type": "Organization",
+    "name": "Veyber",
+    "url": "https://veyber.co.in"
   },
-  areaServed: {
-    '@type': 'Place',
-    name: 'Gujarat, India',
+  "areaServed": {
+    "@type": "Place",
+    "name": "Gujarat, India"
   },
-  hasOfferCatalog: {
-    '@type': 'OfferCatalog',
-    name: 'Veyber Services',
-    itemListElement: [
-      { '@type': 'Service', name: 'eCommerce Development' },
-      { '@type': 'Service', name: 'eCommerce Account Management' },
-      { '@type': 'Service', name: 'Social Media Handling' },
-      { '@type': 'Service', name: 'Content Marketing' },
-      { '@type': 'Service', name: 'Business Consulting' },
-    ],
-  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Veyber Services",
+    "itemListElement": [
+      {
+        "@type": "Service",
+        "name": "Ecommerce Development",
+        "description": "Shopify, WooCommerce, and Custom MERN Stack eCommerce website development for businesses in Gujarat."
+      },
+      {
+        "@type": "Service",
+        "name": "Ecommerce Account Management",
+        "description": "Amazon, Flipkart, and Meesho account setup, product listing, catalog management, and PPC advertising."
+      },
+      {
+        "@type": "Service",
+        "name": "Social Media Handling",
+        "description": "Social media account creation, management, content planning, and audience growth for Instagram and Facebook."
+      },
+      {
+        "@type": "Service",
+        "name": "Content Marketing",
+        "description": "SEO blog writing, website content, social media content, ad copywriting, and keyword strategy for businesses across Gujarat."
+      },
+      {
+        "@type": "Service",
+        "name": "Business Consulting",
+        "description": "Business strategy development, digital growth planning, market research, revenue optimization, and branding strategy."
+      },
+      {
+        "@type": "Service",
+        "name": "Graphic Design",
+        "description": "Brand identity, logo design, ad creatives, marketing collateral, and style guides for businesses in Gujarat."
+      },
+      {
+        "@type": "Service",
+        "name": "Digital Marketing",
+        "description": "SEO, Google Ads (Search, Display, Shopping), and Meta Ads (Facebook & Instagram) for businesses across Gujarat."
+      },
+      {
+        "@type": "Service",
+        "name": "Web Services",
+        "description": "Business website development, website hosting, and DevOps solutions for businesses in Gujarat."
+      }
+    ]
+  }
 };
 
 export default function Page() {
@@ -62,7 +109,7 @@ export default function Page() {
 </p>
 {/* 5 core services pills */}
 <div className="flex flex-wrap gap-2">
-{['eCommerce Development','Account Management','Social Media','Content Marketing','Business Consulting'].map((s) => (
+{['Digital Marketing', 'Web Services', 'eCommerce Development','Account Management','Social Media','Content Marketing','Business Consulting'].map((s) => (
   <span key={s} className="px-3 py-1.5 text-xs font-bold bg-surface-container border border-outline-variant/15 rounded-full text-on-surface-variant hover:border-primary/30 hover:text-primary transition-all duration-200 cursor-default">{s}</span>
 ))}
 </div>
@@ -72,7 +119,94 @@ export default function Page() {
 {/* Services Bento Grid */}
 <section className="px-4 sm:px-8 max-w-7xl mx-auto space-y-8">
 
-{/* Row 1: eCommerce Dev + Account Management */}
+{/* New Row: Core Digital Marketing + Web Services */}
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+  {/* Core Digital Marketing */}
+  <div id="digital-marketing" className="force-dark group relative bg-neutral-900 rounded-2xl transition-all hover:-translate-y-1 overflow-hidden min-h-[380px] sm:min-h-[460px] flex flex-col">
+    <Image
+      alt="Core Digital Marketing SEO Google Ads Meta Ads"
+      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=75"
+      fill
+      sizes="(max-width: 1024px) 100vw, 50vw"
+      loading="lazy"
+      quality={75}
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/96 via-black/70 to-black/30"/>
+    <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent opacity-50"/>
+    <div className="relative z-10 flex flex-col h-full p-5 sm:p-8">
+      <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 border border-white/20">
+        <span className="material-symbols-outlined text-white">campaign</span>
+      </div>
+      <span className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service 01</span>
+      <h2 className="text-2xl font-headline font-bold text-white mb-3">Core Digital Marketing</h2>
+      <p className="text-white/70 mb-5 font-body text-sm leading-relaxed">Get found, get clicks, get customers — through data-driven marketing that delivers measurable ROI.</p>
+      <ul className="space-y-2.5 mb-5 flex-grow">
+        <li className="flex items-center gap-3 text-sm text-white/80">
+          <span className="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+          <Link href="/seo" className="hover:text-primary transition-colors hover:underline">SEO (Search Engine Optimization)</Link>
+        </li>
+        <li className="flex items-center gap-3 text-sm text-white/80">
+          <span className="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+          <Link href="/google-ads" className="hover:text-primary transition-colors hover:underline">Google Ads (Search, Display, Shopping)</Link>
+        </li>
+        <li className="flex items-center gap-3 text-sm text-white/80">
+          <span className="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+          <Link href="/meta-ads" className="hover:text-primary transition-colors hover:underline">Meta Ads (Facebook & Instagram)</Link>
+        </li>
+      </ul>
+      <div className="flex items-center justify-between">
+        <Link href="/digital-marketing" className="inline-flex items-center text-primary font-bold text-sm group/link cursor-pointer shrink-0 mt-auto">
+          Learn More <span className="material-symbols-outlined ml-1 text-[16px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+        </Link>
+      </div>
+    </div>
+  </div>
+
+  {/* Web Services */}
+  <div id="web-services" className="force-dark group relative bg-neutral-900 rounded-2xl transition-all hover:-translate-y-1 overflow-hidden min-h-[380px] sm:min-h-[460px] flex flex-col">
+    <Image
+      alt="Web Services Web Development Hosting DevOps"
+      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+      src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=75"
+      fill
+      sizes="(max-width: 1024px) 100vw, 50vw"
+      loading="lazy"
+      quality={75}
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/96 via-black/70 to-black/30"/>
+    <div className="absolute inset-0 bg-gradient-to-br from-secondary-container/30 via-transparent to-transparent opacity-50"/>
+    <div className="relative z-10 flex flex-col h-full p-5 sm:p-8">
+      <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 border border-white/20">
+        <span className="material-symbols-outlined text-white">code_blocks</span>
+      </div>
+      <span className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service 02</span>
+      <h2 className="text-2xl font-headline font-bold text-white mb-3">Web Services</h2>
+      <p className="text-white/70 mb-5 font-body text-sm leading-relaxed">Beyond eCommerce — we build and maintain the digital infrastructure your business runs on.</p>
+      <ul className="space-y-2.5 mb-5 flex-grow">
+        <li className="flex items-center gap-3 text-sm text-white/80">
+          <span className="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+          <Link href="/web-services/development" className="hover:text-primary transition-colors hover:underline">Website Development</Link>
+        </li>
+        <li className="flex items-center gap-3 text-sm text-white/80">
+          <span className="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+          <Link href="/web-services/hosting" className="hover:text-primary transition-colors hover:underline">Website Hosting</Link>
+        </li>
+        <li className="flex items-center gap-3 text-sm text-white/80">
+          <span className="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+          <Link href="/web-services/devops" className="hover:text-primary transition-colors hover:underline">DevOps & Deployment</Link>
+        </li>
+      </ul>
+      <div className="flex items-center justify-between">
+        <Link href="/web-services" className="inline-flex items-center text-primary font-bold text-sm group/link cursor-pointer shrink-0 mt-auto">
+          Learn More <span className="material-symbols-outlined ml-1 text-[16px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+        </Link>
+      </div>
+    </div>
+  </div>
+</div>
+
+{/* Row 1 -> Row 2: eCommerce Dev + Account Management */}
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
 
 {/* eCommerce Development */}
@@ -92,7 +226,7 @@ export default function Page() {
 <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 border border-white/20">
   <span className="material-symbols-outlined text-white">shopping_cart</span>
 </div>
-<span className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service 01</span>
+<span className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service 03</span>
 <h2 className="text-2xl font-headline font-bold text-white mb-3">eCommerce Development</h2>
 <p className="text-white/70 mb-5 font-body text-sm leading-relaxed">Build a high-performing online store that converts visitors into customers. We develop custom, scalable, and SEO-friendly eCommerce websites tailored to your business needs.</p>
 <ul className="space-y-2.5 mb-5 flex-grow">
@@ -118,7 +252,7 @@ export default function Page() {
 <Image
   alt="eCommerce account management — Amazon Flipkart marketplace services India"
   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=75"
+  src="https://images.unsplash.com/photo-1481437156560-3205f6a55735?auto=format&fit=crop&w=900&q=75"
   fill
   sizes="(max-width: 1024px) 100vw, 42vw"
   loading="lazy"
@@ -130,7 +264,7 @@ export default function Page() {
 <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 border border-white/20">
   <span className="material-symbols-outlined text-white">trending_up</span>
 </div>
-<span className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service 02</span>
+<span className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service 04</span>
 <h2 className="text-2xl font-headline font-bold text-white mb-3">eCommerce Account Management</h2>
 <p className="text-white/70 mb-5 font-body text-sm leading-relaxed">Managing marketplaces like Amazon & Flipkart can be complex — we make it simple and profitable.</p>
 <ul className="space-y-2.5 mb-5 flex-grow">
@@ -152,7 +286,7 @@ export default function Page() {
 </div>
 </div>
 
-{/* Row 2: Social Media + Content Marketing + Graphic Design */}
+{/* Row 2 -> Row 3: Social Media + Content Marketing + Graphic Design */}
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
 {/* Social Media Handling */}
@@ -168,7 +302,7 @@ export default function Page() {
 />
 <div className="absolute inset-0 bg-gradient-to-t from-black/96 via-black/65 to-black/15"/>
 <div className="relative flex flex-col justify-end flex-grow p-5 sm:p-8">
-<span className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service 03</span>
+<span className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service 05</span>
 <h2 className="text-2xl font-headline font-bold text-white mb-3">Social Media Handling</h2>
 <p className="text-white/70 text-sm leading-relaxed mb-4">Build a strong brand presence and engage your audience with strategic social media management.</p>
 <ul className="space-y-2 mb-4">
@@ -206,7 +340,7 @@ export default function Page() {
 <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-4 border border-white/20">
   <span className="material-symbols-outlined text-white">article</span>
 </div>
-<span className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service 04</span>
+<span className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service 06</span>
 <h2 className="text-2xl font-headline font-bold text-white mb-3">Content Marketing</h2>
 <p className="text-white/70 mb-4 font-body text-sm leading-relaxed">Content is the backbone of digital success — and we create content that ranks and converts.</p>
 <ul className="space-y-2 mb-4 flex-grow">
@@ -280,7 +414,7 @@ export default function Page() {
 <div className="relative z-10 p-6 sm:p-10">
 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
 <div>
-<span className="text-tertiary font-headline font-bold text-xs uppercase tracking-[0.2em] mb-3 block">Service 05 · Strategic Advisory</span>
+<span className="text-tertiary font-headline font-bold text-xs uppercase tracking-[0.2em] mb-3 block">Service 07 · Strategic Advisory</span>
 <h2 className="text-2xl sm:text-3xl font-headline font-bold text-white mb-4">Business Consulting</h2>
 <p className="text-white/70 text-base sm:text-lg leading-relaxed mb-6">We don't just execute — we guide your business toward sustainable growth with data-driven strategy and expert insights.</p>
 <div className="space-y-3 mb-6">

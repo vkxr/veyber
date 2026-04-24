@@ -582,61 +582,135 @@ export default function Page() {
 </div>
 </div>
 </section>
-{/*  Testimonials  */}
+{/*  Interactive Impact Gallery  */}
 <section className="px-4 sm:px-8 py-16 sm:py-32 bg-surface-container-low/50 relative overflow-hidden">
-<div className="max-w-7xl mx-auto">
-<div className="flex flex-col md:flex-row justify-between items-end mb-10 sm:mb-16 gap-6 sm:gap-8">
-<h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight">What Our<br/>Clients Say</h2>
-<div className="flex gap-4">
-<button className="w-14 h-14 rounded-full border border-outline-variant/20 flex items-center justify-center text-white hover:bg-surface-variant transition-all">
-<span className="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
-</button>
-<button className="w-14 h-14 rounded-full border border-primary text-primary flex items-center justify-center hover:bg-primary/10 transition-all">
-<span className="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
-</button>
-</div>
-</div>
-<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div className="bg-surface-container-high p-6 sm:p-10 rounded-[2.5rem] border border-outline-variant/10">
-<div className="flex gap-1 mb-6 text-primary">
-<span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-</div>
-<p className="text-lg sm:text-2xl font-medium text-white mb-8 sm:mb-10 leading-relaxed italic">&quot;Veyber completely transformed our Amazon presence. In 6 months, our monthly revenue tripled while our ACoS dropped by 15%.&quot;</p>
-<div className="flex items-center gap-4">
-<div className="w-12 h-12 rounded-full bg-slate-800 border border-outline-variant overflow-hidden relative">
-<Image alt="Client Portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8-AXu7hTdd5AkhbTkbjP1Y6e93sOvWnbEgtDH1Zbnwv0IvYnXXHA6RxrJWPqnHpK5hSQmm2RTm7jaU20tB0_-SoVQixE5eKirfhPBKrR1nd2e1sDFHugBM1AVRyvPCVCIuFcbx37CmJr8dc9mtR34n7-xG02iK_e0qTcTEveNs01ycw_zcpBc9PLoG-sYuIlT442Nk0yyA8k20_oRNFdz8IS8ICzSHplXGqNXanqj-XvsW-uJDKEnaB9nlX--BFAvnQwI7dxyYv0" fill sizes="48px" className="object-cover" loading="lazy" />
-</div>
-<div>
-<h5 className="font-bold text-white">David Chen</h5>
-<p className="text-sm text-on-surface-variant">CEO, Modern Tech Solutions</p>
-</div>
-</div>
-</div>
-<div className="bg-surface-container-high p-6 sm:p-10 rounded-[2.5rem] border border-outline-variant/10">
-<div className="flex gap-1 mb-6 text-primary">
-<span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span className="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-</div>
-<p className="text-lg sm:text-2xl font-medium text-white mb-8 sm:mb-10 leading-relaxed italic">&quot;The team at Veyber understands growth systems better than anyone we&apos;ve ever worked with. Their content marketing is top-tier.&quot;</p>
-<div className="flex items-center gap-4">
-<div className="w-12 h-12 rounded-full bg-slate-800 border border-outline-variant overflow-hidden relative">
-<Image alt="Client Portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgMmZzX7BsjeHR91rDjm5pSYWPGq5ByWQYTx17Arp7s59S3eKMz-2S_5K5QXFEPXJqzsRL9tmSlk6Oq6pMg7AIuML9Ye4d7mirhc0uG-5LQ_euXuaT-RSTu32cgpCuse0Lmex-3fncQCXyzt4xsBm2hoeh2XAU8LiCjjDXrPxXVWsIK_34I_pKsV7mKfs5AqZ2Wx3IlQkf9aIglIZr8lfG__zXBih5HzhQLHUv95e2ZYmaDCJ58RWSMq_aCLp8_r2xrtct5IQLHkM" fill sizes="48px" className="object-cover" loading="lazy" />
-</div>
-<div>
-<h5 className="font-bold text-white">Sarah Jenkins</h5>
-<p className="text-sm text-on-surface-variant">Founder, Bloom Lifestyle</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-primary/10 blur-[120px] rounded-full pointer-events-none"/>
+  
+  <div className="max-w-7xl mx-auto relative z-10">
+    <div className="text-center mb-12 sm:mb-20">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">The Veyber Edge</h2>
+      <p className="text-on-surface-variant max-w-2xl mx-auto text-lg leading-relaxed">We are a modern digital growth agency. We combine agility, deep market research, and cutting-edge execution to give your brand an unfair advantage.</p>
+    </div>
+
+    {/* The Interactive Flex Grid */}
+    <div className="flex flex-col lg:flex-row gap-4 lg:h-[500px] w-full">
+      {/* Card 1 */}
+      <div className="group relative flex-1 lg:hover:flex-[3] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2rem] overflow-hidden cursor-pointer border border-white/10 hover:border-primary/40 shadow-xl bg-neutral-900 min-h-[300px] lg:min-h-0">
+        <Image src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=75" alt="Analytics" fill className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-100" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#07080f] via-[#07080f]/70 to-transparent group-hover:from-black/80 transition-colors duration-500"/>
+        
+        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 flex flex-col justify-end h-full">
+          <div className="flex items-center gap-4 mb-3">
+            <div className="w-12 h-12 rounded-full bg-primary/20 backdrop-blur-md flex items-center justify-center border border-primary/30 text-primary shrink-0 transition-transform group-hover:scale-110 duration-500">
+              <span className="material-symbols-outlined text-2xl">insights</span>
+            </div>
+            <h3 className="text-2xl md:text-3xl font-black text-white whitespace-nowrap">Data First</h3>
+          </div>
+          <h4 className="text-lg font-bold text-white whitespace-nowrap overflow-hidden text-ellipsis transition-all duration-500">Strategy & Research</h4>
+          
+          <div className="grid grid-rows-[1fr] lg:grid-rows-[0fr] lg:group-hover:grid-rows-[1fr] transition-all duration-500 ease-in-out">
+            <div className="overflow-hidden">
+              <div className="pt-4 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                <p className="text-white/70 text-sm leading-relaxed line-clamp-3">
+                  We don&apos;t rely on guesswork. Every campaign, design choice, and line of code is driven by deep market research, competitor analysis, and clear analytics.
+                </p>
+                <div className="mt-4 px-4 py-1.5 bg-primary/20 inline-block rounded-full border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest">
+                  Analytics & SEO
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Card 2 */}
+      <div className="group relative flex-1 lg:hover:flex-[3] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2rem] overflow-hidden cursor-pointer border border-white/10 hover:border-[#f0661b]/40 shadow-xl bg-neutral-900 min-h-[300px] lg:min-h-0">
+        <Image src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=75" alt="Creative" fill className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-100" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#07080f] via-[#07080f]/70 to-transparent group-hover:from-black/80 transition-colors duration-500"/>
+        
+        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 flex flex-col justify-end h-full">
+          <div className="flex items-center gap-4 mb-3">
+            <div className="w-12 h-12 rounded-full bg-[#f0661b]/20 backdrop-blur-md flex items-center justify-center border border-[#f0661b]/30 text-[#f0661b] shrink-0 transition-transform group-hover:scale-110 duration-500">
+              <span className="material-symbols-outlined text-2xl">design_services</span>
+            </div>
+            <h3 className="text-2xl md:text-3xl font-black text-white whitespace-nowrap">Creative</h3>
+          </div>
+          <h4 className="text-lg font-bold text-white whitespace-nowrap overflow-hidden text-ellipsis transition-all duration-500">Design & Branding</h4>
+          
+          <div className="grid grid-rows-[1fr] lg:grid-rows-[0fr] lg:group-hover:grid-rows-[1fr] transition-all duration-500 ease-in-out">
+            <div className="overflow-hidden">
+              <div className="pt-4 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                <p className="text-white/70 text-sm leading-relaxed line-clamp-3">
+                  Standing out requires more than just templates. We craft bespoke, premium brand experiences and eye-catchy designs that capture attention and build trust.
+                </p>
+                <div className="mt-4 px-4 py-1.5 bg-[#f0661b]/20 inline-block rounded-full border border-[#f0661b]/30 text-[#f0661b] text-xs font-bold uppercase tracking-widest">
+                  UI/UX & Branding
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Card 3 */}
+      <div className="group relative flex-1 lg:hover:flex-[3] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2rem] overflow-hidden cursor-pointer border border-white/10 hover:border-[#4ade80]/40 shadow-xl bg-neutral-900 min-h-[300px] lg:min-h-0">
+        <Image src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=75" alt="Code" fill className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-100" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#07080f] via-[#07080f]/70 to-transparent group-hover:from-black/80 transition-colors duration-500"/>
+        
+        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 flex flex-col justify-end h-full">
+          <div className="flex items-center gap-4 mb-3">
+            <div className="w-12 h-12 rounded-full bg-[#4ade80]/20 backdrop-blur-md flex items-center justify-center border border-[#4ade80]/30 text-[#4ade80] shrink-0 transition-transform group-hover:scale-110 duration-500">
+              <span className="material-symbols-outlined text-2xl">code</span>
+            </div>
+            <h3 className="text-2xl md:text-3xl font-black text-white whitespace-nowrap">Build</h3>
+          </div>
+          <h4 className="text-lg font-bold text-white whitespace-nowrap overflow-hidden text-ellipsis transition-all duration-500">eCommerce & Tech</h4>
+          
+          <div className="grid grid-rows-[1fr] lg:grid-rows-[0fr] lg:group-hover:grid-rows-[1fr] transition-all duration-500 ease-in-out">
+            <div className="overflow-hidden">
+              <div className="pt-4 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                <p className="text-white/70 text-sm leading-relaxed line-clamp-3">
+                  From high-converting Shopify stores to custom web applications, we build robust digital ecosystems that load blazing fast and scale effortlessly.
+                </p>
+                <div className="mt-4 px-4 py-1.5 bg-[#4ade80]/20 inline-block rounded-full border border-[#4ade80]/30 text-[#4ade80] text-xs font-bold uppercase tracking-widest">
+                  Development
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Card 4 */}
+      <div className="group relative flex-1 lg:hover:flex-[3] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2rem] overflow-hidden cursor-pointer border border-white/10 hover:border-purple-400/40 shadow-xl bg-neutral-900 min-h-[300px] lg:min-h-0">
+        <Image src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=75" alt="Scale" fill className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-100" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#07080f] via-[#07080f]/70 to-transparent group-hover:from-black/80 transition-colors duration-500"/>
+        
+        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 flex flex-col justify-end h-full">
+          <div className="flex items-center gap-4 mb-3">
+            <div className="w-12 h-12 rounded-full bg-purple-500/20 backdrop-blur-md flex items-center justify-center border border-purple-500/30 text-purple-400 shrink-0 transition-transform group-hover:scale-110 duration-500">
+              <span className="material-symbols-outlined text-2xl">rocket_launch</span>
+            </div>
+            <h3 className="text-2xl md:text-3xl font-black text-white whitespace-nowrap">Scale</h3>
+          </div>
+          <h4 className="text-lg font-bold text-white whitespace-nowrap overflow-hidden text-ellipsis transition-all duration-500">Marketing & Ads</h4>
+          
+          <div className="grid grid-rows-[1fr] lg:grid-rows-[0fr] lg:group-hover:grid-rows-[1fr] transition-all duration-500 ease-in-out">
+            <div className="overflow-hidden">
+              <div className="pt-4 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                <p className="text-white/70 text-sm leading-relaxed line-clamp-3">
+                  We manage your ad spend as if it were our own. We deploy agile marketing strategies, test, iterate, and scale at a pace traditional agencies simply can&apos;t match.
+                </p>
+                <div className="mt-4 px-4 py-1.5 bg-purple-500/20 inline-block rounded-full border border-purple-500/30 text-purple-400 text-xs font-bold uppercase tracking-widest">
+                  Growth Marketing
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 {/* FAQ Section */}
 <section className="px-4 sm:px-8 py-16 sm:py-32 bg-surface">

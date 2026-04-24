@@ -162,7 +162,7 @@ export default function Page() {
 </div>
 </div>
 {/* Our Story */}
-<div className="force-dark md:col-span-8 relative bg-neutral-900 rounded-2xl overflow-hidden min-h-[280px] sm:min-h-[420px] group">
+<div className="force-dark md:col-span-8 relative bg-neutral-900 rounded-2xl overflow-hidden flex flex-col justify-end min-h-[420px] group">
 <Image
   alt="Veyber founders working in Vadodara — our story"
   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -174,7 +174,7 @@ export default function Page() {
 />
 <div className="absolute inset-0 bg-gradient-to-t from-black/93 via-black/60 to-black/20"/>
 <div className="absolute inset-0 bg-gradient-to-tr from-primary/15 via-transparent to-transparent"/>
-<div className="absolute bottom-5 sm:bottom-10 left-5 sm:left-10 right-5 sm:right-10 z-10">
+<div className="relative z-10 p-6 sm:p-10">
 <h2 className="text-2xl sm:text-3xl font-bold font-headline mb-3 sm:mb-4 text-white uppercase tracking-widest drop-shadow-lg">Our Story</h2>
 <p className="text-white/80 text-base sm:text-lg leading-relaxed max-w-xl drop-shadow mb-3">
   Veyber was founded with a clear vision — to bridge the gap between digital efforts and real business growth.
@@ -241,7 +241,7 @@ export default function Page() {
 {/* Co-Founder 1 */}
 <div className="bg-surface-container-high p-5 sm:p-8 rounded-2xl border border-outline-variant/5">
 <div className="w-20 h-20 rounded-full overflow-hidden mb-6 ring-4 ring-primary/20 relative">
-<Image className="w-full h-full object-cover" alt="Co-Founder Veyber — business consulting Gujarat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL9OUzxbhRy2MtWz2vGY87ykzTsLNh_TmQUUNY9QUxYdblWQQSta7R1oouoPAnVzlnswMXV3bMVjOwF36PwgTmszxg585XzeTMSpkMES9gltpHnba2eQK27V54ukcGmOd-L37KjXGwM8YpbqLyLmL6qmy5uzEwC_zUUkbn3hvCO_v_Nqhga6VkZbS_1JORW2FiRkHDSOiovdMB1GmCdFmE_rwTphY5FkLy9nEIneF0s42SS1wbqH0i7C1poVb3mZtz_koRBzvXh4g" fill sizes="80px" loading="lazy" />
+<Image className="w-full h-full object-cover" alt="Co-Founder Veyber — business consulting Gujarat" src="/vraj_gutam_avatar.png" fill sizes="80px" loading="lazy" />
 </div>
 <div className="flex gap-1 mb-4 text-primary">
   {'★★★★★'.split('').map((s, i) => <span key={i} className="text-sm">{s}</span>)}
