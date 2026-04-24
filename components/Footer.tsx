@@ -69,7 +69,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="md:col-span-5">
             <Link href="/" className="inline-block mb-5">
-              <VeyberLogo height={30} accentColor="#4f8eff" />
+              <VeyberLogo height={30} theme="dark" />
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-7 max-w-xs">
               High-end digital growth agency specialising in eCommerce and marketplace dominance. We turn ambition into authority.

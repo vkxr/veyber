@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import LazyMap from '@/components/LazyMap';
+import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
   title: 'Contact Veyber | Digital Marketing & eCommerce Experts in Gujarat',
@@ -82,72 +83,7 @@ export default function Page() {
       <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Send Us a Message</h2>
       <p className="text-on-surface-variant text-sm leading-relaxed">Have a project in mind? Fill out the form and our team will get back to you within 24 hours.</p>
     </div>
-    <form className="relative z-10 space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="space-y-2">
-          <label className="text-xs font-semibold tracking-widest uppercase text-primary/70 block px-1">Full Name *</label>
-          <input
-            className="w-full bg-surface-container border border-outline-variant/20 rounded-xl px-4 py-4 text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
-            placeholder="Your full name"
-            type="text"
-            required
-          />
-        </div>
-        <div className="space-y-2">
-          <label className="text-xs font-semibold tracking-widest uppercase text-primary/70 block px-1">Email Address *</label>
-          <input
-            className="w-full bg-surface-container border border-outline-variant/20 rounded-xl px-4 py-4 text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
-            placeholder="you@example.com"
-            type="email"
-            required
-          />
-        </div>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="space-y-2">
-          <label className="text-xs font-semibold tracking-widest uppercase text-primary/70 block px-1">Phone Number</label>
-          <input
-            className="w-full bg-surface-container border border-outline-variant/20 rounded-xl px-4 py-4 text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
-            placeholder="+91 XXXXX XXXXX"
-            type="tel"
-          />
-        </div>
-        <div className="space-y-2">
-          <label className="text-xs font-semibold tracking-widest uppercase text-primary/70 block px-1">Service Required *</label>
-          <div className="relative">
-            <select
-              className="w-full bg-surface-container border border-outline-variant/20 rounded-xl px-4 py-4 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all appearance-none pr-10"
-              required
-            >
-              <option value="" disabled>Select a service…</option>
-              <option value="ecommerce-development">eCommerce Development</option>
-              <option value="account-management">eCommerce Account Management</option>
-              <option value="social-media">Social Media Handling</option>
-              <option value="content-marketing">Content Marketing</option>
-              <option value="business-consulting">Business Consulting</option>
-            </select>
-            <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span>
-          </div>
-        </div>
-      </div>
-      <div className="space-y-2">
-        <label className="text-xs font-semibold tracking-widest uppercase text-primary/70 block px-1">Message *</label>
-        <textarea
-          className="w-full bg-surface-container border border-outline-variant/20 rounded-xl px-4 py-4 text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all resize-none"
-          placeholder="Tell us about your project, goals, and any specific requirements…"
-          rows={5}
-          required
-        />
-      </div>
-      <p className="text-on-surface-variant/60 text-xs">We respect your time. Expect clear communication, fast response, and practical solutions.</p>
-      <button
-        className="w-full py-5 rounded-full bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-bold text-base tracking-wide hover:shadow-[0_10px_30px_rgba(79,142,255,0.4)] transition-all active:scale-95 flex items-center justify-center gap-2"
-        type="submit"
-      >
-        <span className="material-symbols-outlined text-[20px]">send</span>
-        Get Free Consultation
-      </button>
-    </form>
+    <ContactForm />
   </section>
 
   {/* Contact Info + Map */}
