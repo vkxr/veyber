@@ -148,8 +148,8 @@ export default function Footer() {
                 ['About Us', '/about'],
                 ['Contact',  '/contact'],
                 ['Locations Index', '/service-locations'],
-                ['Privacy Policy', '#'],
-                ['Terms of Service', '#'],
+                ['Privacy Policy', '/privacy-policy'],
+                ['Terms & Conditions', '/terms-and-conditions'],
               ].map(([label, href]) => (
                 <li key={label}>
                   <Link href={href} className="text-slate-500 text-sm hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 group">
