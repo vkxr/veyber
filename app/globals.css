@@ -101,12 +101,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-dashboard-float {
   animation: hero-float 6s ease-in-out infinite;
-  will-change: transform;
 }
 
 .stat-card-1 { animation: stat-card-1 5s ease-in-out infinite; }
 .stat-card-2 { animation: stat-card-2 7s ease-in-out 0.6s infinite; }
 .stat-card-3 { animation: stat-card-3 5.5s ease-in-out 1.2s infinite; }
+
+/* ── Respect reduced motion preference ── */
+@media (prefers-reduced-motion: reduce) {
+  .hero-content-anim {
+    animation: none;
+    opacity: 1;
+  }
+  .hero-dashboard-float,
+  .stat-card-1,
+  .stat-card-2,
+  .stat-card-3 {
+    animation: none;
+  }
+  .animate-ping {
+    animation: none;
+    opacity: 0.75;
+  }
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
 
 /* ══ LIGHT MODE — CSS variable overrides ════════════════════════
    @theme sets dark-mode defaults at :root.
@@ -184,12 +205,41 @@ html:not(.dark) .site-nav .nav-link.active { color: #1749c0 !important; border-b
 
 /* ── text-white → dark text on light backgrounds ── */
 html:not(.dark) .text-white { color: #111225; }
+html:not(.dark) .text-white\/90 { color: rgba(17, 18, 37, 0.90); }
+html:not(.dark) .text-white\/80 { color: rgba(17, 18, 37, 0.80); }
+html:not(.dark) .text-white\/75 { color: rgba(17, 18, 37, 0.75); }
+html:not(.dark) .text-white\/70 { color: rgba(17, 18, 37, 0.70); }
+html:not(.dark) .text-white\/60 { color: rgba(17, 18, 37, 0.60); }
+html:not(.dark) .text-white\/50 { color: rgba(17, 18, 37, 0.50); }
+html:not(.dark) .text-white\/40 { color: rgba(17, 18, 37, 0.40); }
+html:not(.dark) .text-white\/35 { color: rgba(17, 18, 37, 0.35); }
+html:not(.dark) .text-white\/30 { color: rgba(17, 18, 37, 0.30); }
+html:not(.dark) .text-white\/25 { color: rgba(17, 18, 37, 0.25); }
+html:not(.dark) .text-white\/20 { color: rgba(17, 18, 37, 0.20); }
+html:not(.dark) .text-white\/10 { color: rgba(17, 18, 37, 0.10); }
 
-/* ── force-dark: always-dark containers (dashboard mockup, footer) ── */
+html:not(.dark) .hover\:text-white:hover,
+html:not(.dark) .group:hover .group-hover\:text-white,
+html:not(.dark) .group:hover .group-hover\:text-white\/90,
+html:not(.dark) .group:hover .group-hover\:text-white\/80 { color: #111225 !important; }
+
+/* ── force-dark: always-dark containers (dashboard mockup, footer, CTA) ── */
 html:not(.dark) .force-dark { color-scheme: dark; }
 html:not(.dark) .force-dark .text-white { color: #ffffff !important; }
-
-/* ── Floating stat cards in light mode ── */
+html:not(.dark) .force-dark .hover\:text-white:hover,
+html:not(.dark) .force-dark .group:hover .group-hover\:text-white { color: #ffffff !important; }
+html:not(.dark) .force-dark .text-white\/90 { color: rgba(255, 255, 255, 0.90) !important; }
+html:not(.dark) .force-dark .text-white\/80 { color: rgba(255, 255, 255, 0.80) !important; }
+html:not(.dark) .force-dark .text-white\/75 { color: rgba(255, 255, 255, 0.75) !important; }
+html:not(.dark) .force-dark .text-white\/70 { color: rgba(255, 255, 255, 0.70) !important; }
+html:not(.dark) .force-dark .text-white\/60 { color: rgba(255, 255, 255, 0.60) !important; }
+html:not(.dark) .force-dark .text-white\/50 { color: rgba(255, 255, 255, 0.50) !important; }
+html:not(.dark) .force-dark .text-white\/40 { color: rgba(255, 255, 255, 0.40) !important; }
+html:not(.dark) .force-dark .text-white\/35 { color: rgba(255, 255, 255, 0.35) !important; }
+html:not(.dark) .force-dark .text-white\/30 { color: rgba(255, 255, 255, 0.30) !important; }
+html:not(.dark) .force-dark .text-white\/25 { color: rgba(255, 255, 255, 0.25) !important; }
+html:not(.dark) .force-dark .text-white\/20 { color: rgba(255, 255, 255, 0.20) !important; }
+html:not(.dark) .force-dark .text-white\/10 { color: rgba(255, 255, 255, 0.10) !important; }
 html:not(.dark) .stat-card-1,
 html:not(.dark) .stat-card-2,
 html:not(.dark) .stat-card-3 {
@@ -200,4 +250,3 @@ html:not(.dark) .stat-card-3 {
 html:not(.dark) .stat-card-1 p,
 html:not(.dark) .stat-card-2 p,
 html:not(.dark) .stat-card-3 p { color: rgba(68, 73, 106, 0.65) !important; }
-

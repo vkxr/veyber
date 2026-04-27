@@ -1,48 +1,57 @@
+import Image from 'next/image';
+
 interface VeyberLogoProps {
   /** Height in px — width scales proportionally */
   height?: number;
-  /** Accent color for the V shape */
+  /** Accent color for the V shape (unused now since using image) */
   accentColor?: string;
+  /** Force a specific theme, or rely on global dark mode */
+  theme?: 'dynamic' | 'dark' | 'light';
 }
 
 /**
- * Veyber brand logo — inline SVG V + HTML text.
- * "EYBER" uses text-on-surface so it adapts automatically in dark/light mode.
+ * Veyber brand logo — using provided image assets.
+ * Switches between black/white based on dark mode, or forced via prop.
  */
 export default function VeyberLogo({
   height = 30,
-  accentColor = '#4f8eff',
+  theme = 'dynamic',
 }: VeyberLogoProps) {
-  const vW = Math.round((height * 42) / 36);
-  const gap = Math.round(height * 0.2);
-  const fontSize = Math.round(height * 0.75);
-
-  return (
-    <span
-      className="inline-flex items-center select-none"
-      style={{ gap }}
-      aria-label="Veyber"
-    >
-      {/* Geometric V */}
-      <svg
-        width={vW}
-        height={height}
-        viewBox="0 0 42 36"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        <polygon points="0,1 11,1 21,35 10,35" fill={accentColor} />
-        <polygon points="21,35 31,1 42,1 32,35" fill={accentColor} />
-      </svg>
-
-      {/* EYBER — color inherits from text-on-surface CSS variable */}
-      <span
-        className="font-headline font-extrabold tracking-tight leading-none text-on-surface"
-        style={{ fontSize }}
-      >
-        EYBER
+  if (theme === 'dark') {
+    return (
+      <span className="inline-flex items-center select-none" style={{ height }} aria-label="Veyber">
+        <Image src="/logo-white.png" alt="Veyber Logo" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: '100%', objectFit: 'contain' }} priority />
       </span>
+    );
+  }
+
+  if (theme === 'light') {
+    return (
+      <span className="inline-flex items-center select-none" style={{ height }} aria-label="Veyber">
+        <Image src="/logo-black.png" alt="Veyber Logo" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: '100%', objectFit: 'contain' }} priority />
+      </span>
+    );
+  }
+
+  // Dynamic theme (relies on Tailwind's .dark class on <html>)
+  return (
+    <span className="inline-flex items-center select-none" style={{ height }} aria-label="Veyber">
+      {/* Light Mode Logo (Black) */}
+      <Image
+        src="/logo-black.png"
+        alt="Veyber Logo"
+        width={0} height={0} sizes="100vw" style={{ width: 'auto', height: '100%', objectFit: 'contain' }}
+        className="block dark:hidden"
+        priority
+      />
+      {/* Dark Mode Logo (White) */}
+      <Image
+        src="/logo-white.png"
+        alt="Veyber Logo"
+        width={0} height={0} sizes="100vw" style={{ width: 'auto', height: '100%', objectFit: 'contain' }}
+        className="hidden dark:block"
+        priority
+      />
     </span>
   );
 }
