@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   title: 'Social Media Marketing Services in Vadodara | SMM Agency Gujarat – Veyber',
   description: 'Looking for social media handling services in Vadodara? Veyber offers Instagram, Facebook marketing & ad management services across Gujarat to grow your business.',
   keywords: 'Social media handling services Vadodara, Social media marketing Vadodara, SMM agency Gujarat, Instagram marketing Vadodara, Facebook ads services Vadodara, Social media manager Gujarat, Digital marketing company Vadodara, Social media growth services India',
+  alternates: {
+    canonical: 'https://veyber.co.in/social-media-marketing',
+  },
+  openGraph: {
+    title: 'Social Media Marketing Services in Vadodara | SMM Agency Gujarat â€“ Veyber',
+    description: 'Looking for social media handling services in Vadodara? Veyber offers Instagram, Facebook marketing & ad management services across Gujarat to grow your business.',
+    url: 'https://veyber.co.in/social-media-marketing',
+    type: 'website',
+  },
 };
 
 const pageSchema = {

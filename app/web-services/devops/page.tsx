@@ -8,10 +8,13 @@ export const metadata: Metadata = {
   title: 'DevOps & Deployment Services in Gujarat | CI/CD & Cloud – Veyber',
   description: 'Expert DevOps services in Gujarat. We specialize in server setup, CI/CD pipeline automation, Docker containerization, and secure cloud deployments.',
   keywords: 'DevOps services Gujarat, CI/CD automation Vadodara, cloud deployment Ahmedabad, server management India',
+  alternates: {
+    canonical: 'https://veyber.co.in/devops',
+  },
   openGraph: {
     title: 'DevOps & Deployment Services in Gujarat | CI/CD & Cloud – Veyber',
     description: 'Expert DevOps services in Gujarat. We specialize in server setup, CI/CD pipeline automation, Docker containerization, and secure cloud deployments.',
-    url: 'https://veyber.co.in/web-services/devops',
+    url: 'https://veyber.co.in/devops',
     type: 'website',
   }
 };

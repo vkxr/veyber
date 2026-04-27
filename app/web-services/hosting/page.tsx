@@ -8,10 +8,13 @@ export const metadata: Metadata = {
   title: 'Managed Website Hosting Services in Gujarat | Secure & Fast – Veyber',
   description: 'Reliable, fast, and secure managed website hosting services. We provide SSL, daily backups, and 99.9% uptime for businesses across Gujarat.',
   keywords: 'website hosting Gujarat, managed hosting Vadodara, secure web hosting Ahmedabad, fast cloud hosting India',
+  alternates: {
+    canonical: 'https://veyber.co.in/web-hosting',
+  },
   openGraph: {
     title: 'Managed Website Hosting Services in Gujarat | Secure & Fast – Veyber',
     description: 'Reliable, fast, and secure managed website hosting services. We provide SSL, daily backups, and 99.9% uptime for businesses across Gujarat.',
-    url: 'https://veyber.co.in/web-services/hosting',
+    url: 'https://veyber.co.in/web-hosting',
     type: 'website',
   }
 };

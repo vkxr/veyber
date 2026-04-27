@@ -10,10 +10,13 @@ export const metadata: Metadata = {
   title: 'Website Development Services in Gujarat | Custom Web Solutions – Veyber',
   description: 'Professional website development services in Vadodara & Gujarat. We build fast, responsive, and SEO-optimized business websites, landing pages, and web apps.',
   keywords: 'website development Gujarat, web design Vadodara, custom web development Ahmedabad, business website design Surat',
+  alternates: {
+    canonical: 'https://veyber.co.in/web-development',
+  },
   openGraph: {
     title: 'Website Development Services in Gujarat | Custom Web Solutions – Veyber',
     description: 'Professional website development services in Vadodara & Gujarat. We build fast, responsive, and SEO-optimized business websites, landing pages, and web apps.',
-    url: 'https://veyber.co.in/web-services/development',
+    url: 'https://veyber.co.in/web-development',
     type: 'website',
   }
 };

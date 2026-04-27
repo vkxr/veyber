@@ -147,6 +147,7 @@ export default function Footer() {
               {[
                 ['About Us', '/about'],
                 ['Contact',  '/contact'],
+                ['Sitemap', '/sitemap'],
                 ['Locations Index', '/service-locations'],
                 ['Privacy Policy', '/privacy-policy'],
                 ['Terms & Conditions', '/terms-and-conditions'],
